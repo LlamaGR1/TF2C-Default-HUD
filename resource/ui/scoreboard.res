@@ -17,7 +17,7 @@
 		"avatar_width"				"18"
 		"avatar_spacer"				"4"
 		"medal_width"				"14"
-		"name_width"				"102"
+		"name_width"				"100"
 		"nemesis_width"				"20"
 		"class_width"				"25"
 		"score_width"				"22"
@@ -1527,7 +1527,7 @@
 			"pin_to_sibling_corner" "1"
 		}
 		
-		"DominationLabel"
+		"DominationsLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DominationLabel"
@@ -1548,10 +1548,10 @@
 			"pin_corner_to_sibling" "0"
 			"pin_to_sibling_corner" "2"
 		}
-		"Domination"
+		"Dominations"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"			"Domination"
+			"fieldName"			"Dominations"
 			"font"				"StatsFont"
 			"labelText"			"%dominations%"
 			"textAlignment"		"east"
@@ -1749,7 +1749,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"			"DestructionsLabel"
 			"font"				"StatsFont"
-			"labelText"			"#TF_ScoreBoard_DestructionLabel"
+			"labelText"			"#TF_ScoreBoard_DestructionsLabel"
 			"textAlignment"		"west"
 			"xpos"				"0"
 			"ypos"				"0"
@@ -1770,7 +1770,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"			"Destructions"
 			"font"				"StatsFont"
-			"labelText"			"%destruction%"
+			"labelText"			"%destructions%"
 			"textAlignment"		"east"
 			"xpos"				"4"
 			"ypos"				"0"
@@ -1913,7 +1913,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"			"MouseInfo"
 		"font"				"StatsFont"
-		"labelText"			"#TF_RightClick_Enable"
+		"labelText"			"#TF_RightClick_Enable_Mouse"
 		"textAlignment"		"center"
 		"xpos"				"0"
 		"ypos"				"2"

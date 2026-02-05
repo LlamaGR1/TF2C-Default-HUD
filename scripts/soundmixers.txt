@@ -300,9 +300,8 @@
 //	group name			mix value
 //  --------			---------
 
-	"UI"				"1.0"
-	"Music"				"1.0"
-	"Soundscapes"		"0.01"
-	"Scapes"			"0.01"
-	"All"				"0.01"	
+    "UI"				"1.0"
+    "MainMenuMusic"		"1.0"
+    "Ambient"			"0.72"
+    "All"				"0.72"    
 }

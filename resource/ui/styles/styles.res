@@ -86,37 +86,52 @@
 
 		"SubImage"
 		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"cs-0.5"
-			"ypos"			"cs-0.5"
-			"zpos"			"1"
-			"wide"			"f10"
-			"tall"			"f10"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
+			"ControlName"			"ImagePanel"
+			"fieldName"				"SubImage"
+			"xpos"					"cs-0.5"
+			"ypos"					"cs-0.5"
+			"zpos"					"1"
+			"wide"					"f10"
+			"tall"					"f10"
+			"visible"				"1"
+			"enabled"				"1"
+			"scaleImage"			"1"
 			"proportionalToParent"	"1"
 		}
 	}
 	
+	"InGameMenuButton"
+	{
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				"Quit"
+		
+		"proportionalToParent"	"1"
+		
+		"paintbackground"		"1"
+		"font"					"TF2C_InGameMenuButton"
+		"tall"					"28"
+		"wide"					"140"
+		"textAlignment" 		"center"
+	}
+	
 	"OptionsCategoryButton"
 	{
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"Quit"
-		"font"			"SubmenuTab"
+		"visible"					"1"
+		"enabled"					"1"
+		"labelText"					"Quit"
+		"font"						"SubmenuTab"
 
-		"proportionalToParent"	"1"
+		"proportionalToParent"		"1"
 		"use_proportional_insets"	"1"
-		"textinsetx"		"28"
-		"textshiftx"		"4"
-
-		"paintborder"		"0"
-		"paintbackgroundtype"	"2"
-		"paintbackground"		"1"
+		"textinsetx"				"28"
+		"textshiftx"				"4"
+	
+		"paintborder"				"0"
+		"paintbackgroundtype"		"2"
+		"paintbackground"			"1"
 		
-		"RoundedCorners"		"15"
+		"RoundedCorners"			"15"
 
 		"defaultbgColor_override"	"ListingCategory"
 		"armedbgColor_override"		"ListingCategorySelected"

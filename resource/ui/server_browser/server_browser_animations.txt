@@ -48,30 +48,30 @@ event ServerBrowserDefault
 	StopEvent ShowFilters 0.0
 	StopEvent HideFilters 0.0
 
-	Animate Filters		Size		"640 35" Linear 0.0 0.0
-	Animate ServerList	Position	"0 70" Linear 0.0 0.0
+	Animate Filters		Tall		"35" Linear 0.0 0.0
+	Animate ServerList	YPos	"70" Linear 0.0 0.0
 }
 
 event ShowFilters
 {
 	StopEvent HideFilters 0.0
-	Animate Filters		Size		"640 105" Accel 0.0 0.1
-	Animate ServerList	Position	"0 140" Accel 0.0 0.1
+	Animate Filters		Tall		"105" Accel 0.0 0.1
+	Animate ServerList	YPos	"140" Accel 0.0 0.1
 }
 
 event HideFilters
 {
 	StopEvent ShowFilters 0.0
 
-	Animate Filters		Size		"640 35" Accel 0.0 0.1
-	Animate ServerList	Position	"0 70" Accel 0.0 0.1
+	Animate Filters		Tall		"35" Accel 0.0 0.1
+	Animate ServerList	YPos	"70" Accel 0.0 0.1
 }
 
 event ShowServerDetails
 {
 	StopEvent HideServerDetails 0.0
 
-	Animate !self			Size	"640 142" Accel 0.0 0.1
+	Animate !self			Tall	"142" Accel 0.0 0.1
 
 	Animate SpectateButton	Alpha	"255" Linear 0.05 0.05
 	SetVisible SpectateButton	1	0.05
@@ -106,7 +106,7 @@ event ShowServerDetails
 
 event ShowServerDetailsInstantly
 {
-	Animate !self			Size	"640 142" Linear 0.0 0.0
+	Animate !self			Tall	"142" Linear 0.0 0.0
 
 	Animate SpectateButton	Alpha	"255" Linear 0.0 0.0
 	SetVisible SpectateButton	1	0.0
@@ -146,7 +146,7 @@ event HideServerDetails
 	// Become invisible after we're done animating.
 	// (ServerDetails will be deleted after.)
 	Animate ServerDetails	Alpha 	"0"	Linear 0.1 0.0
-	Animate !self			Size	"640 40" Accel 0.0 0.1
+	Animate !self			Tall	"40" Accel 0.0 0.1
 
 	Animate SpectateButton	Alpha	"0" Linear 0.0 0.05
 	SetVisible SpectateButton	0	0.05

@@ -176,8 +176,8 @@
 							"tall"			"14"
 							"actionsignallevel"	"3"
 							"bgcolor_override"	"ListingItems"
-							"fgcolor_override"	"MainTextInactive"
-							"RoundedCorners"	"0"
+							"fgcolor_override"	"MainText"
+							"font"	"ServerBrowserSmall"
 						}
 					}
 
@@ -214,8 +214,9 @@
 							"ypos"			"0"
 							"wide"			"118" // 296*0.4
 							"tall"			"14"
-							"bgcolor_override"	"ListingItems"
-							"fgcolor_override"	"MainTextInactive"
+							"bgcolor_override"	"0 0 0 255"
+							"fgcolor_override"	"MainText"
+							"font"	"ServerBrowserBoldSmall"
 							"actionsignallevel"	"3"
 							"NumericInputOnly" "1"
 							"defaultItem" "0"
@@ -256,8 +257,9 @@
 							"tall"			"14"
 							"actionsignallevel"	"3"
 							"NumericInputOnly" "1"
-							"bgcolor_override"	"ListingItems"
-							"fgcolor_override"	"MainTextInactive"
+							"bgcolor_override"	"0 0 0 255"
+							"fgcolor_override"	"MainText"
+							"font"	"ServerBrowserBoldSmall"
 							"defaultItem" "0"
 
 							"_items"
@@ -295,8 +297,9 @@
 							"tall"			"14"
 							"actionsignallevel"	"3"
 							"editable"	"0"
-							"bgcolor_override"	"ListingItems"
-							"fgcolor_override"	"MainTextInactive"
+							"bgcolor_override"	"0 0 0 255"
+							"fgcolor_override"	"MainText"
+							"font"	"ServerBrowserBoldSmall"
 							"defaultItem" "0"
 
 							"_items"
@@ -332,8 +335,8 @@
 							"tall"			"14"
 							"actionsignallevel"	"3"
 							"bgcolor_override"	"ListingItems"
-							"fgcolor_override"	"MainTextInactive"
-							"RoundedCorners"	"0"
+							"fgcolor_override"	"MainText"
+							"font"	"ServerBrowserSmall"
 						}
 					}
 				}

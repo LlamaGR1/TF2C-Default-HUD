@@ -39,7 +39,14 @@
 				"dependants"
 				{
 					"cl_enable_text_chat"	"1"
+					"tf2c_message_alert"	"1"
+					"tf2c_message_volume"	"1"
+					"cl_chat_close_on_send"	"1"
 					"chat_filter_settings"	"1"
+					
+					
+					
+					
 				}
 			}
 			
@@ -49,6 +56,37 @@
 				"description"	"#TF_EnableTextChat"
 				"tooltip"		"#Tooltip_EnableTextChat"
 				"convar"		"cl_enable_text_chat"
+			}
+			
+			tf2c_message_alert
+			{
+				"datatype"		"check"
+				"description"	"#TF_MessageAlert"
+				"tooltip"		"#TF_MessageAlert_Tip"
+				"convar"		"tf2c_message_alert"
+				
+				"dependants"
+				{
+					"tf2c_message_volume"	"1"
+				}
+			}
+			
+			tf2c_message_volume
+			{
+				"datatype"		"slider"
+				"description"	"#TF_MessageVolume"
+				"min"			"0"
+				"max"			"1"
+				"precision"		"0.01"
+				"convar"		"tf2c_message_volume"
+			}
+			
+			cl_chat_close_on_send			
+			{
+				"datatype"		"check"
+				"description"	"#TF_ChatCloseOnSend"
+				"tooltip"		"#TF_ChatCloseOnSend_Tip"
+				"convar"		"cl_chat_close_on_send"
 			}
 			
 			"chat_filter_settings"

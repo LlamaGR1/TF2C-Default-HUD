@@ -112,7 +112,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"Offense"
-		"xpos"			"c-294"
+		"xpos"			"c-296"
 		"xpos_hidef"			"c-287"
 		"xpos_lodef"	"c-260"
 		"ypos"			"96"
@@ -367,9 +367,7 @@
 		"fgcolor_lodef"	"TanLight"
 		"if_special_classes"
 		{
-			"xpos"			"c-138"
-			"xpos_hidef"	"c-133"
-			"xpos_lodef"	"c-123"
+			"xpos"			"c-134"
 		}
 	}
 	"DefenseBackground"
@@ -596,7 +594,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"Support"
-		"xpos"			"c82"
+		"xpos"			"c84"
 		"xpos_hidef"	"c74"
 		"xpos_lodef"	"c70"
 		"ypos"			"96"
@@ -619,9 +617,7 @@
 		"fgcolor_lodef"	"TanLight"
 		"if_special_classes"
 		{
-			"xpos"			"c23"
-			"xpos_hidef"	"c21"
-			"xpos_lodef"	"c17"
+			"xpos"			"c30"
 		}
 	}
 	"SupportBackground"
@@ -858,7 +854,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"VIP"
-		"xpos"			"c187"
+		"xpos"			"c192"
 		"xpos_hidef"	"c69"
 		"xpos_lodef"	"c65"
 		"ypos"			"96"
@@ -910,13 +906,15 @@
 		"fieldName"			"civilian"
 		"xpos"				"c187"
 		"ypos"				"-5"
-		"ypos_lodef"				"9"
-		"ypos_hidef"				"0"	
+		"ypos_lodef"		"9"
+		"ypos_hidef"		"0"	
 		"zpos"				"6"
 		"wide"				"50"
 		"tall"				"100"
 		"autoResize"		"0"
 		"pinCorner"			"2"
+		"visible"			"0"
+		"enabled"			"0"
 		"tabPosition"		"0"
 		"labelText"			""
 		"textAlignment"		"south-west"
@@ -925,7 +923,7 @@
 		"scaleImage"		"1"
 		
 		"image_default"		"class_sel_sm_civilian_inactive"
-		"image_armed"		"class_sel_sm_civilian_red"
+		"image_armed"		"class_sel_sm_civilian_inactive"
 		
 		"fgcolor"			"TanDark"
 		"defaultFgColor_override" "TanDark"
@@ -942,8 +940,8 @@
 		"image_armedcolor"		"255 255 255 255"
 		"image_selectedcolor"	"255 255 255 255"
 		
-		"stayselectedonclick"	"1"
-		"selectonhover"			"1"
+		"stayselectedonclick"	"0"
+		"selectonhover"			"0"
 		"keyboardinputenabled"	"0"
 		
 		"SubImage"
@@ -955,16 +953,19 @@
 			"zpos"			"7"
 			"wide"			"50"
 			"tall"			"100"
-			"image"			"class_sel_sm_civilian_red"
+			"image"			"class_sel_sm_civilian_inactive"
 			"scaleImage"	"1"
 		}
-		"visible"			"0"
+		
 		"if_special_classes"
 		{
-				"visible"			"1"
+				"visible"				"1"
+				"enabled"				"1"
+				"stayselectedonclick"	"1"
+				"selectonhover"			"1"
 		}		
 	}
-	"numCivilian" [$WIN32]
+	"numCivilian"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"numCivilian"

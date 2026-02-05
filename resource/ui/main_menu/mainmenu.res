@@ -27,6 +27,26 @@
 		}
 	}
 
+	"VersionLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"VersionLabel"
+		"xpos"			"rs1-10"
+		"ypos"			"10"
+		"wide"			"100"
+		"tall"			"20"
+		"visible"		"1"
+		"proportionalToParent"	"1"
+		"textAlignment"		"north-east"
+		"labelText"			"VERSION 3.0.2"
+		"font"				"HudFontSmall"
+
+		"if_inlevel"
+		{
+			"visible"		"0"
+		}
+	}
+
 	"Logo"
 	{
 		"ControlName"	"ImagePanel"
@@ -41,60 +61,6 @@
 		"image"			"resource/svgs/mainmenu/tf2classified_logo.svg"
 		"scaleImage"	"1"
 		"ProportionalToParent"	"1"
-	}
-
-	"BlogButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"MOTD_URLButton"
-		"style"			"MainMenuButton"
-		"xpos"			"0"
-		"ypos"			"10"
-		//"wide"		"28"
-		//"tall"		"28"
-		"tabPosition"	"0"
-		"labelText"		"#TF_Menu_Blog"
-		"Command"		"openblog"
-		"image_default"	"resource/svgs/mainmenu/icon_weblink.svg"
-
-		"defaultFgColor_override"	"MainTextInactive"
-		"armedFgColor_override"		"MainText"
-		"selectedFgColor_override"	"MainText"
-		"depressedFgColor_override"	"MainTextInactive"
-		
-		"border_default"		"MainMenuAdvMiniButtonDefault"
-		"border_armed"			"MainMenuAdvMiniButtonArmed"
-		"border_selected"		"MainMenuAdvButtonDepressed"
-		"border_depressed"		"MainMenuAdvButtonDepressed"
-
-		"image_drawcolor"		"MainTextInactive"
-		"image_armedcolor"		"MainText"
-		"image_selectedcolor"	"MainText"
-		"image_depressedcolor"	"MainTextInactive"
-
-		"sound_depressed"		"UI/buttonclick.wav"
-		"sound_released"		"UI/buttonclickrelease.wav"
-		"sound_armed"			"UI/buttonrollover.wav"
-		
-		"pin_to_sibling"		"VanityPanelShadow"
-		"pin_corner_to_sibling"	"PIN_CENTER_TOP"
-		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
-		
-		"SubImage"
-		{
-			"wide"		"o1"
-			"tall"		"f12"
-			"xpos"		"6"
-			"ypos"		"cs-0.5"
-		}
-
-		"if_inlevel"
-		{
-			"visible"		"0"
-		}
-		
-		"navUp"			"ServerBrowserButton"
-		"navDown"		"AchievementsButton"
 	}
 
 	"VanityPanelShadow"
@@ -335,10 +301,10 @@
 				"visible"	"1"
 			}
 			
-		"navUp"				"QuitButton"
-		"navDown"			"ServerBrowserButton"
-		"navLeft"			"CallVoteButton"
-		"navRight"			"MutePlayerButton"
+			"navUp"				"QuitButton"
+			"navDown"			"ServerBrowserButton"
+			"navLeft"			"CallVoteButton"
+			"navRight"			"MutePlayerButton"
 		}
 		
 		"ResumeButtonDeadZone"
@@ -796,6 +762,243 @@
 			
 			"navUp"			"OptionsButton"
 			"navDown"		"ServerBrowserButton"
+		}
+	}
+
+	"UpdatePanelShadow"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"UpdatePanelShadow"
+		"xpos"			"0"
+		"ypos"			"8"
+		"wide"			"227"
+		"tall"			"46"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		
+		"PaintBackgroundType"	"2"
+		"paintbackground"	"1"
+		"bgcolor_override"	"TanDark"
+
+		"if_inlevel"
+		{
+			"visible"		"0"
+		}
+
+		"pin_to_sibling"		"VanityPanelShadow"
+		"pin_corner_to_sibling"	"PIN_CENTER_TOP"
+		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
+
+		"UpdatePanelShadowBottom"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"UpdatePanelShadowBottom"
+			"xpos"			"0"
+			"xpos"			"0"
+			"wide"			"f0"
+			"tall"			"f0"
+			"visible"		"1"
+			"enabled"		"1"
+			"ProportionalToParent" "1"
+			"RoundedCorners"	"15"
+			"CornerSize"		"7"
+			
+			"PaintBackgroundType"	"4"
+			"FadeAlphaStart"	"0"
+			"FadeAlphaEnd"	"240"
+			"bgcolor_override"	"TanDarkest"
+		}
+	}
+
+	"UpdatePanel"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"UpdatePanel"
+		"xpos"			"-1"
+		"ypos"			"-1"
+		"wide"			"225"
+		"tall"			"44"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"RoundedCorners"	"15"
+		
+		"PaintBackgroundType"	"2"
+		"FadeAlphaStart"	"255"
+		"FadeAlphaEnd"	"255"
+		"paintbackground"	"1"
+		"bgcolor_override"	"TanDarkest"
+
+		"if_inlevel"
+		{
+			"visible"		"0"
+		}
+
+		"pin_to_sibling"		"UpdatePanelShadow"
+		"pin_corner_to_sibling"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
+
+		"BackgroundFade"
+		{
+			"ControlName"	"Panel"
+			"fieldName"		"BackgroundFade"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"f0"
+			"visible"		"1"
+			"enabled"		"1"
+			"PaintBackgroundType"	"4"
+			"proportionalToParent"	"1"
+			"FadeAlphaStart"	"255"
+			"FadeAlphaEnd"	"120"
+
+			"bgcolor_override"	"TanDarkerish"
+		}
+		
+		"BlogButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"BlogButton"
+			"style"			"MainMenuButton"
+			"xpos"			"8"
+			"ypos"			"8"
+			"wide"			"f78"
+			"tabPosition"	"0"
+			"labelText"		"#TF_Menu_Blog"
+			"Command"		"openblog"
+			"actionsignallevel"	"2"
+			"image_default"	"resource/svgs/mainmenu/icon_logo.svg"
+			
+			"defaultFgColor_override"	"MainTextInactive"
+			"armedFgColor_override"		"MainText"
+			"selectedFgColor_override"	"MainText"
+			"depressedFgColor_override"	"MainTextInactive"
+			
+			"border_default"		"MainMenuAdvMiniButtonDefault"
+			"border_armed"			"MainMenuAdvMiniButtonArmed"
+			"border_selected"		"MainMenuAdvButtonDepressed"
+			"border_depressed"		"MainMenuAdvButtonDepressed"
+
+			"image_drawcolor"		"MainTextInactive"
+			"image_armedcolor"		"MainText"
+			"image_selectedcolor"	"MainText"
+			"image_depressedcolor"	"MainTextInactive"
+
+			"image_drawcolor"		"MainTextInactive"
+			"image_armedcolor"		"MainText"
+			"image_selectedcolor"	"MainText"
+			"image_depressedcolor"	"MainTextInactive"
+			
+			"SubImage"
+			{
+				"wide"		"o1"
+				"tall"		"f14"
+				"xpos"		"6"
+				"ypos"		"cs-0.5"
+			}
+			
+			"navUp"			"ServerBrowserButton"
+			"navDown"		"AchievementsButton"
+		}
+
+		"UpdateButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"UpdateButton"
+			"style"			"MainMenuButton"
+			"xpos"			"3"
+			"ypos"			"0"
+			"wide"		"28"
+			"tall"		"28"
+			"tabPosition"	"0"
+			"labelText"		""
+			"tooltiptext"	"#TF_Menu_LatestUpdate"
+			"Command"		"openupdate"
+			"actionsignallevel"	"2"
+			"image_default"	"resource/svgs/mainmenu/icon_link.svg"
+			
+			"defaultFgColor_override"	"MainTextInactive"
+			"armedFgColor_override"		"MainText"
+			"selectedFgColor_override"	"MainText"
+			"depressedFgColor_override"	"MainTextInactive"
+			
+			"border_default"		"MainMenuAdvMiniButtonDefault"
+			"border_armed"			"MainMenuAdvMiniButtonArmed"
+			"border_selected"		"MainMenuAdvButtonDepressed"
+			"border_depressed"		"MainMenuAdvButtonDepressed"
+
+			"image_drawcolor"		"MainTextInactive"
+			"image_armedcolor"		"MainText"
+			"image_selectedcolor"	"MainText"
+			"image_depressedcolor"	"MainTextInactive"
+			
+			"pin_to_sibling"		"BlogButton"
+			"pin_corner_to_sibling"	"PIN_CENTER_LEFT"
+			"pin_to_sibling_corner"	"PIN_CENTER_RIGHT"
+			
+			"SubImage"
+			{
+				"wide"		"o1"
+				"tall"		"f8"
+				"xpos"		"cs-0.5"
+				"ypos"		"cs-0.5"
+			}
+			
+			"navUp"			"ServerBrowserButton"
+			"navDown"		"AchievementsButton"
+		}
+		
+		"BugReportButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"BugReportButton"
+			"style"			"MainMenuButton"
+			"xpos"			"3"
+			"ypos"			"0"
+			"wide"			"28"
+			"tall"			"28"
+			"tabPosition"	"0"
+			"labelText"		""
+			"tooltiptext"	"#TF_Menu_ReportBug"
+			"Command"		"openbugreport"
+			"actionsignallevel"	"2"
+			"image_default"	"resource/svgs/mainmenu/icon_bug.svg"
+			
+			"defaultFgColor_override"	"MainTextInactive"
+			"armedFgColor_override"		"MainText"
+			"selectedFgColor_override"	"MainText"
+			"depressedFgColor_override"	"MainTextInactive"
+			
+			"border_default"		"MainMenuAdvMiniButtonDefault"
+			"border_armed"			"MainMenuAdvMiniButtonArmed"
+			"border_selected"		"MainMenuAdvButtonDepressed"
+			"border_depressed"		"MainMenuAdvButtonDepressed"
+
+			"image_drawcolor"		"MainTextInactive"
+			"image_armedcolor"		"MainText"
+			"image_selectedcolor"	"MainText"
+			"image_depressedcolor"	"MainTextInactive"
+			
+			"pin_to_sibling"		"UpdateButton"
+			"pin_corner_to_sibling"	"PIN_CENTER_LEFT"
+			"pin_to_sibling_corner"	"PIN_CENTER_RIGHT"
+			
+			"SubImage"
+			{
+				"wide"		"f8"
+				"tall"		"o1"
+				"xpos"		"cs-0.5"
+				"ypos"		"cs-0.5"
+			}
+			
+			"navUp"			"ServerBrowserButton"
+			"navDown"		"AchievementsButton"
 		}
 	}
 

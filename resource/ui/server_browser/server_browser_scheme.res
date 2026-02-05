@@ -103,7 +103,7 @@ Scheme
 			"1"
 			{
 				"name"		"DejaVu Sans Condensed"
-				"tall"		"8"
+				"tall"		"12"
 				"weight"	"400"
 				"additive"	"0"
 				"antialias" "1"
@@ -120,6 +120,18 @@ Scheme
 				"additive"		"0"
 				"antialias" 	"1"
 				"dropshadow"	"1"
+			}
+		}
+
+		"ServerBrowserSmaller"
+		{
+			"1"
+			{
+				"name"		"DejaVu Sans Condensed"
+				"tall"		"10"
+				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
 			}
 		}
 	}

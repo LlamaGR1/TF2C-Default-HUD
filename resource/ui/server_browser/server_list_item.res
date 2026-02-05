@@ -91,7 +91,7 @@
 		{
 			"ControlName"			"Label"
 			"fieldName"				"Latency"
-			"font"					"ServerBrowserMedium"
+			"font"					"ServerBrowserLarge"
 			"fgcolor_override"		"MainTextInactive"
 			"wide"					"25"
 			"tall"					"20"
@@ -100,7 +100,7 @@
 			"zpos"					"2"
 			"labelText"				"%latency%"
 			"textinsetx"			"0"
-			"textinsety"			"-4"
+			"textinsety"	"4" // round(4*(16/12))
 			"textAlignment"			"south-west"
 			"inputEnabled"			"0"
 		}
@@ -122,7 +122,7 @@
 			"zpos"			"2"
 			"labelText"		"%playercount%"
 			"textinsetx"	"0"
-			"textinsety"	"0"
+			"textinsety"	"0" // round(4*(14/12))-3
 			"textAlignment"	"north"
 			"inputEnabled"	"0"
 		}
@@ -276,6 +276,7 @@
 		//"textAlignment"	"south-west"
 		"fgcolor_override"	"MainText"
 		"font"			"ServerBrowserBoldLarge"
+		"textinsety" "5" // round(4*(16/12))
 
 		//"textinsetx"	"25"
 		"inputEnabled"	"0"
@@ -505,6 +506,7 @@
 			"labelText"				"%botcount%"
 			"textAlignment"			"south-west"
 			"font"					"ServerBrowserBoldLargeShadow"
+			"textinsety"	"5" // round(4*(16/12))
 			"fgcolor_override"		"MainText"
 			"inputEnabled"			"0"
 		}

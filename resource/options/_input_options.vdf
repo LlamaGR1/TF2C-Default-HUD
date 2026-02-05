@@ -110,6 +110,7 @@
 				"description"	"#TF2c_MouseSensitivity"
 				"min"			"1"
 				"max"			"20"
+				"precision"		"0.01"
 				"convar"		"sensitivity"
 			}
 			

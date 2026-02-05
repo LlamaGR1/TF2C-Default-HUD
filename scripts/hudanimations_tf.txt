@@ -328,7 +328,7 @@ event HudSpyDisguiseApplied
 	Animate PlayerStatusSpyOutlineImage		Position	"c-200 r398"	Linear 0.0 0.2
 	Animate PlayerStatusSpyOutlineImage		Size		"400 400"		Linear 0.0 0.2
 
-	RunEvent HudSpyDisguiseHide	0.7
+	RunEvent HudSpyDisguiseHide	0.5
 }
 
 event HudSpyDisguiseHide
@@ -339,7 +339,7 @@ event HudSpyDisguiseHide
 
 	Animate PlayerStatusSpyOutlineImage		Position	"-4 r87"		Linear 0.0 0.2
 	Animate PlayerStatusSpyOutlineImage		Size		"72 72"			Linear 0.0 0.2
-	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.2
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
 	
 	Animate PlayerStatusSpyImage			Alpha		"255"			Linear 0.2 0.1
 }
@@ -368,7 +368,7 @@ event HudSpyDisguiseRemoved
 	Animate PlayerStatusSpyOutlineImage		Position	"c-200 r398"	Linear 0.0 0.2
 	Animate PlayerStatusSpyOutlineImage		Size		"400 400"		Linear 0.0 0.2
 
-	RunEvent HudSpyDisguiseReveal	0.7
+	RunEvent HudSpyDisguiseReveal	0.5
 }
 
 event HudSpyDisguiseReveal
@@ -381,7 +381,7 @@ event HudSpyDisguiseReveal
 
 	Animate PlayerStatusSpyOutlineImage		Position	"18 r87"		Linear 0.0 0.2
 	Animate PlayerStatusSpyOutlineImage		Size		"72 72"			Linear 0.0 0.2
-	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.2
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
 }
 
 //===========================================

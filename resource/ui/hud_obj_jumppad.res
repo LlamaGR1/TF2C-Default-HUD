@@ -217,7 +217,7 @@
 			"tall"				"31"
 			"visible"			"1"
 			"enabled"			"1"
-			"labelText"			"#Building_hud_jumppad_a_not_built"
+			"labelText"			"#Building_hud_jumppad_b_not_built"
 			"textAlignment"		"Left"
 			"dropshadow"		"0"
 			"wrap"				"1"

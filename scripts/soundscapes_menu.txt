@@ -105,20 +105,6 @@
 			"wave"		"ambient/menu/intercom3.mp3"
 		}
 	}
-	
-	"playrandom"
-	{
-		"time"			"20"
-		"volume"		"0.4,0.5"
-		"pitch"			"75,105"
-		"rndwave"
-		{
-			"wave"		"ambient/menu/pigeon_flyby1.mp3"
-			"wave"		"ambient/menu/pigeon_flyby2.mp3"
-			"wave"		"ambient/menu/pigeon_flyby3.mp3"
-			"wave"		"ambient/menu/pigeon_flyby4.mp3"
-		}
-	}
 
 	"playrandom"
 	{

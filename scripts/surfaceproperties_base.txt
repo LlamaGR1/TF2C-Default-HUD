@@ -165,7 +165,7 @@
 	"friction"	"0.8"
 
 	"audioreflectivity"	"0.7"
-	"audioroughnessfactor"	"0.5
+	"audioroughnessfactor"	"0.5"
 	"audioHardMinVelocity"	"500"
 
 	"impactHardThreshold"	"0.8"
@@ -741,7 +741,7 @@
 	"stepleft"	"Default.StepLeft"
 	"stepright"	"Default.StepRight"
 	"bulletimpact"	"Flesh.BulletImpact"
-	"impacthard"	"Flesh_Bloody.ImpactHard"
+	"impacthard"	"Flesh.ImpactHard"
 	"impactsoft"	"Flesh.ImpactSoft"
 	"scraperough"	"Flesh.ScrapeRough"
 	"scrapesmooth"	"Flesh.ScrapeSmooth"

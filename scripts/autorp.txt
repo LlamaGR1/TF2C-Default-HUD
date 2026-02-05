@@ -1627,24 +1627,24 @@
 			"replacement_plural"    "catapults"
 			"replacement_plural"    "trebuchets"
 			"replacement_plural"    "onagri"
-			"replacement_plural"    "aerial engine"
+			"replacement_plural"    "aerial engines"
 			"replacement_plural"    "springboards"
 		}
 
 		"1"
-		{
-			"word"    "jumppad"
-			"word_plural"    "jumppads"
-			"replacement"    "catapult"
-			"replacement"    "trebuchet"
-			"replacement"    "onager"
-			"replacement"    "aerial engine"
-			"replacement"    "springboard"
-			"replacement_plural"    "catapults"
-			"replacement_plural"    "trebuchets"
-			"replacement_plural"    "onagri"
-			"replacement_plural"    "aerial engines"
-			"replacement_plural"    "springboards"
-		}
+        {
+            "word"    "jumppad"
+            "word_plural"    "jumppads"
+            "replacement"    "catapult"
+            "replacement"    "trebuchet"
+            "replacement"    "onager"
+            "replacement"    "aerial engine"
+            "replacement"    "springboard"
+            "replacement_plural"    "catapults"
+            "replacement_plural"    "trebuchets"
+            "replacement_plural"    "onagri"
+            "replacement_plural"    "aerial engines"
+            "replacement_plural"    "springboards"
+        }
 	}
 }

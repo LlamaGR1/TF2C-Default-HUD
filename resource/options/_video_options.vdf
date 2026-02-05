@@ -705,7 +705,7 @@
 					"tf2c_hud_disable_dropshadow"           "1"
 					"tf2c_hud_alternative_timer"            "1"
 					"glow_outline_effect_enable"            "1"
-					"tf_colorblindassist"                   "1"
+					"tf2c_colorblind_pattern_enable"        "1"
 					"tf2c_hud_hide_keybinds"                "1"
 				}
 			}
@@ -849,17 +849,17 @@
 			"glow_outline_effect_enable"
 			{
 				"datatype"		"check"
-				"description"	"#TF_UseGlowEffect"
-				"tooltip"		"#Tooltip_UseGlowEffect"
+				"description"	"#TF_GlowEffects"
+				"tooltip"		"#TF_GlowEffects_Tip"
 				"convar"		"glow_outline_effect_enable"
 			}
 			
-			"tf_colorblindassist"
+			"tf2c_colorblind_pattern_enable"
 			{
 				"datatype"		"check"
 				"description"	"#TF_colorblindassist"
 				"tooltip"		"#Tooltip_colorblindassist"
-				"convar"		"tf_colorblindassist"
+				"convar"		"tf2c_colorblind_pattern_enable"
 			}
 			
 			"tf2c_hud_hide_keybinds"

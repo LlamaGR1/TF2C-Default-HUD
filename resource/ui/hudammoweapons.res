@@ -74,7 +74,7 @@
 	
 	"WeaponBucket"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"		"CBitmapImagePanel"
 		"fieldName"			"WeaponBucket"
 		"xpos"				"34"
 		"xpos_minmode"		"30"

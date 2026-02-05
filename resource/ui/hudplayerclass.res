@@ -56,7 +56,7 @@
 		"xpos_minmode"	"-5"
 		"ypos"			"r87"
 		"ypos_minmode"	"r44"
-		"zpos"			"7"
+		"zpos"			"3"
 		"wide"			"72"
 		"wide_minmode"	"27"
 		"tall"			"72"

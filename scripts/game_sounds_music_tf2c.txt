@@ -208,6 +208,7 @@
 		"wave"		"#*ui/gamestartup23.mp3"
 		"wave"		"#*ui/gamestartup24.mp3"
 		"wave"		"#*ui/gamestartup25.mp3"
+		"wave"		"#*ui/gamestartup26.mp3"
 	}
 }
 

@@ -2071,6 +2071,187 @@
 	}	
 }
 
+//-----------------------------------------------------------------------------
+// VIP Announcer
+//-----------------------------------------------------------------------------
+
+// Code triggered
+"Announcer.VIP_OurTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession02.mp3"
+		"wave"	"vo/announcer_sd_possession17.mp3"
+		"wave"	"vo/announcer_sd_possession23.mp3"
+	}
+}
+
+// Code triggered
+"Announcer.VIP_OurTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession26.mp3"
+		"wave"	"vo/announcer_sd_possession27.mp3"
+	}
+}
+
+"Announcer.VIP_OurTeamCapped"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_generic_success_fail02.mp3"
+		"wave"	"vo/announcer_sd_generic_success_fail03.mp3"
+	}
+}
+
+"Announcer.VIP_TheirTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession05.mp3"		
+		"wave"	"vo/announcer_sd_possession09.mp3"
+		"wave"	"vo/announcer_sd_possession15.mp3"
+	}
+}
+
+"Announcer.VIP_TheirTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession11.mp3"
+		"wave"	"vo/announcer_sd_possession20.mp3"
+	}
+}
+
+"Announcer.VIP_TheirTeamCapped"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_generic_success_fail05.mp3"
+	}
+}
+
+"Announcer.VIP_FlagReturned"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_drop_site03.mp3"
+		"wave"	"vo/announcer_sd_drop_site06.mp3"
+	}
+}
+
+"Announcer.VIP_TheirVIPOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings03.mp3"
+	}
+}
+
+//
+"Announcer.VIP_OurVIPOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings05.mp3"
+	}
+}
+
+"Announcer.VIP_GateOpen"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_security_alert.mp3"
+		"wave"	"vo/announcer_security_warning.mp3"
+	}
+}
+
+"Announcer.VIP_PointContested"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_stop_courier.mp3"
+	}
+}
+
+"Announcer.VIP_VIPDeath"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_am_killstreak01.mp3"
+		"wave"	"vo/announcer_am_killstreak06.mp3"
+		"wave"	"vo/announcer_dec_kill06.mp3"
+		"wave"	"vo/announcer_dec_kill07.mp3"
+		"wave"	"vo/announcer_dec_kill08.mp3"
+		"wave"	"vo/announcer_dec_kill09.mp3"
+		"wave"	"vo/announcer_dec_kill10.mp3"
+		"wave"	"vo/announcer_dec_kill13.mp3"
+		"wave"	"vo/announcer_dec_kill14.mp3"
+	}
+}
+
 "Announcer.VIP_OurVIPDeath"
 {
 	"channel"		"CHAN_VOICE2"

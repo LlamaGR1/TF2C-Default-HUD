@@ -433,8 +433,8 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"TeamMenuSpectate"
 		"xpos"			"c-112"
-		"xpos_lodef"			"c-125"
-		"xpos_hidef"			"c-109"
+		"xpos_lodef"	"c-125"
+		"xpos_hidef"	"c-109"
 		"ypos"			"256"
 		"ypos_lodef"	"292"
 		"zpos"			"2"
@@ -450,7 +450,7 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"wrap"			"0"
-		"font"			"StatsFont"
+		"font"			"MenuFontSmall"
 		
 		if_2team
 		{
