@@ -1,0 +1,345 @@
+"urban.util_metalslams"
+{
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.85"
+		"pitch"		"50,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_90dB"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/BinHit01.wav"
+			"wave"	"scapes/misc/BinHit02.wav"
+			"wave"	"scapes/misc/BinHit03.wav"
+		}
+	}
+
+}
+"urban.util_metalslams_2"
+{
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"7,20"
+		"volume"	"0.5"
+		"pitch"		"60,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/RandomMetalRattle01.wav"
+			"wave"	"scapes/misc/RandomMetalRattle02.wav"
+			"wave"	"scapes/misc/RandomMetalRattle03.wav"
+			"wave"	"scapes/misc/RandomMetalShake01.wav"
+			"wave"	"scapes/misc/RandomMetalShake02.wav"
+			"wave"	"scapes/misc/RandomMetalSqueak01.wav"
+			"wave"	"scapes/misc/RandomMetalSqueak02.wav"
+		}
+	}
+
+}
+
+"2bridge.town"
+{
+	"dsp" "25"
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"scapes/ambience/crucial_Urban_Rooftop_AmbLoop01.wav"
+	}
+
+//	some utilities, maybe move the urban sounds to soundscapes_canada?
+	"playsoundscape"
+	{
+		"name"		"urban.util_metalslams_2"
+		"volume"	".4"
+	}
+	"playsoundscape"
+	{
+		"name"		"urban.util_metalslams"
+		"volume"	".5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"util_ext.windgusts"
+		"volume" "0.2"
+	}
+		
+	"playsoundscape"
+	{
+		"name"	"util_metal.rattles"
+		"volume" "0.5"
+	}
+
+	// wind gusts
+	"playrandom"
+	{
+		"time"		"11,24"
+		"volume"	"0.5"
+		"pitch"		"90,110"
+
+		"rndwave"
+		{
+			"wave"	"scapes/wind/wind_snippet1.wav"
+			"wave"	"scapes/wind/wind_snippet2.wav"
+			"wave"	"scapes/wind/wind_snippet3.wav"
+		}
+	}
+
+	// metal sfx
+	"playrandom"
+	{
+		"position"	"random"
+		"time"			"14,23"
+		"pitch"			"75,100"
+		"volume"		"0.4,.0.7"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/Cable_Rattle01.wav"
+			"wave"	"scapes/misc/Cable_Rattle02.wav"
+			"wave"	"scapes/misc/Cable_Rattle03.wav"
+			"wave"	"scapes/misc/Cable_Rattle04.wav"
+			"wave"	"scapes/misc/Cable_Rattle05.wav"
+		}
+	}
+
+	// arf
+	"playrandom"
+	{
+		"time"		"11,25"
+		"volume"	".55"
+		"pitch"		"90,110"
+		"attenuation"	".2,.3"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/RUR_Random_DogBig01.wav"
+			"wave"	"scapes/misc/RUR_Random_DogBig02.wav"
+			"wave"	"scapes/misc/RUR_Random_DogBig03.wav"
+			"wave"	"scapes/misc/RUR_Random_DogBig04.wav"
+			
+		}
+	}
+	
+	// paper gusts
+	"playrandom"
+	{
+		"time"		"6,21"
+		"volume"	".08"
+		"pitch"		"140"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/Blowing_papers01.wav"
+			"wave"	"scapes/misc/Blowing_papers02.wav"
+			
+		}
+	}
+
+	// neon sign, if set in the soundscape position
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"scapes/3d/fluorescent_lights_loop.wav"
+		"position"	"0"
+		"soundlevel"  	"SNDLVL_NORM"
+	}
+	
+	//	floosh
+	"playrandom"
+	{
+		"volume" "1"
+		"pitch"		"90,100"
+		"time"	"120, 400"
+		"position"	"1"
+		"soundlevel"	"SNDLVL_90dB"
+		
+		"rndwave"	
+		{
+			"wave"	"ambient\materials\flush1.wav"
+			"wave"	"ambient\materials\flush2.wav"		
+		}
+	}
+
+
+}
+
+
+"2bridge.pond"
+{
+	"dsp" "1"
+
+	// underlying area "tone"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		")scapes/wind/crucial_wind_outdoors_1.wav"
+	}
+
+	// uses a random position around the pond
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"position"    "1"
+		"wave"		"scapes/caves/cave_crickets_loop1.wav"
+		"soundlevel"  "SNDLVL_120dB"
+	}
+
+	// shore animal sounds
+	"playrandom"
+	{
+		"time"		"17,25"
+		"volume"	".6"
+		"pitch"		"90,110"
+		"position"    "random"
+		"soundlevel"	"SNDLVL_100dB"
+
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/RUR_Random_Coyote01.wav"
+			"wave"	"scapes/misc/RUR_Random_Coyote02.wav"
+			"wave"	"scapes/misc/RUR_Random_Coyote03.wav"
+			"wave"	"scapes/misc/RUR_Random_Coyote04.wav"
+			"wave"	"scapes/misc/RUR_Random_DogBig01.wav"
+			"wave"	"scapes/misc/RUR_RandomScreechOwl01.wav"
+			"wave"	"scapes/misc/RUR_RandomScreechOwl02.wav"
+			"wave"	"scapes/misc/RUR_RandomScreechOwl03.wav"
+
+		}
+	}
+
+	"playrandom"
+	{
+		"time"			"20,40"
+		"pitch"			"95,102"
+		"volume"		"0.25"
+		"soundlevel"  	"SNDLVL_NORM"
+
+		"rndwave"
+		{
+			"wave"	"scapes/animal/crow_1.wav"
+			"wave"	"scapes/animal/crow_2.wav"
+		}
+	}
+
+	// wind gusts
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	 "0.4"
+		"pitch"		"90,110"
+		"position" "random"
+		"soundlevel"  "SNDLVL_100dBdB"
+
+		"rndwave"
+		{
+			"wave"	"scapes/nature/wind_leaves_mild_gust_1.wav"
+			"wave"	"scapes/forest/treewind1.wav"
+			"wave"	"scapes/forest/treewind2.wav"
+			"wave"	"scapes/forest/treewind3.wav"
+			"wave"	"scapes/forest/treewind4.wav"
+		}
+	}
+
+	// wind gusts with leaves
+	"playrandom"
+	{
+		"time"		"5,10"
+		"volume"	"0.5,0.7"
+		"pitch"		"80,110"
+		"position"	"random"
+		"soundlevel"  "SNDLVL_100dBdB"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/Leaves_Rustle01.wav"
+			"wave"	"scapes/misc/Leaves_Rustle02.wav"
+			"wave"	"scapes/misc/Leaves_Rustle03.wav"
+			
+		}
+	}
+
+	//waterlaps 
+	"playlooping"
+	{
+		"volume"		".5"
+		"pitch"			"110"
+		"wave"			")ambient/pondwater.wav"
+		"soundlevel" 		"SNDLVL_60dB"
+		"position"	"0"
+	}
+}
+
+"2bridge.spawn"
+{
+	"dsp"	"19"
+
+	// underlying area "tone"
+	"playlooping"
+	{  
+		"volume"	".5"
+		"pitch"		"100"
+		"wave"		"ambient/underground.wav"
+	}
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"scapes/ambience/crucial_quiet_cellblock_amb.wav"
+	}
+
+	// Rats_running
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	".5,.9"
+		"pitch"		"90,100"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/animal/RatPath01.wav"
+			"wave"	"scapes/animal/RatPath02.wav"
+			"wave"	"scapes/animal/RatPath03.wav"
+		}
+	}
+	"playsoundscape"
+	{
+		"name" "utils_smallindoormetalambience"
+		"volume" "0.5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.125"
+		"pitch"		"55"
+		"wave"		"scapes/3D/lights_flicker.wav"
+		"soundlevel" 	"SNDLVL_50dB"
+	}
+	
+	// neon sign, if set in the soundscape position
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"scapes/3d/fluorescent_lights_loop.wav"
+		"position"	"0"
+		"soundlevel"  	"SNDLVL_NORM"
+	}
+
+}

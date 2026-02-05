@@ -1,0 +1,736 @@
+//
+// This is a general collection of useful soundscape utils that weren't originally designed for TF2,
+// but which may fill gaps for specific settings where the existing soundscapes aren't workable.
+// 
+// All sounds referenced to this file are in sound/scapes, as opposed to regular TF2 soundscapes which
+// are in sound/ambient. Sounds created *for* TF2 and TF2C should remain in sound/ambient.
+//
+// This file contains utility soundscapes (prefixed with _util) which
+// aren't intended to be used directly, they can be called by other soundscapes which want
+// a convenient way to add certain types of sounds. This includes soundscapes in other files,
+// or in custom maps, which can inherit these and call them.
+//
+
+/////                    /////
+///// Interior utilities /////
+/////                    /////
+"util_interior.bursts"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	".55,.95"
+		"pitch"		"50,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/Interior_Random_01.wav"
+			"wave"	"scapes/2d/random_amb/Interior_Random_02.wav"
+			"wave"	"scapes/2d/random_amb/Interior_Random_03.wav"
+			"wave"	"scapes/2d/random_amb/Interior_Random_04.wav"
+			"wave"	"scapes/2d/random_amb/Interior_Random_05.wav"
+			"wave"	"scapes/2d/random_amb/Interior_Random_06.wav"
+			"wave"	"scapes/2d/random_amb/Interior_Random_07.wav"
+		}
+
+	}
+
+}
+
+"util_abstract.interior"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"9,22"
+		"volume"	".55,.95"
+		"pitch"		"50,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_04.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_05.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_06.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_07.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_08.wav"
+		}
+
+	}
+
+}
+
+"util_abstract.interior2"
+// Softer lo textures
+{
+
+	
+	"playrandom"
+	{
+		"time"		"11,20"
+		"volume"	"1"
+		"pitch"		"80,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_09.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_10.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_11.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_12.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_13.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_14.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_15.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_16.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_17.wav"
+		}
+
+	}
+
+}
+
+"util_metal.moans"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"10,30"
+		"volume"	".55,.95"
+		"pitch"		"50,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/Interior_MetalMoan_01.wav"
+			"wave"	"scapes/2d/random_amb/Interior_MetalMoan_02.wav"
+			"wave"	"scapes/2d/random_amb/Interior_MetalMoan_03.wav"
+			"wave"	"scapes/2d/random_amb/Interior_MetalMoan_04.wav"
+			"wave"	"scapes/2d/random_amb/Interior_MetalMoan_05.wav"
+		}
+	}
+
+}
+
+"util_sewer.ambient"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	".85,1"
+		"pitch"		"95,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2D/random_amb/sewer_rand1.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand2.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand3.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand4.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand5.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand6.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand7.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand8.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand9.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand10.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand11.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand12.wav"
+			"wave"	"scapes/2D/random_amb/sewer_rand13.wav"
+		}
+
+	}
+}
+
+"util_lo.end"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"9,21"
+		"volume"	".95,1"
+		"pitch"		"96,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/random_lo_end_01.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_02.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_03.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_04.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_05.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_06.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_07.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_08.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_09.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_10.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_11.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_12.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_13.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_14.wav"
+			"wave"	"scapes/2d/random_amb/random_lo_end_15.wav"
+		}
+
+	}
+
+}
+
+"util_verb.machinery"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"8,15"
+		"volume"	".76,1"
+		"pitch"		"68,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/random_machinery_01.wav"
+			"wave"	"scapes/2d/random_amb/random_machinery_02.wav"
+			"wave"	"scapes/2d/random_amb/random_machinery_03.wav"
+			"wave"	"scapes/2d/random_amb/random_machinery_04.wav"			
+			"wave"	"scapes/2d/random_amb/random_machinery_05.wav"
+			"wave"	"scapes/2d/random_amb/random_machinery_06.wav"
+			"wave"	"scapes/2d/random_amb/random_machinery_07.wav"
+			"wave"	"scapes/2d/random_amb/random_machinery_08.wav"
+
+		}
+
+	}
+
+}
+
+"utils_undergroundatmosphere"
+// originally undergroundatmosphere_ambience1
+{
+	"playlooping"
+	{
+		"volume"	".65"
+		"pitch"		"100"
+		"wave"		"ambient\atmosphere\underground_hall_loop1.wav"
+		"soundlevel" 	"SNDLVL_85dB"
+	}
+}
+
+"utils_interiorbase"
+// originally interior1.Base
+{
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"soundlevel"	"0"
+		"pitch"		"95, 105"
+		"wave"		"scapes/2D/interior2/base.wav"
+	}
+}
+
+"utils_smallindoormetalambience"
+// originally Indoors.Ambience2
+//Sparse muffled metal sounds and a low moaning on top of an air generator 
+{
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"scapes\2D\interior1\base_alt.wav"
+	}
+
+
+	
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.5,0.8"
+		"pitch"		"70,100"
+		"soundlevel"	"0"
+		"rndwave"
+		{
+			
+			"wave"	"scapes\2D\interior1\lowpumping5.wav"
+			"wave"	"scapes\2D\interior1\metalknocking.wav"
+			"wave"	"scapes\2D\interior1\ventfootsteps.wav"
+			
+		}
+	}
+}
+
+
+"utils_quietactivity"
+// originally Indoors.Ambience3
+// Low humming with uneven footsteps and pipe groaning
+{
+	"dsp"	"100"
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"scapes\2D\interior1\base.wav"
+	}
+
+
+	
+	"playrandom"
+	{
+		"time"		"18,24"
+		"volume"	"0.4,0.9"
+		"pitch"		"80,100"
+		"soundlevel"	"0"
+		"rndwave"
+		{
+			
+			"wave"	"scapes\2D\interior1\strangesounds22.wav"
+			"wave"	"scapes\2D\interior1\strangesounds15.wav"
+		}
+	}
+}
+
+"utils_computerroom"
+// originally Indoors.Ambience5
+// Various beeping sounds on top of a mid humming/pulsating loop
+{
+	"dsp"	"100"
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"scapes\2D\interior1\base_alt.wav"
+	}
+
+
+	
+	"playrandom"
+	{
+		"time"		"0.5,4"
+		"volume"	"0.15,0.25"
+		"pitch"		"100"
+		"soundlevel"	"0"
+		"rndwave"
+		{
+			
+			"wave"	"scapes\2D\interior1\beep1.wav"
+			"wave"	"scapes\2D\interior1\beep2.wav"
+			"wave"	"scapes\2D\interior1\beep3.wav"
+			"wave"	"scapes\2D\interior1\beep4.wav"
+			"wave"	"scapes\2D\interior1\beep5.wav"
+			
+		}
+	}
+}
+
+
+"utils_indoormetalambience"
+// originally Indoors.Ambience6
+// Sparse muffled metal sounds on top of a mid humming
+{
+	"dsp"	"100"
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"scapes\2D\interior1\room_large_wide.wav"
+	}
+
+
+	
+	"playrandom"
+	{
+		"time"		"3,12"
+		"volume"	"0.5,0.8"
+		"pitch"		"70,140"
+		"soundlevel"	"0"
+		"rndwave"
+		{
+			
+			"wave"	"scapes\2D\interior1\lowpumping5.wav"
+			"wave"	"scapes\2D\interior1\metalknocking.wav"
+			"wave"	"scapes\2D\interior1\ventfootsteps.wav"
+		}
+	}
+}
+
+
+"utils_waterdrips"
+// originally Indoors.Ambience7
+// Random water drips
+{
+	"dsp"	"100"
+
+
+	
+
+	"playrandom"
+	{
+		"time"		"3,10"
+		"volume"	"0.25,0.5"
+		"pitch"		"80,100"
+		"soundlevel"	"0"
+		"rndwave"
+		{
+			
+			"wave"	"ambient/water/distant_drip2.wav"
+			"wave"	"ambient/water/distant_drip3.wav"
+			
+		}
+	}
+}
+
+/////                    /////
+///// Exterior utilities /////
+/////                    /////
+"util_ext.windgusts"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"12,25"
+		"volume"	"0.55,0.95"
+		"pitch"		"90,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/Gust_01.wav"
+			"wave"	"scapes/2d/random_amb/Gust_02.wav"
+			"wave"	"scapes/2d/random_amb/Gust_03.wav"
+			"wave"	"scapes/2d/random_amb/Gust_04.wav"
+		}
+
+	}
+
+}
+
+
+
+"util_metal.rattles"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	".55,.95"
+		"pitch"		"60,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/metalrattle_01.wav"
+			"wave"	"scapes/2d/random_amb/metalrattle_02.wav"
+			"wave"	"scapes/2d/random_amb/metalrattle_03.wav"
+			"wave"	"scapes/2d/random_amb/metalrattle_04.wav"
+		}
+
+	}
+
+}
+
+"util_abstract.ambient"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"10,28"
+		"volume"	".85,.99"
+		"pitch"		"90,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_01.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_02.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_03.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_09.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_10.wav"
+			"wave"	"scapes/2d/random_amb/RandomAbAmb_11.wav"
+		}
+
+	}
+
+}
+
+"util_rockslides"
+{
+
+	
+	"playrandom"
+	{
+		"time"		"12,21"
+		"volume"	"0.55,0.95"
+		"pitch"		"90,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/2d/random_amb/rockslides_01.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_02.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_03.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_04.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_05.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_06.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_07.wav"
+			"wave"	"scapes/2d/random_amb/rockslides_08.wav"
+		}
+
+	}
+
+}
+
+"utils_frogs01"
+// originally swamps.frogs_01
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	".3,.9"
+		"pitch"		"97,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/by_frog_01.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_02.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_03.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_04.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_05.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_06.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_07.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_08.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_long_01.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_long_02.wav"
+			"wave"	"scapes/random_animals/frog_groups/by_frog_long_03.wav"
+		}
+	}
+
+}
+
+"utils_frogs02"
+// originally swamps.frogs_02
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	".7,1"
+		"pitch"		"97,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/small_frog_01a.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_01b.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_01c.wav"
+		}
+	}
+
+}
+
+"utils_frogs03"
+// originally swamps.frogs_03
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,21"
+		"volume"	".4,1"
+		"pitch"		"97,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/small_frog_03a.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_03b.wav"
+		}
+	}
+
+}
+
+"utils_frogs04"
+// originally swamps.frogs_04
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	".7,1"
+		"pitch"		"97,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/small_frog_04a.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_04b.wav"							"wave"	"scapes/random_animals/frog_groups/small_frog_04c.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_04d.wav"	
+		}
+	}
+
+}
+
+"utils_frogs05"
+// originally swamps.frogs_05
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	".7,1"
+		"pitch"		"97,103"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/small_frog_05a.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_05b.wav"	
+			"wave"	"scapes/random_animals/frog_groups/small_frog_05c.wav"
+			"wave"	"scapes/random_animals/frog_groups/small_frog_05c.wav"
+			
+		}
+	}
+
+}
+
+"utils_frogs06"
+// originally swamps.frogs_06
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	".7,1"
+		"pitch"		"97,102"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/frog_long_01.wav"
+			"wave"	"scapes/random_animals/frog_groups/frog_long_02.wav"
+			"wave"	"scapes/random_animals/frog_groups/frog_long_03.wav"	
+		}
+	}
+
+}
+
+"utils_bullfrogs01"
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	".7,1"
+		"pitch"		"94,101"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/frog_groups/bullfrog_01.wav"
+			"wave"	"scapes/random_animals/frog_groups/bullfrog_02.wav"		
+		}
+	}
+
+}
+
+"utils_flies"
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"4,22"
+		"volume"	".7,.9"
+		"pitch"		"150"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/fly_buzz_01.wav"
+			"wave"	"scapes/random_animals/fly_buzz_02.wav"
+			"wave"	"scapes/random_animals/fly_buzz_03.wav"
+			"wave"	"scapes/random_animals/fly_buzz_04.wav"
+		}
+	}
+
+}
+
+"utils_gators"
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"30,90"
+		"volume"	".9,1"
+		"pitch"		"100"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/random_animals/gator_01.wav"
+			"wave"	"scapes/random_animals/gator_02.wav"
+			"wave"	"scapes/random_animals/gator_03.wav"
+			"wave"	"scapes/random_animals/gator_04.wav"		
+		}
+	}
+
+}
+
+"utils_woodqueaks"
+// originally urban2.util_woodqueaks_new
+{
+
+	"dsp"	"1"
+	
+	"playrandom"
+	{
+		"time"		"4,12"
+		"volume"	"0.7,0.9"
+		"pitch"		"50,115"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"scapes/misc/Wood_Creaks_New01.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New02.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New03.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New04.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New05.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New06.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New07.wav"
+			"wave"	"scapes/misc/Wood_Creaks_New08.wav"
+		}
+	}
+}

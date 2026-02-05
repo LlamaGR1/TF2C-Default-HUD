@@ -1,0 +1,11 @@
+<svg id="hud_obj_status_rockets_128" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-1" d="M64,100a36,36,0,1,1,36-36A36,36,0,0,1,64,100Zm9-48L69,34H59L55,52v3H73V52Zm0,6H55v3l4,9v3H69V70l4-9V58Zm0,33-4-4V76H59V87l-4,4v3H73V91Z"/>
+</svg>

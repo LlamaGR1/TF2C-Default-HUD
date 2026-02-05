@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" class="color" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 68 32">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st1 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st2 {
+        fill: url(#linear-gradient4);
+      }
+
+      .st3 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st4 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="309.35" y1="1320.52" x2="335.24" y2="1320.52" gradientTransform="translate(-300.53 -1306)" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#000"/>
+      <stop offset=".9" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="309.22" y1="1322.41" x2="332.78" y2="1328.72" gradientTransform="translate(-300.53 -1306)" gradientUnits="userSpaceOnUse">
+      <stop offset=".3" stop-color="#000"/>
+      <stop offset=".7" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="308.97" y1="1315.87" x2="317.52" y2="1315.87" gradientTransform="translate(-300.53 -1306)" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#000"/>
+      <stop offset=".8" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient3" x1="304.24" y1="1306" x2="304.24" y2="1338" gradientTransform="translate(-300.53 -1306)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#000" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#000"/>
+      <stop offset=".8" stop-color="#000"/>
+      <stop offset=".95" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient4" x1="35.68" y1="29.01" x2="57.51" y2="29.01" gradientTransform="translate(-2.47 44.25) rotate(-3.25) scale(1.02 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".1" stop-color="#e17800" stop-opacity="0"/>
+      <stop offset=".7" stop-color="#e17800"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path class="st4" d="M34.71,13.89l-23.95,2.26-1.88.18c.02-.19.02-.38.02-.56v-.14c0-.65-.03-1.29-.08-1.92l25.79-1,.1,1.19h0Z"/>
+    <path class="st1" d="M32.14,23.14l-23.3-5.84c.03-.32.05-.65.04-.98.02-.19.02-.38.02-.56v-.14l1.86.53,21.23,6.07.15.93h0Z"/>
+    <path class="st0" d="M16.99,7.95l-8.28,4.78c-.07-.59-.16-1.15-.27-1.7l7.96-4.02.59.95h0Z"/>
+    <path class="st3" d="M7.42,15.76c0,7.19-3.03,13.4-7.42,16.24,2.7-4.01,4.4-9.94,4.4-16.54C4.4,9.43,2.99,3.97.68,0c4.01,3.01,6.74,8.94,6.74,15.76Z"/>
+  </g>
+  <g>
+    <path class="st2" d="M54.41,14.72l-.31-5.53c-1.5,2.57-3.18,2.77-4.53,2.16-.63-.3-1.21-.76-1.74-1.14-.95-.71-2.13-1.25-3.51-.34-1.25.77-1.85,1.9-2.78,2.9-.34.36-.59.63-.78.83-.32-.22-.76-.52-1.31-.86-.32-.2-.56-.34-.75-.44-.67-.36-.96-.48-1.8-.31-.21.04-.42.09-.63.16-1.66.56-3.36,1.14-4.16,1.23.66-.02,1.35-.03,2.05,0,.96-.25,1.5-.47,1.77-.55.12.03.27.09.45.17s.4.18.7.33c1.83.94,2.88,1.73,4.24,1.89,1.21.19,1.55-.2,1.87-.67.18-.27.4-.61.77-1.13.41-.55.96-1.59,1.28-1.82.21.06.65.35.97.57.62.43,1.42,1.08,2.46,1.7,1.81,1.03,3.87,1.81,5.73.88h0Z"/>
+    <path d="M63.25,15.53l-5.18.29c-.28.02-.52-.24-.57-.6-.28-2.14-.4-4.29-.37-6.44.01-.36.22-.64.5-.66l5.18-.29c.47-.03.9.39.99,1,.28,1.86.39,3.73.32,5.61-.03.61-.4,1.08-.87,1.1h0Z"/>
+    <path d="M67.1,14.24l-1.78.1c.21-1.88.1-3.73-.32-5.58l1.78-.1c.41-.02.79.33.92.85.31,1.24.38,2.5.21,3.78-.07.53-.4.92-.81.95h0Z"/>
+    <path d="M54.99,15.42l1.11-.06c-.32-2.17-.44-4.35-.37-6.55l-1.11.06c-.4.02-.73.41-.76.93-.1,1.6-.01,3.2.27,4.77.09.51.46.86.86.84Z"/>
+  </g>
+</svg>

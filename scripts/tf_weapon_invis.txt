@@ -1,0 +1,46 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"			"#TF_Weapon_PDA"
+	"BuiltRightHanded"		"0"
+	"weight"			"2"
+	"WeaponType"			"item1"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+	"autoswitchto"		"0"
+
+	// Ammo & Clip
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"MeleeWeapon"			"1"	// so we can always attack
+
+	// Buckets.	
+	"bucket"			"4"
+	"bucket_position"		"0"
+
+	// Models & Animation
+	"viewmodel"				"models/weapons/v_models/v_watch_spy.mdl"
+	"playermodel"			"models/weapons/w_models/w_cigarette_case.mdl"
+	"anim_prefix"			"pda"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"special1"		"Player.Spy_Cloak"
+		"special2"		"Player.Spy_UnCloak"
+	}
+
+	// Crosshair
+	"crosshair"	"top"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+}

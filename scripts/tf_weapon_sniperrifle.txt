@@ -1,0 +1,72 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"		"#TF_Weapon_SniperRifle"
+	"BuiltRightHanded"	"0"
+	"weight"		"3"
+	"WeaponType"		"primary"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+	
+	// Attributes TF.
+	"Damage"		"4"
+	"Range"			"8192"
+	"BulletsPerShot"	"1"
+	"Spread"		"0.0"
+	"TimeFireDelay"		"1.5"
+	"ProjectileType"	"projectile_bullet"
+
+	// Ammo & Clip.
+	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"secondary_ammo"	"None"
+	"clip_size"		"-1"
+	"default_clip"		"75"
+	"MaxAmmo"		"25"
+	"SpawnAmmo"		"10"
+
+	// Buckets.
+	"bucket"		"0"
+	"bucket_position"	"0"
+
+	// Muzzleflash
+	"MuzzleFlashParticleEffect" "muzzle_sniperrifle"
+	"MuzzleFlashModel"	"models/effects/muzzleflash/minigunmuzzle.mdl"
+	"MuzzleflashModelScale"	".5"
+	
+	// Models & Animation.
+	"viewmodel"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+	"playermodel"		"models/weapons/w_models/w_sniperrifle.mdl"
+	"anim_prefix"		"shotgun"
+	
+	// Brass shell.
+	"DoInstantEjectBrass"	"0"
+	"BrassModel"		"models/weapons/shells/shell_sniperrifle.mdl"
+
+	// Tracer effect
+	"TracerEffect"        "tracer_sniper_rifle_PARENT"
+	"TracerFreq"		"1"
+
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
+	SoundData
+	{
+		"single_shot"		"Weapon_SniperRifle.Single"
+		"reload"		"Weapon_SniperRifle.WorldReload"
+		"empty"			"Weapon_SniperRifle.ClipEmpty"	
+		"burst"			"Weapon_SniperRifle.SingleCrit"
+	}
+	"DamageFeedbackVolume"	"1"
+
+	// Crosshair
+	"crosshair"	"cross"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"64"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+	}
+}

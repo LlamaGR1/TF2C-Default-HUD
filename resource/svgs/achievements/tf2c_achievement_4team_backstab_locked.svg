@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 512 512"
+   id="svg16"
+   sodipodi:docname="tf2c_achievement_4team_backstab.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.2949219"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="534"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs
+     id="defs2">
+    <linearGradient
+       id="Dégradé_sans_nom_5"
+       data-name="Dégradé sans nom 5"
+       x1="256"
+       y1="1.9"
+       x2="256"
+       y2="505.1"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#4a2a13"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#230e0b"
+         id="stop2" />
+    </linearGradient>
+    <mask
+       id="mask"
+       x="3.4"
+       y="-13.6"
+       width="546.6"
+       height="536.3"
+       maskUnits="userSpaceOnUse">
+      <g
+         id="g2">
+        <rect
+           x="3.4"
+           y="-13.6"
+           width="546.6"
+           height="536.3"
+           fill="#fff"
+           id="rect2"
+           style="fill:#ffffff" />
+        <polygon
+           points="155.7 167.6 304.1 137.2 315.6 137.2 324.6 157.1 348.4 283.2 353.7 317.5 334.7 327.8 115.6 366.8 96.8 193.6 110 179.8 155.7 167.6"
+           id="polygon2" />
+      </g>
+    </mask>
+    <linearGradient
+       data-name="Dégradé sans nom 5"
+       x1="256"
+       y1="1.9"
+       x2="256"
+       y2="505.1"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4926">
+      <stop
+         offset="0"
+         stop-color="#4a2a13"
+         id="stop1-1"
+         style="stop-color:#2e2e2e" />
+      <stop
+         offset="1"
+         stop-color="#230e0b"
+         id="stop2-1"
+         style="stop-color:#171717" />
+    </linearGradient>
+  </defs>
+  <g
+     id="Calque_1">
+    <image
+       width="512"
+       height="512"
+       xlink:href="../../../../Alexander/Documents/GitHub/tf2classified-steam/depots/tf2classic_shared/tf2classic/resource/svgs/achievements/BW/27.png"
+       id="image2" />
+  </g>
+  <g
+     id="Calque_2">
+    <rect
+       width="512"
+       height="512"
+       fill="url(#Dégradé_sans_nom_5)"
+       id="rect3"
+       style="fill:url(#linearGradient4926)" />
+  </g>
+  <g
+     id="Calque_3">
+    <g
+       mask="url(#mask)"
+       id="g12">
+      <g
+         id="g11">
+        <g
+           id="g6">
+          <path
+             d="M488,212.6c-.3-20.1-3.2-164.6-3.2-164.6,0,0-2.5-20-32.2-18.3-29.7,1.7-277.6,5.5-277.6,5.5,0,0-19.7,1.3-19.3,20.1l3.5,161.6s1.4,16.9,10.5,19.3l296.6-2.9s22.2-.7,21.8-20.9ZM176.1,220.3l-5.1-168.5,295.1-9.4,1.5,177-291.5.9Z"
+             fill="#c2592b"
+             id="path3"
+             style="fill:#767676" />
+          <path
+             d="M453.9,55.1l-267.7,8.5v147s268.9-3.4,268.9-3.4l-1.2-152.1ZM205.7,187.7l-2.9-101.8,123.8-5.5,4.1,108.7-125-1.4ZM349.8,81.6l83.1-1.7.2,11.1-82.8,3.7-.5-13.1ZM352.8,106.3l78.3-3.2,1.8,10.5-78.9,2.5-1.2-9.7ZM355.7,157.7l-1.4-9,50.6.3.3,9.3-49.5-.6ZM353.8,137.2l-.2-9.3,76.9-1.3.5,9.5-77.2,1.1Z"
+             fill="#c2592b"
+             id="path4"
+             style="fill:#767676" />
+          <path
+             d="M229,179.8s8.6-30.3,39.4-30.9,39.5,29.2,39.5,29.2l-78.9,1.7Z"
+             fill="#c2592b"
+             id="path5"
+             style="fill:#767676" />
+          <path
+             d="M288.7,124c-2.2,12.1-12,19.6-23.5,17.6s-20.7-13.4-18.6-25.5c2.2-12.1,13.6-19.8,25.1-17.7s19.1,13.6,16.9,25.7Z"
+             fill="#c2592b"
+             id="path6"
+             style="fill:#767676" />
+        </g>
+        <g
+           opacity=".5"
+           id="g10">
+          <path
+             d="M435.9,482.5c3.7-19.8,29.7-161.9,29.7-161.9,0,0,1.6-20.1-27.9-24.3-29.5-4.2-273.2-50-273.2-50,0,0-19.6-2.6-23,15.9l-28.8,159s-2,16.9,6.4,21l291.2,56.3s21.9,3.7,25.6-16.1ZM128.8,427.9l28.6-166.2,291.1,49.7-33.8,173.8-285.9-57.2Z"
+             fill="#e8dbae"
+             id="path7"
+             style="fill:#cbcbcb" />
+          <path
+             d="M433.9,321.4l-264-45.1-29.3,144.1,264.2,50.3,29.2-149.3ZM164.2,401.8l17.5-100.3,122.4,19.3-17.7,107.3-122.2-26.3ZM326.6,326.6l81.8,14.9-2,10.9-81.9-12.9,2.1-13ZM324.6,351.4l77.4,12.4-.3,10.6-77.8-13.3.8-9.8ZM317.2,402.4l.4-9.1,49.5,10.4-1.5,9.2-48.4-10.5ZM319.5,381.9l1.7-9.2,75.6,14.1-1.4,9.4-75.9-14.3Z"
+             fill="#e8dbae"
+             id="path8"
+             style="fill:#cbcbcb" />
+          <path
+             d="M188.7,398.8s14.4-28,44.7-22.4c30.3,5.5,32.9,36.5,32.9,36.5l-77.7-14.1Z"
+             fill="#e8dbae"
+             id="path9"
+             style="fill:#cbcbcb" />
+          <path
+             d="M258.3,356c-4.5,11.5-15.7,16.8-26.5,12.5s-17.7-17.3-13.1-28.7c4.5-11.5,17.3-16.7,28.2-12.4s16,17.1,11.5,28.6Z"
+             fill="#e8dbae"
+             id="path10"
+             style="fill:#cbcbcb" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g15">
+      <path
+         d="M362.4,306.9c-3.9-19.9-32-162.3-32-162.3,0,0-5.9-19.4-34.8-12.4-28.9,7-272,54.5-272,54.5,0,0-19.2,4.8-15.5,23.4l31.7,159.4s4.4,16.5,13.7,17.3l291.1-55.2s21.7-4.6,17.8-24.5ZM57.1,369.6L22.5,203.7l288.5-61.4,32.5,175-286.5,52.4Z"
+         fill="#e8dbae"
+         id="path12"
+         style="fill:#cbcbcb" />
+      <path
+         d="M301.2,157.1L39.5,212.7l25.8,145.5,263.7-50.8-27.9-150.4ZM80.4,332.2l-20.7-100.3,120.8-27.3,23,106.8-123.1,20.7ZM203.5,201.6l81.4-16.4,2.2,11-80.8,18.3-2.8-12.9ZM210.7,225.6l76.4-17,3.6,10.1-77.2,16.4-2.8-9.4ZM222.6,276l-3-8.6,49.8-8.6,1.9,9.1-48.8,8.1ZM217.2,256l-1.8-9.2,75.4-14.8,2.2,9.3-75.7,14.7Z"
+         fill="#e8dbae"
+         id="path13"
+         style="fill:#cbcbcb" />
+      <path
+         d="M102,320.2s3.1-31.5,33.3-37.5,44,21.9,44,21.9l-77.3,15.6Z"
+         fill="#e8dbae"
+         id="path14"
+         style="fill:#cbcbcb" />
+      <path
+         d="M150.9,254.4c0,12.4-8.3,21.5-20,21.5s-22.7-9.6-22.7-22,9.9-22,21.6-22,21.2,10.1,21.2,22.5Z"
+         fill="#e8dbae"
+         id="path15"
+         style="fill:#cbcbcb" />
+    </g>
+    <polygon
+       points="512 512 458.9 512 488 308.5 482.1 293.3 465.6 279.6 378.1 263.6 374.7 252.5 492.7 257.7 507.4 244 512 227.2 512 512"
+       fill="#c2592b"
+       opacity=".5"
+       id="polygon15"
+       style="fill:#767676" />
+    <path
+       d="M98.9,0S118,14.7,0,83.7v78.3l140.6-17.8s-7.5-74.3-6.8-96.9c.8-22.6,28.3-34.3,28.3-34.3l286.4-2.7h21.8l17.8,9.7,11.6,19.4,12.4,128.1V0H98.9Z"
+       fill="#c2592b"
+       opacity=".5"
+       id="path16"
+       style="fill:#767676" />
+    <polygon
+       points="105.8 458.9 89.8 448.9 84.9 435.2 94 401.9 55.3 411.2 33.6 408.6 22.5 396.2 0 322.2 0 465.4 114.9 512 350.2 512 105.8 458.9"
+       fill="#c2592b"
+       opacity=".5"
+       id="polygon16"
+       style="fill:#767676" />
+  </g>
+</svg>

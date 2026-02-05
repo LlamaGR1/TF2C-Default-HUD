@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="tf2c_achievement_kill_sentry_with_nailgun.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.2949219"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="534"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="c"
+       data-name="Dégradé sans nom 5"
+       x1="256"
+       y1="1.903"
+       x2="256"
+       y2="505.139"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#4a2a13"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#230e0b"
+         id="stop2" />
+    </linearGradient>
+    <mask
+       id="e"
+       data-name="mask"
+       x="-680.433"
+       y="-99.516"
+       width="756.049"
+       height="725.1"
+       maskUnits="userSpaceOnUse" />
+    <clipPath
+       id="f">
+      <rect
+         x="-572"
+         width="512"
+         height="512"
+         fill="none"
+         id="rect2" />
+    </clipPath>
+    <linearGradient
+       data-name="Dégradé sans nom 5"
+       x1="256"
+       y1="1.903"
+       x2="256"
+       y2="505.139"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4528">
+      <stop
+         offset="0"
+         stop-color="#4a2a13"
+         id="stop1-1"
+         style="stop-color:#2e2e2e" />
+      <stop
+         offset="1"
+         stop-color="#230e0b"
+         id="stop2-1"
+         style="stop-color:#171717" />
+    </linearGradient>
+  </defs>
+  <g
+     id="a"
+     data-name="Calque 1">
+    <image
+       width="512"
+       height="512"
+       xlink:href="../../../../Alexander/Documents/GitHub/tf2classified-steam/depots/tf2classic_shared/tf2classic/resource/svgs/achievements/BW/7.png"
+       id="image2" />
+  </g>
+  <g
+     id="b"
+     data-name="Calque 2">
+    <rect
+       width="512"
+       height="512"
+       fill="url(#c)"
+       id="rect3"
+       style="fill:url(#linearGradient4528)" />
+  </g>
+  <g
+     id="d"
+     data-name="Calque 3">
+    <g
+       mask="url(#e)"
+       id="g7">
+      <g
+         opacity=".5"
+         id="g6">
+        <g
+           clip-path="url(#f)"
+           id="g5">
+          <polygon
+             points="-316 256 39 182.797 -26.267 -9.427 -316 256"
+             fill="#c2592b"
+             id="polygon3"
+             style="fill:#767676" />
+          <polygon
+             points="-316 256 24.721 390.194 75.616 288.155 -316 256"
+             fill="#c2592b"
+             id="polygon4"
+             style="fill:#767676" />
+          <polygon
+             points="-316 256 -81.798 537.511 6.484 501.79 -316 256"
+             fill="#c2592b"
+             id="polygon5"
+             style="fill:#767676" />
+        </g>
+      </g>
+    </g>
+    <polygon
+       points="126.484 185 122.032 199.129 285.387 456.548 299.516 461.387 418.935 395 421.839 384.742 344.226 250.613 356.226 259.516 425.903 382.806 422.419 399.065 270.29 490.806 253.839 486.548 92.613 233 93.581 215.774 121.839 180.742 202.548 154.226 206.161 158.806 126.484 185"
+       fill="#e8dbae"
+       id="polygon7"
+       style="fill:#cbcbcb" />
+    <path
+       d="M183.258,151.71l-16.903,5.161-8.516-12.516s-2.645-6.387,5.032-10.065c7.677-3.677,9.613.323,9.613.323l10.774,17.097Z"
+       fill="#e8dbae"
+       id="path7"
+       style="fill:#cbcbcb" />
+    <path
+       d="M163.839,125.903s-6.129.129-8.516,4.71l-12.129-20.323s.065-4.065,3.29-5.161,5.29,0,5.29,0l12.065,20.774Z"
+       fill="#e8dbae"
+       id="path8"
+       style="fill:#cbcbcb" />
+    <path
+       d="M146.032,98.097s-4.839.129-6.387,3.548l-33.484-56.516s.303-2.368,2.968-3.871c2.516-1.419,3.935,0,3.935,0l32.968,56.839Z"
+       fill="#e8dbae"
+       id="path9"
+       style="fill:#cbcbcb" />
+    <path
+       d="M110.903,33.79s-3.629-1.258-5.806.823-3.29,6.014-3.29,6.014l-9.194-12.256s-.726-4.452,4.161-7.355,7.161,0,7.161,0l6.968,12.774Z"
+       fill="#e8dbae"
+       id="path10"
+       style="fill:#cbcbcb" />
+    <polygon
+       points="256 136.71 273.29 131.484 286.065 137.581 293.323 150.161 288.968 153.548 281.613 140 272.806 136.226 259.258 140.871 256 136.71"
+       fill="#e8dbae"
+       id="polygon10"
+       style="fill:#cbcbcb" />
+    <polygon
+       points="329.323 224.484 300.677 174.806 304.935 171.71 335.129 222.806 329.323 224.484"
+       fill="#e8dbae"
+       id="polygon11"
+       style="fill:#cbcbcb" />
+    <path
+       d="M266.484,150.806l-5.419,14.194s2.323,0,8.258,6.71l10.839-9.548s-9.419-12.645-13.677-11.355Z"
+       fill="#e8dbae"
+       id="path11"
+       style="fill:#cbcbcb" />
+    <polygon
+       points="291.774 182.161 317.903 228.355 305.968 232.742 288.419 198.097 269.194 202.161 282.097 230.032 299 234.548 294.097 237 279.258 233.258 265.839 218.548 256 224.484 264.29 215.323 264.806 204.097 261.839 200.226 268.806 199.968 273.452 195.581 286.226 193.258 282.871 188.355 291.774 182.161"
+       fill="#e8dbae"
+       id="polygon12"
+       style="fill:#cbcbcb" />
+    <path
+       d="M227.419,179.677l-1.935,2.484,31.645,15.129s-2.806-5.226-2.419-7.258l-27.29-10.355Z"
+       fill="#e8dbae"
+       id="path12"
+       style="fill:#cbcbcb" />
+    <path
+       d="M336.387,266.097l-6.968-13.742-13.161,3.645c7.742,12.742-1.548,19.871-1.548,19.871l-15.387,7.355-21.097-2.903-7.355-8.71,2.516-5.806-5.032-.774-6.387,14.323-.581,20.71c-24.193,12.871-39.29,12.677-39.29,12.677-18.968-19.452-25.258-32.129-25.258-32.129l18.387-39.581,12.968,1.21,14.226,20.565-9.194-22.839,18.097-3.677c-23.323,3.387-43.161.097-43.161.097,15-11.71,15-18.387,15-18.387l-19.742,16.065-6.677-14.903c-3.387,3.968-8.613,3.387-8.613,3.387l8.032,16.065,15.29,1.548-19.065,33.484c-27.387-43.935-31.645-56.613-31.645-56.613l18.484,2.032c-2.419-1.645-2.806-6.194-2.806-6.194l-20.323-5.129c2.032-6.774,7.645-9,7.645-9l12.387,11.226.387-3.677-10.258-9.097,25.161-12.581,9.484-14.032s-33.581,13.355-46.161,17.903c-12.581,4.548-7.742,13.355-7.742,13.355,36,79.161,68.129,112.065,68.129,112.065l.315.356c4.526,5.121,11.661,7.095,18.16,4.978,43.349-14.12,91.319-41.249,97.655-44.818,6.871-3.871,5.129-8.323,5.129-8.323ZM265.258,298.806v-13.935l4.258-9.387,7.742,7.645,18,1.935-30,13.742Z"
+       fill="#e8dbae"
+       id="path13"
+       style="fill:#cbcbcb" />
+    <polygon
+       points="226.935 171.71 206.806 146.677 218.613 127.129 241.335 131.484 259.258 151.516 250.355 171.71 226.935 171.71"
+       fill="#c2592b"
+       id="polygon13"
+       style="fill:#767676" />
+    <polygon
+       points="336.584 139.839 321.839 112.097 338.484 94.806 361.968 104.097 374.226 128.097 360.677 146.29 336.584 139.839"
+       fill="#c2592b"
+       id="polygon14"
+       style="fill:#767676" />
+    <path
+       d="M329.839,144.803l-62.968,49.616s-3.548,1.419-5.806-1.548,1.097-6.516,1.097-6.516l60.516-54.452,7.161,12.9Z"
+       fill="#c2592b"
+       id="path14"
+       style="fill:#767676" />
+    <path
+       d="M335.129,229.806l-65.032,21.387s-2.774,2-2.387,4.806c.387,2.806,4,4.161,7.484,3.71s60.645-15.871,60.645-15.871l-.71-14.032Z"
+       fill="#c2592b"
+       id="path15"
+       style="fill:#767676" />
+    <polygon
+       points="344.419 242.677 343.258 210.161 363 202.419 381.581 220.097 383 245.328 363.129 257 344.419 242.677"
+       fill="#c2592b"
+       id="polygon15"
+       style="fill:#767676" />
+    <path
+       d="M355.387,386.419s-31.054,26.492-56.903-16.903c-21.29-35.742,10.968-53.161,10.968-53.161,0,0-27.097,4-27.097,34.968s26.194,50.452,46.71,50.452,26.323-15.355,26.323-15.355Z"
+       fill="#e8dbae"
+       id="path16"
+       style="fill:#cbcbcb" />
+    <path
+       d="M342.29,385.323l14.968-8.774s7.677-5.935,7.677-19.484-14.129-40.71-36.129-40.71l-22.452,10.903s-6.903,6.774-6.903,18.452,12.129,40.839,36.129,40.839c0,0,3.958.387,6.71-1.226Z"
+       fill="#c2592b"
+       id="path17"
+       style="fill:#767676" />
+    <ellipse
+       cx="297.319"
+       cy="444.301"
+       rx="5.19"
+       ry="6.968"
+       transform="translate(-182.317 208.184) rotate(-30)"
+       fill="#e8dbae"
+       id="ellipse17"
+       style="fill:#cbcbcb" />
+    <ellipse
+       cx="404.973"
+       cy="385.228"
+       rx="5.19"
+       ry="6.968"
+       transform="translate(-138.358 254.097) rotate(-30)"
+       fill="#e8dbae"
+       id="ellipse18"
+       style="fill:#cbcbcb" />
+    <path
+       d="M211.839,166.323l-28.742,41.613s-3.484,8.806,4.548,8.806l33.387-39.097-9.194-11.323Z"
+       fill="#c2592b"
+       id="path18"
+       style="fill:#767676" />
+  </g>
+</svg>

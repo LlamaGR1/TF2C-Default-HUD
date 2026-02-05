@@ -1,0 +1,7 @@
+"LoadingBackgrounds"
+{
+	1	"loading/loading_bg01"
+	2	"loading/loading_bg02"
+	3	"loading/loading_bg03"
+	4	"loading/loading_bg04"
+}

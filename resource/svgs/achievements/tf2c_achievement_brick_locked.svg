@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="tf2c_achievement_brick.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.2949219"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="534"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="c"
+       data-name="Dégradé sans nom 5"
+       x1="256"
+       y1="1.903"
+       x2="256"
+       y2="505.139"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#4a2a13"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#230e0b"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       data-name="Dégradé sans nom 5"
+       x1="256"
+       y1="1.903"
+       x2="256"
+       y2="505.139"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient2909">
+      <stop
+         offset="0"
+         stop-color="#4a2a13"
+         id="stop1-1"
+         style="stop-color:#2e2e2e" />
+      <stop
+         offset="1"
+         stop-color="#230e0b"
+         id="stop2-1"
+         style="stop-color:#171717" />
+    </linearGradient>
+  </defs>
+  <g
+     id="a"
+     data-name="Calque 1">
+    <image
+       width="512"
+       height="512"
+       xlink:href="../../../../Alexander/Documents/GitHub/tf2classified-steam/depots/tf2classic_shared/tf2classic/resource/svgs/achievements/BW/8.png"
+       id="image2" />
+  </g>
+  <g
+     id="b"
+     data-name="Calque 2">
+    <rect
+       width="512"
+       height="512"
+       fill="url(#c)"
+       id="rect2"
+       style="fill:url(#linearGradient2909)" />
+  </g>
+  <g
+     id="d"
+     data-name="Calque 3">
+    <path
+       d="M302.201,429.092l-7.299-28.104-12.289-20.891v-26.428l-30.656-118.044-15.408-17.721,5.711-19.617-22.412-86.298c-1.515-5.832-7.47-9.332-13.302-7.817l-161.026,41.819c-5.832,1.515-9.332,7.47-7.817,13.302l6.148,23.675,9.601,9.775-1.417,21.734,68.021,261.92c1.515,5.832,7.47,9.332,13.302,7.817l13.443-3.491,12.716-13.916,19.771,5.479,115.096-29.891c5.832-1.515,9.332-7.47,7.818-13.302ZM106.317,216.737l-3.908-15.046c-3.605-13.88,4.725-28.054,18.605-31.658l31.276-8.122c13.88-3.605,28.054,4.725,31.658,18.605l3.908,15.046c3.604,13.88-4.725,28.054-18.605,31.658l-31.276,8.123c-13.88,3.605-28.054-4.725-31.658-18.605ZM131.135,312.303l-3.907-15.046c-3.605-13.88,4.725-28.054,18.605-31.658l31.276-8.122c13.88-3.605,28.054,4.725,31.658,18.605l3.908,15.046c3.604,13.88-4.725,28.054-18.605,31.658l-31.276,8.123c-13.88,3.605-28.054-4.725-31.658-18.605ZM218.889,418.352l-31.276,8.123c-13.88,3.605-28.054-4.725-31.658-18.605l-3.907-15.046c-3.605-13.88,4.725-28.054,18.605-31.658l31.276-8.122c13.88-3.605,28.054,4.725,31.658,18.605l3.908,15.046c3.605,13.88-4.725,28.054-18.605,31.658Z"
+       fill="#e8dbae"
+       id="path2"
+       style="fill:#cbcbcb" />
+    <polygon
+       points="321.71 485.774 332.548 475.226 342.032 472.419 359.355 475.226 363.806 485.774 321.71 485.774"
+       fill="#e8dbae"
+       id="polygon2"
+       style="fill:#cbcbcb" />
+    <polygon
+       points="386.452 485.774 393.806 468.645 401.548 461.871 422.935 454.032 437.645 463.613 449.742 485.774 386.452 485.774"
+       fill="#e8dbae"
+       id="polygon3"
+       style="fill:#cbcbcb" />
+  </g>
+</svg>

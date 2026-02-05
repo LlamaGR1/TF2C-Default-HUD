@@ -1,0 +1,1212 @@
+//============================================================================================================
+// TF criteria - moved to response_rules.txt file.  Please keep all definitions there.
+//============================================================================================================
+
+	
+//============================================================================================================
+// Taunts, idle expressions, firing expressions (not all chars have idle responses, depends on their 'default' face)
+//============================================================================================================
+
+
+// Pyro
+//------------------------------------------------------------------------------------------------------------
+
+	response "PyroTauntPrimary"
+	{
+		scene "scenes/player/pyro/low/taunt01_v1.vcd"
+		scene "scenes/player/pyro/low/taunt01_v2.vcd"
+		scene "scenes/player/pyro/low/taunt01_v3.vcd"
+	}
+	response "PyroTauntSecondary"
+	{
+		scene "scenes/player/pyro/low/taunt02.vcd"
+	}
+	response "PyroTauntMelee"
+	{
+		scene "scenes/player/pyro/low/taunt03.vcd"
+	}
+	response "PyroTauntMeleeBeacon"
+	{
+		scene "scenes/player/pyro/low/taunt07.vcd"
+	}
+	response "PyroTauntItem1"
+	{
+		scene "scenes/player/pyro/low/taunt02.vcd"
+	}
+	response "PyroTauntHalloween"
+	{
+		scene "scenes/player/pyro/low/taunt06.vcd"
+	}
+	response "PyroTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	rule PyroTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsFlamethrower
+		response PyroTauntPrimary
+	}
+	rule PyroTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsShotgunPyro
+		response PyroTauntSecondary
+	}
+	rule PyroTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsAxe
+		response PyroTauntMelee
+	}
+	rule PyroTauntPlayerItem1
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsFlaregun
+		response PyroTauntItem1
+	}
+	rule PyroTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsPyro IsHalloweenTaunt
+		response PyroTauntHalloween
+	}
+	
+// TF2C	
+	rule PyroTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsSandvich
+		response PyroTauntSandvich
+	}	
+	rule PyroTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsNotSandvich WeaponIsLunchbox
+		response PyroTauntSandvich
+	}
+	rule PyroTauntPlayerDoubleShotgun
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsDoubleShotgun
+		response PyroTauntSecondary
+	}
+	rule PyroTauntPlayerBeacon
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsBeacon
+		response PyroTauntMeleeBeacon
+	}
+//============================================================================================================
+
+
+// Heavy
+//------------------------------------------------------------------------------------------------------------
+	response "HeavyTauntPrimary"
+	{
+		scene "scenes/player/heavy/low/taunt01.vcd"
+		scene "scenes/player/heavy/low/taunt01_v2.vcd"
+		scene "scenes/player/heavy/low/taunt01_v3.vcd"
+	}
+	response "HeavyTauntSecondary"
+	{
+		scene "scenes/player/heavy/low/taunt02.vcd"
+		scene "scenes/player/heavy/low/taunt02_v1.vcd"
+		scene "scenes/player/heavy/low/taunt02_v2.vcd"
+	}
+	response "HeavyTauntMelee"
+	{
+		scene "scenes/player/heavy/low/taunt03_v1.vcd"
+	}
+	response "HeavyTauntKGB"
+	{
+		scene "scenes/player/heavy/low/taunt05.vcd"
+	}
+	response "HeavyTauntPlayerItem1"
+	{
+		scene "scenes/player/heavy/low/taunt04.vcd"
+	}
+	response "HeavyTauntHalloween"
+	{
+		scene "scenes/player/heavy/low/taunt06.vcd"
+	}
+	response "HeavyTauntAAGun"
+	{
+		scene "scenes/player/heavy/low/tauntaagun.vcd"
+	}
+
+	rule HeavyTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsMinigun
+		response HeavyTauntPrimary
+	}
+	rule HeavyTauntPlayerAAGun
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsAAGun
+		response HeavyTauntPrimary
+	}
+	rule HeavyTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsShotgunHwg
+		response HeavyTauntSecondary
+	}
+	rule HeavyTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsFists
+		response HeavyTauntMelee
+	}
+	rule HeavyTauntPlayerMeleeRR
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsRussianRoulette
+		response HeavyTauntMelee
+	}
+	rule HeavyTauntPlayerItem1
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsSandvich
+		response HeavyTauntPlayerItem1
+	}
+	rule HeavyTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsHeavy IsHalloweenTaunt
+		response HeavyTauntHalloween
+	}
+	
+	Response PlayerExpressionIdleHeavy
+	{
+		scene "scenes/player/heavy/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleHeavy
+	{
+		criteria ConceptPlayerExpression IsHeavy
+		Response PlayerExpressionIdleHeavy
+	}	
+
+	Response PlayerExpressionFiringMinigunHeavy
+	{
+		scene "scenes/player/heavy/low/attackMinigun02.vcd"
+	}
+	Rule PlayerExpressionFiringMinigunHeavy
+	{
+		criteria ConceptPlayerExpression IsHeavy IsFiringMinigun
+		Response PlayerExpressionFiringMinigunHeavy
+	}
+	
+	// Minigun vocal stuff has been moved to Heavy.txt !
+	
+	Response PlayerExpressionIdleHurtHeavy
+	{
+		scene "scenes/player/heavy/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtHeavy
+	{
+		criteria ConceptPlayerExpression IsHeavy LowHealthContext
+		Response PlayerExpressionIdleHurtHeavy
+	}
+	Rule PlayerExpressionRoundLossHeavy
+	{
+		criteria ConceptPlayerExpression IsHeavy GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtHeavy
+	}
+	
+	Response HeavyFireMinigun
+	{
+		//scene "scenes/player/heavy/low/attackMinigun01.vcd" *bug*
+		scene "scenes/player/heavy/low/attackMinigun02.vcd"
+	}
+	Rule HeavyFireMinigun
+	{
+		criteria ConceptFireMinigun IsHeavy WeaponIsMinigun
+		Response HeavyFireMinigun
+	}
+	
+	Response HeavyWindMinigun
+	{
+		scene "scenes/player/heavy/low/attackWindup01.vcd"
+	}
+	Rule HeavyWindMinigunHeavy
+	{
+		criteria ConceptWindMinigun IsHeavy WeaponIsMinigun
+		Response HeavyWindMinigun
+	}
+// 2.1.2
+	Response HeavyFireAAGun
+	{
+		//scene "scenes/player/heavy/low/attackMinigun01.vcd" *bug*
+		scene "scenes/player/heavy/low/attackMinigun02.vcd"
+	}
+	Rule HeavyFireAAGun
+	{
+		criteria ConceptFireAAGun IsHeavy WeaponIsAAGun
+		Response HeavyFireAAGun
+	}
+	
+	Response HeavyWindAAGun
+	{
+		scene "scenes/player/heavy/low/attackWindup01.vcd"
+	}
+	Rule HeavyWindAAGunHeavy
+	{
+		criteria ConceptWindAAGun IsHeavy WeaponIsAAGun
+		Response HeavyWindAAGun
+	}
+// end 2.1.2
+	Response PlayerExpressionAttackHeavy
+	{
+		scene "scenes/player/heavy/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackHeavy
+	{
+		criteria ConceptFireWeapon IsHeavy
+		Response PlayerExpressionAttackHeavy
+	}
+	
+	//--------------------------------------------------------------------------------------------------------------
+	// Auto Speech Sandwich
+	//--------------------------------------------------------------------------------------------------------------
+	Response AteSandwichHeavy
+	{
+		scene "scenes/Player/Heavy/low/SandwichTaunt01.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt02.vcd" predelay "1.0"  
+		scene "scenes/Player/Heavy/low/SandwichTaunt03.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt04.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt05.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt06.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt07.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt08.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt09.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt10.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt11.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt12.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt13.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt14.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt15.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt16.vcd" predelay "1.0" 
+		scene "scenes/Player/Heavy/low/SandwichTaunt17.vcd" predelay "1.0" 
+	}
+	Rule AteSandwichHeavy
+	{
+		criteria ConceptAteFood IsHeavy WeaponIsSandvich
+		Response AteSandwichHeavy
+	}
+
+
+//============================================================================================================
+
+
+// Engineer
+//------------------------------------------------------------------------------------------------------------
+	response "EngineerTauntPrimary"
+	{
+		scene "scenes/player/engineer/low/taunt01_vocal01.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal02.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal03.vcd"
+		scene "scenes/player/engineer/low/taunt01_vocal04.vcd"
+	}
+	response "EngineerTauntSecondary"
+	{
+		scene "scenes/player/engineer/low/taunt02_vocal01.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal02.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal03.vcd"
+	}
+	response "EngineerTauntCoilgun"
+	{
+		scene "scenes/player/engineer/low/taunt02_vocal01.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal02.vcd"
+		scene "scenes/player/engineer/low/taunt02_vocal03.vcd"
+	}
+	response "EngineerTauntMelee"
+	{
+		scene "scenes/player/engineer/low/taunt03.vcd"
+	}
+	response "EngineerTauntHalloween"
+	{
+		scene "scenes/player/engineer/low/taunt06.vcd"
+	}
+	response "EngineerTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+
+	rule EngineerTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsEngineer WeaponIsShotgunPrimary
+		response EngineerTauntPrimary
+	}
+	rule EngineerTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsEngineer WeaponIsPistol
+		response EngineerTauntSecondary
+	}
+	rule EngineerTauntPlayerCoilgun
+	{
+		criteria ConceptPlayerTaunt IsEngineer WeaponIsCoilgun
+		response EngineerTauntCoilgun
+	}
+	rule EngineerTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsEngineer WeaponIsWrench
+		response EngineerTauntMelee
+	}
+	rule EngineerTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsEngineer IsHalloweenTaunt
+		response EngineerTauntHalloween
+	}
+// TF2C
+	rule EngineerTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsEngineer WeaponIsSandvich
+		response EngineerTauntSandvich
+	}
+	rule EngineerTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsEngineer WeaponIsNotSandvich WeaponIsLunchbox
+		response EngineerTauntSandvich
+	}	
+	
+	
+	Response PlayerExpressionIdleEngineer
+	{
+		scene "scenes/player/engineer/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleEngineer
+	{
+		criteria ConceptPlayerExpression IsEngineer
+		Response PlayerExpressionIdleEngineer
+	}
+	
+	Response PlayerExpressionIdleHurtEngineer
+	{
+		scene "scenes/player/engineer/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtEngineer
+	{
+		criteria ConceptPlayerExpression IsEngineer LowHealthContext
+		Response PlayerExpressionIdleHurtEngineer
+	}
+	Rule PlayerExpressionRoundLossEngineer
+	{
+		criteria ConceptPlayerExpression IsEngineer GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtEngineer
+	}
+	
+	Response PlayerExpressionAttackEngineer
+	{
+		scene "scenes/player/engineer/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackEngineer
+	{
+		criteria ConceptFireWeapon IsEngineer
+		Response PlayerExpressionAttackEngineer
+	}
+
+//============================================================================================================
+
+
+// Medic
+//------------------------------------------------------------------------------------------------------------
+	response "MedicTauntPrimary"
+	{
+		scene "scenes/player/medic/low/taunt01_vocal01.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal03.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal04.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal05.vcd"
+	}
+	response "MedicTauntSecondary"
+	{
+		scene "scenes/player/medic/low/taunt02_v1.vcd"
+	}
+	response "MedicTauntMelee"
+	{
+		scene "scenes/player/medic/low/taunt03.vcd"
+	}
+	response "MedicTauntKritzkrieg"
+	{
+		scene "scenes/player/medic/low/taunt06.vcd"
+	}
+	response "MedicTauntUbersaw"
+	{
+		scene "scenes/player/medic/low/taunt08.vcd"
+	}
+	response "MedicTauntShockTherapy"
+	{
+		scene "scenes/player/medic/low/taunt01_vocal01.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal03.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal04.vcd"
+		scene "scenes/player/medic/low/taunt01_vocal05.vcd"
+	}
+	response "MedicTauntHalloween"
+	{
+		scene "scenes/player/medic/low/taunt07.vcd"
+	}
+	response "MedicTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	rule MedicTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsSyringe
+		response MedicTauntPrimary
+	}
+	rule MedicTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsHeal
+		response MedicTauntSecondary
+	}
+	rule MedicTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsBonesaw
+		response MedicTauntMelee
+	}
+	rule MedicTauntPlayerKritzkrieg
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsKritzkrieg
+		response MedicTauntKritzkrieg
+	}
+	rule MedicTauntUbersaw
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsUbersaw
+		response MedicTauntUbersaw
+	}
+	rule MedicTauntShockTherapy
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsShockTherapy
+		response MedicTauntShockTherapy
+	}
+	rule MedicTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsMedic IsHalloweenTaunt
+		response MedicTauntHalloween
+	}
+	
+// TF2C	
+	rule MedicTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsSandvich
+		response MedicTauntSandvich
+	}	
+	rule MedicTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsNotSandvich WeaponIsLunchbox
+		response MedicTauntSandvich
+	}
+	rule MedicTauntHealLauncher
+	{
+		criteria ConceptPlayerTaunt IsMedic WeaponIsHealLauncher
+		response MedicTauntSecondary
+	}
+	
+	
+	Response PlayerExpressionIdleMedic
+	{
+		scene "scenes/player/medic/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleMedic
+	{
+		criteria ConceptPlayerExpression IsMedic
+		Response PlayerExpressionIdleMedic
+	}
+	
+	Response PlayerExpressionIdleHurtMedic
+	{
+		scene "scenes/player/medic/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtMedic
+	{
+		criteria ConceptPlayerExpression IsMedic LowHealthContext
+		Response PlayerExpressionIdleHurtMedic
+	}
+	Rule PlayerExpressionRoundLossMedic
+	{
+		criteria ConceptPlayerExpression IsMedic GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtMedic
+	}
+	
+	Response PlayerExpressionAttackMedic
+	{
+		scene "scenes/player/medic/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackMedic
+	{
+		criteria ConceptFireWeapon IsMedic
+		Response PlayerExpressionAttackMedic
+	}
+
+//============================================================================================================
+
+
+// Soldier
+//------------------------------------------------------------------------------------------------------------
+	response "SoldierTauntPrimary"
+	{
+		scene "scenes/player/soldier/low/taunt01_v1.vcd"
+		scene "scenes/player/soldier/low/taunt01_v2.vcd"
+		scene "scenes/player/soldier/low/taunt01_v3.vcd"
+	}
+	response "SoldierTauntSecondary"
+	{
+		scene "scenes/player/soldier/low/taunt02_v1.vcd"
+		scene "scenes/player/soldier/low/taunt02_v2.vcd"
+		//scene "scenes/player/soldier/low/taunt04.vcd"
+	}
+	response "SoldierTauntMelee"
+	{
+		scene "scenes/player/soldier/low/taunt03_v1.vcd"
+		scene "scenes/player/soldier/low/taunt03_v2.vcd"
+		scene "scenes/player/soldier/low/taunt03_v3.vcd"
+		scene "scenes/player/soldier/low/taunt03_v4.vcd"
+	}
+	response "SoldierTauntAnchor"
+	{
+		scene "scenes/player/soldier/low/taunt05.vcd"
+	}
+	response "SoldierTauntDirectHit"
+	{
+		scene "scenes/player/soldier/low/taunt07.vcd"
+	}
+	response "SoldierTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	rule SoldierTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsRocket
+		response SoldierTauntPrimary
+	}
+	rule SoldierTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsShotgunSoldier
+		response SoldierTauntSecondary
+	}
+	rule SoldierTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsShovel
+		response SoldierTauntMelee
+	}
+	rule SoldierTauntPlayerMeleeAnchor
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsAnchor
+		response SoldierTauntAnchor
+	}
+	response "SoldierTauntHalloween"
+	{
+		scene "scenes/player/soldier/low/taunt06.vcd"
+	}
+	// Modified for TF2C
+	rule SoldierTauntDirectHit
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsRPG
+		response SoldierTauntDirectHit
+	}	
+	rule SoldierTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsSoldier IsHalloweenTaunt
+		response SoldierTauntHalloween
+	}
+	rule SoldierTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsSandvich
+		response SoldierTauntSandvich
+	}
+	rule SoldierTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsNotSandvich WeaponIsLunchbox
+		response SoldierTauntSandvich
+	}
+	
+	Response PlayerExpressionIdleSoldier
+	{
+		scene "scenes/player/soldier/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleSoldier
+	{
+		criteria ConceptPlayerExpression IsSoldier
+		Response PlayerExpressionIdleSoldier
+	}
+	Response PlayerExpressionIdleHurtSoldier
+	{
+		scene "scenes/player/soldier/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtSoldier
+	{
+		criteria ConceptPlayerExpression IsSoldier LowHealthContext
+		Response PlayerExpressionIdleHurtSoldier
+	}
+	Rule PlayerExpressionRoundLossSoldier
+	{
+		criteria ConceptPlayerExpression IsSoldier GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtSoldier
+	}
+	
+	Response PlayerExpressionAttackSoldier
+	{
+		scene "scenes/player/soldier/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackSoldier
+	{
+		criteria ConceptFireWeapon IsSoldier
+		Response PlayerExpressionAttackSoldier
+	}
+	
+//============================================================================================================
+
+
+// Scout
+//------------------------------------------------------------------------------------------------------------
+	response "ScoutTauntPrimary"
+	{
+		scene "scenes/player/scout/low/taunt01_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt01_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt01_vocal03.vcd"
+	}
+	response "ScoutTauntSecondary"
+	{
+		scene "scenes/player/scout/low/taunt02_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt02_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt02_vocal03.vcd"
+	}
+	response "ScoutTauntMelee"
+	{
+		scene "scenes/player/scout/low/taunt03_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal03.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal04.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal05.vcd"
+		scene "scenes/player/scout/low/taunt03_vocal06.vcd"
+	}
+	response ScoutTauntNailGun
+	{
+		scene "scenes/player/scout/low/taunt07_vocal01.vcd"
+		scene "scenes/player/scout/low/taunt07_vocal02.vcd"
+		scene "scenes/player/scout/low/taunt07_vocal03.vcd"
+		scene "scenes/player/scout/low/taunt07_vocal04.vcd"
+		scene "scenes/player/scout/low/taunt07_vocal05.vcd"
+	}
+	response "ScoutTauntHalloween"
+	{
+		scene "scenes/player/scout/low/taunt06_v1.vcd"
+	}
+	response "ScoutTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	
+	rule ScoutTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsScattergun
+		response ScoutTauntPrimary
+	}
+	rule ScoutTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsPistolScout
+		response ScoutTauntSecondary
+	}
+	rule ScoutTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsBat
+		response ScoutTauntMelee
+	}
+	rule ScoutTauntPlayerNailGun
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsNailGun
+		response ScoutTauntNailGun
+	}
+	rule ScoutTauntPlayerBrick
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsBrick
+		response ScoutTauntSecondary
+	}
+	rule ScoutTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsScout IsHalloweenTaunt
+		response ScoutTauntHalloween
+	}
+	
+	rule ScoutTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsSandvich
+		response ScoutTauntSandvich
+	}
+	
+	rule ScoutTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsNotSandvich WeaponIsLunchbox
+		response ScoutTauntSandvich
+	}	
+	
+	Response PlayerExpressionIdleScout
+	{
+		scene "scenes/player/scout/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleScout
+	{
+		criteria ConceptPlayerExpression IsScout
+		Response PlayerExpressionIdleScout
+	}
+	
+	Response PlayerExpressionIdleHurtScout
+	{
+		scene "scenes/player/scout/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtScout
+	{
+		criteria ConceptPlayerExpression IsScout LowHealthContext
+		Response PlayerExpressionIdleHurtScout
+	}
+	Rule PlayerExpressionRoundLossScout
+	{
+		criteria ConceptPlayerExpression IsScout GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtScout
+	}
+	
+	Response PlayerExpressionAttackScout
+	{
+		scene "scenes/player/scout/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackScout
+	{
+		criteria ConceptFireWeapon IsScout
+		ApplyContext "ScoutFired:1:7" // Apply the ScoutFired context, to allow Scouts to say double jump lines
+		Response PlayerExpressionAttackScout
+	}
+	
+//============================================================================================================
+
+
+// Sniper
+//------------------------------------------------------------------------------------------------------------
+	response "SniperTauntPrimary"
+	{
+		scene "scenes/player/sniper/low/taunt01_v1.vcd"
+		scene "scenes/player/sniper/low/taunt01_v2.vcd"
+		scene "scenes/player/sniper/low/taunt01_v3.vcd"
+		scene "scenes/player/sniper/low/taunt01_v4.vcd"
+		scene "scenes/player/sniper/low/taunt01_v5.vcd"
+	}
+	response "SniperTauntSecondary"
+	{
+		scene "scenes/player/sniper/low/taunt02_v1.vcd"
+		scene "scenes/player/sniper/low/taunt02_v2.vcd"
+	}
+	response "SniperTauntMelee"
+	{
+		scene "scenes/player/sniper/low/taunt03_v1.vcd"
+		scene "scenes/player/sniper/low/taunt03_v2.vcd"
+		scene "scenes/player/sniper/low/taunt03_v3.vcd"
+		scene "scenes/player/sniper/low/taunt03_v4.vcd"		
+	}
+	response "SniperTauntBow"
+	{		
+		scene "scenes/player/sniper/low/taunt04.vcd"
+	}
+	response "SniperTauntHalloween"
+	{		
+		scene "scenes/player/sniper/low/taunt06.vcd"
+	}
+
+	response "SniperTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+
+	rule SniperTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsSniperrifle
+		response SniperTauntPrimary
+	}
+	rule SniperTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsSMG
+		response SniperTauntSecondary
+	}
+	rule SniperTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsClub
+		response SniperTauntMelee
+	}
+	rule SniperTauntPlayerBow
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsBow
+		response SniperTauntBow
+	}
+	rule SniperTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsClub
+		response SniperTauntMelee
+	}
+	rule SniperTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsSniper IsHalloweenTaunt
+		response SniperTauntHalloween
+	}
+		
+	// TF2C
+	Rule SniperTauntPlayerPrimaryHunterRifle
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsHunterRifle
+		response SniperTauntSecondary
+	}
+	rule SniperTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsSandvich
+		response SniperTauntSandvich
+	}
+	rule SniperTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsSniper WeaponIsNotSandvich WeaponIsLunchbox
+		response SniperTauntSandvich
+	}	
+	Response PlayerExpressionIdleSniper
+	{
+		scene "scenes/player/sniper/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleSniper
+	{
+		criteria ConceptPlayerExpression IsSniper
+		Response PlayerExpressionIdleSniper
+	}
+	response PlayerExpressionIdleDeployedSniper
+	{
+		scene "scenes/player/sniper/low/idleloopDeployed01.vcd"
+	}
+	rule PlayerExpressionIdleDeployedSniper
+	{
+		criteria ConceptPlayerExpression IsSniper DeployedContext WeaponIsSniperrifle
+		response PlayerExpressionIdleDeployedSniper
+	}
+	Response PlayerExpressionIdleHurtSniper
+	{
+		scene "scenes/player/sniper/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtSniper
+	{
+		criteria ConceptPlayerExpression IsSniper LowHealthContext
+		Response PlayerExpressionIdleHurtSniper
+	}
+	Rule PlayerExpressionRoundLossSniper
+	{
+		criteria ConceptPlayerExpression IsSniper GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtSniper
+	}
+
+	Response PlayerExpressionAttackSniper
+	{
+		scene "scenes/player/sniper/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackSniper
+	{
+		criteria ConceptFireWeapon IsSniper
+		Response PlayerExpressionAttackSniper
+	}
+
+//============================================================================================================
+
+
+// Spy
+//------------------------------------------------------------------------------------------------------------
+	response "SpyTauntPrimary"
+	{
+		scene "scenes/player/spy/low/taunt01_v1.vcd"
+		scene "scenes/player/spy/low/taunt01_v2.vcd"
+		scene "scenes/player/spy/low/taunt01_v3.vcd"
+		scene "scenes/player/spy/low/taunt01_v4.vcd"
+		scene "scenes/player/spy/low/taunt01_v5.vcd"
+	}
+	response "SpyTauntSecondary"
+	{
+		scene "scenes/player/spy/low/taunt02.vcd"
+	}
+	response "SpyTauntMelee"
+	{
+		scene "scenes/player/spy/low/taunt03_v1.vcd"
+		scene "scenes/player/spy/low/taunt03_v2.vcd"
+	}
+	response "SpyTauntPDA"
+	{
+		scene "scenes/player/spy/low/taunt04_v1.vcd"
+		scene "scenes/player/spy/low/taunt04_v2.vcd"
+		scene "scenes/player/spy/low/taunt04_v3.vcd"
+		scene "scenes/player/spy/low/taunt04_v4.vcd"
+		scene "scenes/player/spy/low/taunt04_v5.vcd"
+		scene "scenes/player/spy/low/taunt05.vcd"
+	}
+	response "SpyTauntHalloween"
+	{
+		scene "scenes/player/spy/low/taunt06.vcd"
+	}
+	response "SpyTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	rule SpyTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsRevolver
+		response SpyTauntPrimary
+	}
+	rule SpyTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsBuild
+		response SpyTauntSecondary
+	}
+	rule SpyTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsKnife
+		response SpyTauntMelee
+	}
+	rule SpyTauntPlayerPDA
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsSpyPDA
+		response SpyTauntPDA
+	}
+	rule SpyTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsSpy IsHalloweenTaunt
+		response SpyTauntHalloween
+	}
+	// TF2C
+	Rule SpyTauntPlayerTranquilizer
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsTranquilizer
+		response SpyTauntPrimary
+	}
+	rule SpyTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsSandvich
+		response SpyTauntSandvich
+	}
+	rule SpyTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsNotSandvich WeaponIsLunchbox
+		response SpyTauntSandvich
+	}	
+	response "SpyTauntPDASpycrab"
+	{
+		scene "scenes/player/spy/low/taunt05.vcd"
+	}
+	rule SpyTauntPlayerPDASpycrab
+	{
+		criteria ConceptPlayerTaunt IsSpy WeaponIsSpyPDA PlayerIsLookingUp
+		response SpyTauntPDASpycrab
+	}
+
+	Response PlayerExpressionIdleSpy
+	{
+		scene "scenes/player/spy/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleSpy
+	{
+		criteria ConceptPlayerExpression IsSpy
+		Response PlayerExpressionIdleSpy
+	}
+
+	Response PlayerExpressionAttackSpy
+	{
+		scene "scenes/player/spy/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackSpy
+	{
+		criteria ConceptFireWeapon IsSpy
+		Response PlayerExpressionAttackSpy
+	}
+	
+//============================================================================================================
+
+
+// Demoman
+//------------------------------------------------------------------------------------------------------------
+	response "DemomanTauntPrimary"
+	{
+		scene "scenes/player/demoman/low/taunt01.vcd"
+	}
+	response "DemomanTauntSecondary"
+	{
+		scene "scenes/player/demoman/low/taunt02.vcd"
+		
+	}
+	response "DemomanTauntMelee"
+	{
+		scene "scenes/player/demoman/low/taunt03_v1.vcd"
+		scene "scenes/player/demoman/low/taunt03_v2.vcd"
+		scene "scenes/player/demoman/low/taunt03_v3.vcd"
+	}
+	response "DemomanTauntHalloween"
+	{
+		scene "scenes/player/demoman/low/taunt06.vcd"
+	}
+	
+	rule DemomanTauntPlayerPrimary
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsPipebomb
+		response DemomanTauntPrimary
+	}
+	rule DemomanTauntPlayerSecondary
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsGrenade
+		response DemomanTauntSecondary
+	}
+	rule DemomanTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsBottle
+		ApplyContext "NotSober:1:10" // Apply the drunk context here
+		response DemomanTauntMelee
+	}
+	rule DemomanTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsDemoman IsHalloweenTaunt
+		response DemomanTauntHalloween
+	}
+	Response PlayerExpressionIdleDemoman
+	{
+		scene "scenes/player/demoman/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleDemoman
+	{
+		criteria ConceptPlayerExpression IsDemoman
+		Response PlayerExpressionIdleDemoman
+	}
+	
+	Response PlayerExpressionIdleHurtDemoman
+	{
+		scene "scenes/player/demoman/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtDemoman
+	{
+		criteria ConceptPlayerExpression IsDemoman LowHealthContext
+		Response PlayerExpressionIdleHurtDemoman
+	}
+	Rule PlayerExpressionRoundLossDemoman
+	{
+		criteria ConceptPlayerExpression IsDemoman GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtDemoman
+	}
+	
+	Response PlayerExpressionAttackDemoman
+	{
+		scene "scenes/player/demoman/low/attack01.vcd"
+	}
+	Rule PlayerExpressionAttackDemoman
+	{
+		criteria ConceptFireWeapon IsDemoman
+		Response PlayerExpressionAttackDemoman
+	}
+	
+//	TF2C
+	
+	response "DemomanTauntMirv"
+	{
+		scene "scenes/player/demoman/low/taunt07_v1.vcd"
+	}
+	response "DemomanTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	response "DemomanTauntMineLayer"
+	{
+		scene "scenes/player/demoman/low/taunt08.vcd"
+	}
+	
+	rule DemomanTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsSandvich
+		response DemomanTauntSandvich
+	}
+	rule DemomanTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsNotSandvich WeaponIsLunchbox
+		response DemomanTauntSandvich
+	}
+	rule DemomanTauntMirv
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsMIRV
+		response DemomanTauntMirv
+	}
+	rule DemomanTauntPillstreak
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsPillstreak
+		response DemomanTauntSecondary
+	}
+	rule DemomanTauntBrimstone
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsBrimstone
+		response DemomanTauntSecondary
+	}
+	rule DemomanTauntMineLayer
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsMineLayer
+		response DemomanTauntMineLayer
+	}
+	rule DemomanTauntPlayerCyclops
+	{
+		criteria ConceptPlayerTaunt IsDemoman WeaponIsCyclops
+		response DemomanTauntSecondary
+	}
+//============================================================================================================
+
+
+// Civilian (TF2C)
+//------------------------------------------------------------------------------------------------------------
+	Response "CivilianTauntMelee"
+	{
+		scene "scenes/player/civilian/low/taunt01.vcd"
+	}
+	response "CivilianTauntHalloween"
+	{
+		scene "scenes/player/civilian/low/taunt06.vcd"
+	}
+	response "CivilianTauntSandvich"
+	{
+		scene "scenes/player/shared/low/taunt_sandvich.vcd"
+	}
+	
+	Rule CivilianTauntPlayerMelee
+	{
+		criteria ConceptPlayerTaunt IsCivilian WeaponIsClassUmbrella
+		response CivilianTauntMelee
+	}
+	rule CivilianTauntHalloween
+	{
+		criteria ConceptPlayerTaunt IsCivilian IsHalloweenTaunt
+		response CivilianTauntHalloween
+	}	
+
+	rule CivilianTauntSandvich
+	{
+		criteria ConceptPlayerTaunt IsCivilian WeaponIsSandvich
+		response CivilianTauntSandvich
+	}	
+
+	rule CivilianTauntLunchboxGeneric
+	{
+		criteria ConceptPlayerTaunt IsCivilian WeaponIsNotSandvich WeaponIsLunchbox
+		response CivilianTauntSandvich
+	}
+
+	Response PlayerExpressionIdleCivilian
+	{
+		scene "scenes/player/civilian/low/idleloop01.vcd"
+	}
+	Rule PlayerExpressionIdleCivilian
+	{
+		criteria ConceptPlayerExpression IsCivilian
+		Response PlayerExpressionIdleCivilian
+	}
+	
+	Response PlayerExpressionIdleHurtCivilian
+	{
+		scene "scenes/player/civilian/low/idleloopHurt01.vcd"
+	}
+	Rule PlayerExpressionIdleHurtCivilian
+	{
+		criteria ConceptPlayerExpression IsCivilian LowHealthContext
+		Response PlayerExpressionIdleHurtCivilian
+	}
+	Rule PlayerExpressionRoundLossCivilian
+	{
+		criteria ConceptPlayerExpression IsCivilian GameRulesInWinState PlayerOnLosingTeam
+		Response PlayerExpressionIdleHurtCivilian
+	}
+	
+	Response PlayerExpressionAttackCivilian
+	{
+		scene "scenes/player/civilian/low/attack01.vcd"
+		scene "scenes/player/civilian/low/attack02.vcd"
+		scene "scenes/player/civilian/low/attack03.vcd"
+		scene "scenes/player/civilian/low/attack04.vcd"
+	}
+	Rule PlayerExpressionAttackCivilian
+	{
+		criteria ConceptFireWeapon IsCivilian
+		Response PlayerExpressionAttackCivilian
+	}
+//============================================================================================================

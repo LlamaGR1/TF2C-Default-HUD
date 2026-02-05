@@ -1,0 +1,75 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"			"#TF_Weapon_HealLauncher"
+	"BuiltRightHanded"		"0"
+	"weight"			"3"
+	"WeaponType"			"item1"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"	
+
+	// Attributes TF.
+	"damage"			"30"
+	"DamageRadius"			"146"
+	"BulletsPerShot"		"1"
+	"Spread"			"0.0"	
+	"PunchAngle"			"1.0"
+	"TimeFireDelay"			"0.85"
+	"TimeIdle"			"2.0"
+	"TimeIdleEmpty"			"2.0"
+	"TimeReload"			"1.5"  // Uses these values for meter reload
+	
+	"ProjectileType"		"tf2c_projectile_healgrenade"
+	"Secondary_ProjectileType"	"tf2c_projectile_ubergenerator"
+
+	// Ammo & Clip.
+	"primary_ammo"		"TF_AMMO_SECONDARY"
+	"secondary_ammo"	"None"
+	"clip_size"		"8"
+	"default_clip"		"8"
+
+	// Buckets.
+	"bucket"		"1"
+	"bucket_position"	"0"
+	
+	// Models.
+	"viewmodel"		"models/weapons/v_models/v_medic_gl_fireandforget.mdl"
+	"playermodel"		"models/weapons/w_models/w_medic_gl.mdl"
+	
+	//"HasTeamSkins_Viewmodel"	"1"	
+	
+	// Muzzleflash
+	"MuzzleFlashParticleEffect" "muzzle_nader"
+	
+	// Explosions
+	"ExplosionEffect"		"medic_explosion_wall_PARENT"
+	"ExplosionPlayerEffect"	"medic_explosion_PARENT"
+	"ExplosionWaterEffect"	"medic_explosion_underwater_PARENT"
+	"HasTeamColoredExplosions"	"1"
+	"HasCritExplosions"		"0"
+
+	"ExplosionSound"	"HealGrenade.Explode"
+
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
+	SoundData
+	{
+		"single_shot"	"HealGrenade.Shoot"
+		"reload"		"Weapon_HealLauncher.Charge"
+		"special2"		"HealGrenade.ShootUber"
+		"burst"			"HealGrenade.Shoot"	
+	}
+
+	// Crosshair
+	"crosshair"	"heal"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"32"
+				"y"			"32"
+				"width"		"32"
+				"height"	"32"
+		}
+	}
+}

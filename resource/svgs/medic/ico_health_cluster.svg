@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="ico_health_cluster.svg"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   sodipodi:docname="ico_health_cluster.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.1901653"
+     inkscape:cx="48.169881"
+     inkscape:cy="114.60322"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="ico_health_cluster.svg" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #ece3cb;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.61;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+      }
+
+      .cls-3 {
+        opacity: 0.19;
+      }
+
+      .cls-4 {
+        opacity: 0.08;
+      }
+    </style>
+  </defs>
+  <path
+     id="a"
+     class="cls-1"
+     d="M 168.22812,235.10204 H 146.28527 V 256 h -20.89796 v -20.89796 h -19.85307 v -20.89796 h 19.85307 v -20.89796 h 20.89796 v 20.89796 h 21.94285 z"
+     style="stroke-width:0.522449" />
+  <path
+     id="b"
+     class="cls-2"
+     d="m 189.12608,161.95918 v 19.85306 H 173.45261 V 161.95918 H 153.59955 V 153.6 h 25.07755 v -28.21224 h 10.44898 v 20.89795 h 20.89796 v 15.67347 z M 145.24037,84.636735 H 109.71384 V 118.07347 H 99.264857 V 101.3551 H 73.142408 V 80.457143 H 99.264857 V 54.334694 h 20.897963 v 26.122449 h 27.16734 V 101.3551 h -2.08979 z M 80.456694,163.00408 h 13.583673 v 22.98776 h 24.032653 v 13.58367 H 94.040367 v 24.03265 H 80.456694 V 199.57551 H 56.424041 v -13.58367 h 24.032653 z"
+     style="stroke-width:0.522449" />
+  <path
+     id="c"
+     class="cls-3"
+     d="m 166.13833,85.681633 v 26.122447 h -20.89796 v -6.26939 h 6.26939 V 76.277551 H 124.34241 V 61.64898 h 17.76326 V 34.481633 h 24.03266 V 61.64898 h 27.16734 V 85.681633 Z M 72.09751,166.13878 H 58.513837 V 151.5102 H 43.885265 V 137.92653 H 58.513837 V 122.25306 H 72.09751 v 15.67347 H 77.322 V 151.5102 H 72.09751 Z M 54.334245,95.085714 H 40.750571 V 80.457143 H 26.122 V 66.873469 H 40.750571 V 51.2 H 54.334245 V 66.873469 H 70.007714 V 80.457143 H 54.334245 Z"
+     style="stroke-width:0.522449" />
+  <path
+     id="d"
+     class="cls-4"
+     d="M 214.20363,53.289796 V 68.963265 H 200.61996 V 53.289796 H 184.94649 V 39.706122 h 15.67347 V 24.032653 h 13.58367 V 39.706122 H 229.8771 V 53.289796 Z M 91.950571,43.885714 H 79.411796 V 28.212245 H 63.738327 V 15.673469 H 79.411796 V 0 H 91.950571 V 15.673469 H 107.62404 V 28.212245 H 91.950571 Z"
+     style="stroke-width:0.522449" />
+  <path
+     id="X"
+     class="cls-5"
+     d="m 174.49751,149.42041 h -33.43673 v 32.39183 H 113.89343 V 149.42041 H 81.501592 V 122.25306 H 113.89343 V 88.816327 h 27.16735 v 33.436733 h 33.43673 z"
+     style="stroke-width:0.522449" />
+</svg>

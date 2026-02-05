@@ -1,0 +1,37 @@
+"sprites/640_hud"
+{
+	TextureData
+	{
+		// 
+		// TF2 Classic Instructor Hint Textures
+		// 
+		// (Note that there is a measure in code to ensure "tf2c_civilian" returns "tf_civilian")
+		// 
+
+		//Sheet 1 - Row 1
+		"tf_civilian"
+		{
+				"file"		"vgui/hud/tf2c_instructor_iconsheet"
+				"x"			"0"
+				"y"			"0"
+				"width"		"128"
+				"height"	"128"
+		}
+		"tf_grn_team"
+		{
+				"file"		"vgui/hud/tf2c_instructor_iconsheet"
+				"x"			"128"
+				"y"			"0"
+				"width"		"128"
+				"height"	"128"
+		}
+		"tf_ylw_team"
+		{
+				"file"		"vgui/hud/tf2c_instructor_iconsheet"
+				"x"			"256"
+				"y"			"0"
+				"width"		"128"
+				"height"	"128"
+		}
+	}	
+}

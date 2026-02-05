@@ -1,0 +1,57 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"			"#TF_Weapon_Bottle"
+	"BuiltRightHanded"		"0"
+	"MeleeWeapon"			"1"
+	"weight"			"1"
+	"WeaponType"		"melee"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+	
+	// Attributes TF.
+	"Damage"			"65"
+	"TimeFireDelay"			"0.8"
+	"TimeIdle"			"5.0"
+
+	// Ammo & Clip
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	// Buckets.	
+	"bucket"			"2"
+	"bucket_position"		"0"
+
+	// Model & Animation
+	//"viewmodel"     -viewmodel is now defined in _items_main.txt
+	//"playermodel"   -playermodel is now defined in _items_main.txt
+	"anim_prefix"			"bottle"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Bottle.IntactHitFlesh"
+		"single_shot_npc"		"Weapon_Bottle.IntactHitWorld"
+		"double_shot"		"Weapon_Bottle.BrokenHitFlesh"
+		"double_shot_npc"		"Weapon_Bottle.BrokenHitWorld"
+		"special1"		"Weapon_Bottle.Break"
+		"melee_miss"		"Weapon_Bottle.Miss"
+		"melee_hit"		"Weapon_Bottle.HitFlesh"
+		"melee_hit_world"	"Weapon_Bottle.HitWorld"
+		"burst"			"Weapon_Bottle.MissCrit"
+	}
+	"DamageFeedbackVolume"	"0.5"
+
+	// Crosshair
+	"crosshair"	"circle"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"32"
+				"y"			"32"
+				"width"		"32"
+				"height"	"32"
+		}
+	}
+}

@@ -1,0 +1,86 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"		"#TF_Weapon_AAGun"
+	"BuiltRightHanded"	"0"
+	"weight"		"3"
+	"WeaponType"		"primary"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+		
+	// Attributes TF.
+	"Damage"		"60"
+	"DamageRadius"		"90"
+	"Range"			"900"
+	"BulletsPerShot"	"1"
+	"Spread"		"0.0"
+	"PunchAngle"		"2.0"
+	"TimeFireDelay"		"0.55"
+	"ProjectileType"	"projectile_bullet"
+
+	// Ammo & Clip.
+	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"secondary_ammo"	"None"
+	"clip_size"		"-1"
+	"MaxAmmo"		"40"
+	"SpawnAmmo"		"40"
+
+	// Buckets.
+	"bucket"		"0"
+	"bucket_position"	"0"
+
+	// Models.
+	"viewmodel"		"models/weapons/v_models/v_browning.mdl"
+	"playermodel"		"models/weapons/c_models/c_browning/c_browning.mdl"
+	
+	// Tracer.
+	"TracerEffect"		"aagun_tracer_PARENT"
+	"TracerFreq"		"1"
+	
+	// Brass shell.
+	"BrassModel"		"models/weapons/shells/shell_aagun.mdl"
+
+	// Explosions
+	"ExplosionEffect"				"SYS_explosion_100"
+	"ExplosionPlayerEffect"			"SYS_explosion_player_100"
+	"ExplosionWaterEffect"			"SYS_explosion_water_100"
+	"HasTeamColoredCritExplosions"	"1"
+
+	"ExplosionAddonEffect"			"SYS_expladdon_shrapnel"
+	"ExplosionAddonPlayerEffect"	"SYS_expladdon_shrapnel_player"
+	"ExplosionAddonWaterEffect"		"SYS_expladdon_shrapnel"
+
+	"ExplosionSound"	"Weapon_AAGun.Explode"
+	
+	// Muzzleflash
+	"MuzzleFlashParticleEffect"	"muzzle_aagun_PARENT"
+	"MuzzleflashModelScale"		".001"
+	"NoMuzzleLight"				"1"
+
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
+	SoundData
+	{
+		"reload"		"Weapon_AAGun.Spin"	// That's right, a hack
+		"empty"			"Weapon_AAGun.ClipEmpty"	
+		"single_shot"		"Weapon_AAGun.Fire"
+		"special1"		"Weapon_AAGun.Explode"
+		"special2"		"Weapon_AAGun.WindUp"
+		"special3"		"Weapon_AAGun.WindDown"
+		"burst"			"Weapon_AAGun.FireCrit"
+	}
+	"DamageFeedbackVolume"	"0.8"
+
+	// Crosshair
+	"crosshair"	"cross"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"64"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+	}
+}

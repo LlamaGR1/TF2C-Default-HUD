@@ -1,0 +1,11 @@
+<svg id="hud_upgrade_1" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_1" data-name="1" class="cls-1" d="M64,100a36,36,0,1,1,36-36A36,36,0,0,1,64,100Zm4.5-60.5L62,38a7.174,7.174,0,0,1-2.5,5A15.205,15.205,0,0,1,54,46l2.5,5.5s2.935-.631,4-2L59.5,82,55,87.5H73.5L68,81Z"/>
+</svg>

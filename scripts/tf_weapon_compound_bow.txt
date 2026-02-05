@@ -1,0 +1,63 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"					"#TF_Weapon_CompoundBow"
+	"BuiltRightHanded"			"0"
+	"weight"					"3"
+	"WeaponType"				"item2"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+		
+	// Attributes TF.
+	"Damage"			"70"
+	"Range"				"8192"
+	"BulletsPerShot"	"1"
+	"PunchAngle"		"2.0"
+	"TimeFireDelay"		"2.0"
+	"TimeIdle"			"0.6"
+	"TimeIdleEmpty"		"0.6"
+	"TimeReloadStart"	"0"
+	"TimeReload"		"1.0"
+	"Spread"			"0.0"
+	"ProjectileType"	"tf2c_projectile_arrow"
+
+	// Ammo & Clip.
+	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"secondary_ammo"	"None"
+	"clip_size"			"-1"
+	"MaxAmmo"			"12"
+	"SpawnAmmo"			"12"
+
+	// Buckets.
+	"bucket"			"0"
+	"bucket_position"	"0"
+
+	// Animation.
+	"anim_prefix"		"ac"
+
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
+	SoundData
+	{
+		"single_shot"	"Weapon_CompoundBow.Single"
+		"reload"		"Weapon_CompoundBow.WorldReload"
+		"empty"			"Weapon_CompoundBow.ClipEmpty"	
+		"burst"			"Weapon_CompoundBow.SingleCrit"
+		"special2"		"Player.UseDeny"
+		"special1"		"Weapon_CompoundBow.SinglePull"
+	}
+	"DamageFeedbackVolume"	"0.5"
+
+	// Crosshair
+	"crosshair"	"cross"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+	}
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="icon_alert.svg"
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   version="1.1"
+   sodipodi:docname="icon_alert.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.5299028"
+     inkscape:cx="44.923701"
+     inkscape:cy="76.82284"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="icon_alert.svg" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path
+     id="_"
+     data-name="!"
+     class="cls-1"
+     d="M 111.98883,116.11401 H 16.024246 A 16.011443,16.011443 0 0 1 2.6947206,91.232223 L 50.677011,19.140702 a 16.011443,16.011443 0 0 1 26.659052,0 L 125.31835,91.232223 A 16.011443,16.011443 0 0 1 111.98883,116.11401 Z M 53.7392,89.75917 a 7.785564,7.785564 0 0 0 -0.552395,2.850036 5.9722681,5.9722681 0 0 0 0.692495,2.874054 7.4293094,7.4293094 0 0 0 1.821301,2.225591 8.6942134,8.6942134 0 0 0 2.537814,1.461044 8.2218758,8.2218758 0 0 0 2.898071,0.524375 8.7422477,8.7422477 0 0 0 5.531954,-2.00143 7.4533266,7.4533266 0 0 0 1.821301,-2.22559 6.8929261,6.8929261 0 0 0 0.800572,-2.874054 7.8616184,7.8616184 0 0 0 -0.432309,-2.802003 7.2051492,7.2051492 0 0 0 -1.533095,-2.56183 8.0937843,8.0937843 0 0 0 -2.609865,-1.869337 7.9656927,7.9656927 0 0 0 -3.566549,-0.668477 8.0497528,8.0497528 0 0 0 -5.816157,2.537814 7.7895669,7.7895669 0 0 0 -1.593138,2.529807 z m 4.663332,-56.728542 -1.765261,44.535828 11.636316,0.672482 4.00286,-44.535829 z"
+     style="stroke-width:4.00286" />
+</svg>

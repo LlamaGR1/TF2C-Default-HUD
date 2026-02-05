@@ -1,0 +1,1388 @@
+// DSP Effects
+// 0 : "Normal (off)"
+// 1 : "Generic"
+// 2 : "Metal Small"
+// 3 : "Metal Medium"
+// 4 : "Metal Large"
+// 5 : "Tunnel Small"
+// 6 : "Tunnel Medium"
+// 7 : "Tunnel Large"
+// 8 : "Chamber Small"
+// 9 : "Chamber Medium"
+// 10: "Chamber Large"
+// 11: "Bright Small"
+// 12: "Bright Medium"
+// 13: "Bright Large"
+// 14: "Water 1"
+// 15: "Water 2"
+// 16: "Water 3"
+// 17: "Concrete Small"
+// 18: "Concrete Medium"
+// 19: "Concrete Large"
+// 20: "Big 1"
+// 21: "Big 2"
+// 22: "Big 3"
+// 23: "Cavern Small"
+// 24: "Cavern Medium"
+// 25: "Cavern Large"
+// 26: "Weirdo 1"
+// 27: "Weirdo 2"
+// 28: "Weirdo 3"
+
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f	75dB
+//	ATTN_IDLE		2.0f	60dB
+//	ATTN_STATIC		1.25f	66dB
+//	ATTN_RICOCHET	1.5f	65dB
+//	ATTN_GUNFIRE	0.27f	140dB
+
+//	SNDLVL_50dB		= 50,	// 3.9
+//	SNDLVL_55dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_60dB		= 60,	// 2.0
+//	SNDLVL_65dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_70dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	// 0.8
+//	SNDLVL_80dB		= 80,	// 0.7
+//	SNDLVL_85dB		= 85,	// 0.6
+//	SNDLVL_90dB		= 90,	// 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	// 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_140dB	= 140,	// 0.2
+//	SNDLVL_150dB	= 150,	// 0.2
+
+"Avanti.BLU_Spawn"
+{
+	"dsp"	"6"
+	
+// Soundscape: BLU's initial spawn, it's a wine cellar!
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"70"
+		"wave"			"ambient/desert_indoors.wav"
+	}
+	
+	"playlooping"
+	{  
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient/underground.wav"
+	}	
+	
+	"playlooping"
+	{  
+		"volume"		"0.5"
+		"pitch"			"85"
+		"wave"			"scapes/misc/underground_hall_loop1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"80"
+		"wave"			"ambient/lightwindcreaks.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"scapes/3d/fluorescent_lights_loop.wav"
+	}
+
+	// creaky wood 
+	
+	"playrandom"
+	{
+		"time"			"8,25"
+		"volume"		"0.5"
+		"pitch"			"60"
+		"rndwave"
+		{
+			"wave"		"scapes/materials/wood_creak1.wav"
+			"wave"		"scapes/materials/wood_creak2.wav"
+			"wave"		"scapes/materials/wood_creak3.wav"
+			"wave"		"scapes/materials/wood_creak4.wav"
+			"wave"		"scapes/materials/wood_creak5.wav"
+			"wave"		"scapes/materials/wood_creak6.wav"
+			"wave"		"scapes/misc/wood_creaks_new01.wav"
+			"wave"		"scapes/misc/wood_creaks_new02.wav"
+			"wave"		"scapes/misc/wood_creaks_new03.wav"
+			"wave"		"scapes/misc/wood_creaks_new04.wav"
+			"wave"		"scapes/misc/wood_creaks_new05.wav"
+			"wave"		"scapes/misc/wood_creaks_new06.wav"
+			"wave"		"scapes/misc/wood_creaks_new07.wav"
+			"wave"		"scapes/misc/wood_creaks_new08.wav"
+			"wave"		"scapes/misc/wood_floor_squeak01.wav"
+			"wave"		"scapes/misc/wood_floor_squeak02.wav"
+			"wave"		"scapes/misc/wood_floor_squeak03.wav"
+			"wave"		"scapes/misc/wood_floor_squeak04.wav"
+			"wave"		"scapes/misc/wood_floor_squeak05.wav"
+			"wave"		"scapes/misc/wood_floor_squeak06.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_05.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/random_interiormetal_07.wav"
+		}
+	}	
+	
+	// occasional low howling wind
+	
+	"playrandom"
+	{
+		"time"			"10,35"
+		"volume"		"0.75"
+		"pitch"			"95"
+		"rndwave"
+		{
+			"wave"		"scapes/wind/wind_snippet1.wav"
+			"wave"		"scapes/wind/wind_snippet2.wav"
+		}
+	}	
+	
+	// leaky barrel
+	
+	"playrandom"
+	{
+		"time"			"4,15"
+		"volume"		"0.25"
+		"pitch"			"80"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"	
+		"rndwave"
+		{
+			"wave"		"ambient/water/rain_drip1.wav"
+			"wave"		"ambient/water/rain_drip2.wav"
+			"wave"		"ambient/water/rain_drip3.wav"
+			"wave"		"ambient/water/rain_drip4.wav"
+		}
+	}	
+	
+	// wined up super rats
+	
+	"playrandom"
+	{
+		"time"			"3,20"
+		"volume"		"0.25"
+		"pitch"			"75"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"	
+		"rndwave"
+		{
+			"wave"		"scapes/animal/RatPath01.wav"
+			"wave"		"scapes/animal/RatPath02.wav"
+			"wave"		"scapes/animal/RatPath03.wav"
+			"wave"		"scapes/animal/rats1.wav"
+			"wave"		"scapes/animal/rats2.wav"
+			"wave"		"scapes/animal/rats3.wav"
+		}
+	}	
+}
+
+"Avanti.RED_Spawn"
+{
+	"dsp"	"10"
+	
+// Soundscape: RED's spawn, set in the drunken heart of the winery. Somewhat oppressive industrial room tone, with bottling and various industrial clamor audible in the background.
+
+	// Positions
+	// 0: Bottling line
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"110"
+		"wave"			"ambient/cp_harbor/indoor_lp_04.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"110"
+		"wave"			"ambient/cp_harbor/machinery_in_lp_02.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"ambient/avanti/avanti_distant_industrial.wav"
+	}	
+	
+	// bottles
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_85dB"
+		"position"		"0"
+		"wave"			"ambient/avanti/avanti_bottling_line.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"			"13,30"
+		"volume"		"0.25,0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_85dB"
+		"position"		"0"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/bottles1.mp3"
+			"wave"		"ambient/avanti/bottles2.mp3"
+			"wave"		"ambient/avanti/bottles3.mp3"
+		}
+	}		
+	
+	// distant industrial clamor
+	
+	"playrandom"
+	{
+		"time"			"5,25"
+		"volume"		"0.5,0.75"
+		"pitch"			"80,100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/menu/buzzer_alarm.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell3.mp3"
+			"wave"		"ambient/vip_harbor/machinery7.mp3"
+			"wave"		"ambient/vip_harbor/truck.mp3"
+			"wave"		"ambient/menu/door1.mp3"
+			"wave"		"ambient/menu/door2.mp3"
+			"wave"		"ambient/menu/door3.mp3"
+			"wave"		"ambient/menu/door4.mp3"
+			"wave"		"ambient/menu/door5.mp3"
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_02.wav"
+			"wave"		"scapes/misc/random_interiormetal_03.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/randommetalrattle01.wav"
+			"wave"		"scapes/misc/randommetalrattle02.wav"
+		}
+	}		
+
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"10,30"
+		"volume"		"0.8"
+		"pitch"			"80"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"scapes/wind/wind_snippet1.wav"
+			"wave"		"scapes/wind/wind_snippet2.wav"
+		}
+	}
+}
+
+"Avanti.Hillside"
+{
+	"dsp"	"1"
+	
+// Soundscape: Wind sounds and nature, with light metal rattling. Used outside BLU spawn and for A Point exteriors.
+
+	// Positions
+	// 0: Hillsides outside BLU spawn
+	// 1: Deathpit neighboring A Point
+	// 2: Well at A Point
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"ambient/country_life.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient/desert_wind_high2.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"ambient/desert_wind.wav"
+	}
+	
+	// hillside grassy wind outside BLU spawn
+	
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_115dB"
+		"position"		"0"
+		"wave"			")ambient/country_hillside.wav"
+	}
+	
+	// wind, but also hills
+
+	"playrandom"
+	{
+		"time"			"13,45"
+		"volume"		"0.5,0.75"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_115dB"
+		"position"		"0"
+		"rndwave"
+		{
+			"wave"		")ambient/avanti/windy_hills1.mp3"
+			"wave"		")ambient/avanti/windy_hills2.mp3"
+			"wave"		")ambient/avanti/windy_hills3.mp3"
+		}
+	}	
+	
+	// wine train making the rounds
+	
+	"playrandom"
+	{
+		"time"			"15,80"
+		"volume"		"0.5,0.65"
+		"pitch"			"98,102"
+		"soundlevel" 	"SNDLVL_115dB"
+		"position"		"0"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/train_horn_distant1.mp3"
+			"wave"		"ambient/avanti/train_horn_distant2.mp3"
+			"wave"		"ambient/avanti/train_horn_distant3.mp3"
+		}
+	}
+
+	// wind but evil for deathpit outside of A
+	
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_90dB"
+		"position"		"1"
+		"wave"			")ambient/country_hillside2.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"90"
+		"soundlevel" 	"SNDLVL_90dB"
+		"position"		"1"
+		"wave"			")ambient/windwinter.wav"
+	}
+
+	// evil random deathpit wind
+	
+	"playrandom"
+	{
+		"time"			"13,45"
+		"volume"		"0.5,0.75"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_90dB"
+		"position"		"1"
+		"rndwave"
+		{
+			"wave"		"ambient/halloween/windgust_01.wav"
+			"wave"		"ambient/halloween/windgust_02.wav"
+			"wave"		"ambient/halloween/windgust_03.wav"
+			"wave"		"ambient/halloween/windgust_04.wav"
+			"wave"		"ambient/halloween/windgust_05.wav"
+			"wave"		"ambient/halloween/windgust_06.wav"
+			"wave"		"ambient/halloween/windgust_07.wav"
+			"wave"		"ambient/halloween/windgust_09.wav"
+			"wave"		"ambient/halloween/windgust_10.wav"
+			"wave"		"ambient/halloween/windgust_11.wav"
+		}
+	}	
+
+	// well outside A
+	
+	"playlooping"
+	{
+		"volume"		"0.5" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"2"
+		"wave"			")ambient/avanti/avanti_well.wav"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.75" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_65dB"
+		"position"		"2"
+		"wave"			")scapes/swamps/water_lap_loop_st.wav"
+	}
+
+	// random well drops 
+	
+	"playrandom"
+	{
+		"time"			"10,35"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_65dB"
+		"position"		"2"
+		"rndwave"
+		{
+			"wave"		"ambient/water/drip1.wav"
+			"wave"		"ambient/water/drip2.wav"
+			"wave"		"ambient/water/drip3.wav"
+			"wave"		"ambient/water/drip4.wav"
+		}
+	}
+	
+	// birds
+	
+	"playrandom"
+	{
+		"time"			"6,15"
+		"volume"		"0.4,0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/avanti_birds1.mp3"
+			"wave"		"ambient/avanti/avanti_birds2.mp3"
+			"wave"		"ambient/avanti/avanti_birds3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+			"wave"		"ambient/forest_bird1.wav"
+			"wave"		"ambient/forest_bird2.wav"
+			"wave"		"ambient/forest_bird3.wav"
+			"wave"		"ambient/forest_bird4.wav"
+			"wave"		"ambient/forest_bird5.wav"
+			"wave"		"ambient/forest_bird6.wav"
+			"wave"		"ambient/forest_bird7.wav"
+			"wave"		"ambient/forest_bird8.wav"
+			
+		}
+	}
+	
+	// shutters
+	
+	"playrandom"
+	{
+		"time"			"8,30"
+		"volume"		"1"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/shutter4.wav"
+			"wave"		"ambient/shutter5.wav"
+			"wave"		"ambient/shutter6.wav"
+		}
+	}	
+		
+	// non-evil global wind
+	
+	"playrandom"
+	{
+		"time"			"8,20"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/wind_gust1.wav"
+			"wave"		"ambient/wind_gust2.wav"
+			"wave"		"scapes/forest/treewind1.wav"
+			"wave"		"scapes/forest/treewind2.wav"
+			"wave"		"scapes/forest/treewind3.wav"
+			"wave"		"scapes/forest/treewind4.wav"
+			"wave"		"scapes/nature/wind_leaves_mild_gust_1.wav"
+		}
+	}
+}
+
+"Avanti.Hillside_Interior"
+{
+	"dsp"	"12"
+	
+// Soundscape: Subdued nature fx with wood creaking sounds. Used for the more run-down interiors found in the first leg of the map.
+
+	// Positions
+	// 0: Spytech computers inside A Silo
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"110"
+		"wave"			"ambient/desert_indoors.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"110"
+		"wave"			"scapes/ambience/crucial_smallroomtone_amb_loop.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"ambient/country_life.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"ambient/desert_wind_high2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"wave"			"ambient/lightwindcreaks.wav"
+	}
+	
+	// computer go beep
+	
+	"playlooping"
+	{
+		"volume"		"0.75" 
+		"pitch"			"105"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"0"
+		"wave"			")ambient/computer_working.wav"
+	}		
+	
+	// creaky wood
+	
+	"playrandom"
+	{
+		"time"			"13,30"
+		"volume"		"0.5"
+		"pitch"			"90"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"scapes/materials/wood_creak1.wav"
+			"wave"		"scapes/materials/wood_creak2.wav"
+			"wave"		"scapes/materials/wood_creak3.wav"
+			"wave"		"scapes/materials/wood_creak4.wav"
+			"wave"		"scapes/materials/wood_creak5.wav"
+			"wave"		"scapes/materials/wood_creak6.wav"
+			"wave"		"scapes/misc/wood_creaks_new04.wav"
+			"wave"		"scapes/misc/wood_creaks_new06.wav"
+			"wave"		"scapes/misc/wood_creaks_new07.wav"
+			"wave"		"scapes/misc/wood_creaks_new08.wav"
+			"wave"		"scapes/misc/wood_floor_squeak01.wav"
+			"wave"		"scapes/misc/wood_floor_squeak02.wav"
+			"wave"		"scapes/misc/wood_floor_squeak03.wav"
+			"wave"		"scapes/misc/wood_floor_squeak04.wav"
+			"wave"		"scapes/misc/wood_floor_squeak05.wav"
+			"wave"		"scapes/misc/wood_floor_squeak06.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_05.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/random_interiormetal_07.wav"
+		}
+	}	
+	
+	// birds
+	
+	"playrandom"
+	{
+		"time"			"5,25"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/avanti_birds1.mp3"
+			"wave"		"ambient/avanti/avanti_birds2.mp3"
+			"wave"		"ambient/avanti/avanti_birds3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+			"wave"		"ambient/forest_bird1.wav"
+			"wave"		"ambient/forest_bird2.wav"
+			"wave"		"ambient/forest_bird3.wav"
+			"wave"		"ambient/forest_bird4.wav"
+			"wave"		"ambient/forest_bird5.wav"
+			"wave"		"ambient/forest_bird6.wav"
+			"wave"		"ambient/forest_bird7.wav"
+			"wave"		"ambient/forest_bird8.wav"
+			
+		}
+	}
+
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"15,45"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"scapes/wind/wind_snippet1.wav"
+			"wave"		"scapes/wind/wind_snippet2.wav"
+		}
+	}	
+}
+
+"Avanti.Industrial"
+{
+	"dsp"	"1"
+	
+// Soundscape: Wind sounds and distant industrial echoes. Lighter focus on nature sounds. Used from the courtyard before B all the way to C.
+
+	// Positions
+	// 0: Distant guitar playing
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"ambient/country_life.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"ambient/desert_wind_high2.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"ambient/avanti/avanti_distant_industrial.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"ambient/cp_harbor/outdoor_lp_03.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"80"
+		"wave"			"ambient/factory_outdoor.wav"
+	}
+	
+	// guitar
+	
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_90dB"
+		"position"		"0"
+		"wave"			"^ambient/avanti/avanti_radio_guitar.wav"
+	}
+
+	// the crickets have logged on 
+	
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/rur5b_cricket_loopl.wav"
+	}
+	
+	// distant industrial clamor
+	
+	"playrandom"
+	{
+		"time"			"20,45"
+		"volume"		"0.5"
+		"pitch"			"80,100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/vip_harbor/metal_creak1.mp3"
+			"wave"		"ambient/vip_harbor/metal_creak2.mp3"
+			"wave"		"ambient/vip_harbor/metal_creak3.mp3"
+			"wave"		"ambient/vip_harbor/machinery5.mp3"
+			"wave"		"ambient/vip_harbor/machinery6.mp3"
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_02.wav"
+			"wave"		"scapes/misc/random_interiormetal_03.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/randommetalrattle01.wav"
+			"wave"		"scapes/misc/randommetalrattle02.wav"
+			"wave"		"scapes/misc/randommetalsqueak01.wav"
+			"wave"		"scapes/misc/randommetalsqueak02.wav"
+		}
+	}		
+
+	// birds
+	
+	"playrandom"
+	{
+		"time"			"15,25"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/avanti_birds1.mp3"
+			"wave"		"ambient/avanti/avanti_birds2.mp3"
+			"wave"		"ambient/avanti/avanti_birds3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+			"wave"		"ambient/forest_bird1.wav"
+			"wave"		"ambient/forest_bird2.wav"
+			"wave"		"ambient/forest_bird3.wav"
+			"wave"		"ambient/forest_bird4.wav"
+			"wave"		"ambient/forest_bird5.wav"
+			"wave"		"ambient/forest_bird6.wav"
+			"wave"		"ambient/forest_bird7.wav"
+			"wave"		"ambient/forest_bird8.wav"
+			
+		}
+	}
+	
+	// shutters
+	
+	"playrandom"
+	{
+		"time"			"8,30"
+		"volume"		"1"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/shutter4.wav"
+			"wave"		"ambient/shutter5.wav"
+			"wave"		"ambient/shutter6.wav"
+		}
+	}	
+	
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/windy_hills1.mp3"
+			"wave"		"ambient/avanti/windy_hills2.mp3"
+			"wave"		"ambient/avanti/windy_hills3.mp3"
+			"wave"		"ambient/wind_gust1.wav"
+			"wave"		"ambient/wind_gust2.wav"
+			"wave"		"scapes/forest/treewind1.wav"
+			"wave"		"scapes/forest/treewind2.wav"
+			"wave"		"scapes/forest/treewind3.wav"
+			"wave"		"scapes/forest/treewind4.wav"
+			"wave"		"scapes/misc/blowing_papers01.wav"
+			"wave"		"scapes/misc/blowing_papers02.wav"
+			"wave"		"scapes/nature/wind_leaves_mild_gust_1.wav"
+		}
+	}
+}
+
+"Avanti.Industrial_Interior"
+{
+	"dsp"	"13"
+	
+// Soundscape: Industrial interiors for use in the middle portion of the map.
+
+	// Positions
+	// 0: Leaky barrels
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"110"
+		"wave"			"ambient/desert_indoors.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"85"
+		"wave"			"ambient/lightwindcreaks.wav"
+	}
+		
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"110"
+		"wave"			"ambient/cp_harbor/indoor_lp_04.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"ambient/country_life.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient/avanti/avanti_distant_industrial.wav"
+	}
+	
+	// crickets 
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/rur5b_cricket_loopl.wav"
+	}
+	
+	// leaky barrel
+	
+	"playrandom"
+	{
+		"time"			"2"
+		"volume"		"0.5"
+		"pitch"			"80,120"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"0"
+		"rndwave"
+		{
+			"wave"		"ambient/water/rain_drip1.wav"
+			"wave"		"ambient/water/rain_drip2.wav"
+			"wave"		"ambient/water/rain_drip4.wav"
+		}
+	}		
+	
+	// distant industrial clamor
+	
+	"playrandom"
+	{
+		"time"			"20,45"
+		"volume"		"0.5"
+		"pitch"			"80,100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_02.wav"
+			"wave"		"scapes/misc/random_interiormetal_03.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/randommetalrattle01.wav"
+			"wave"		"scapes/misc/randommetalrattle02.wav"
+		}
+	}		
+	
+	// birds
+	
+	"playrandom"
+	{
+		"time"			"20,30"
+		"volume"		"0.15"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/avanti_birds1.mp3"
+			"wave"		"ambient/avanti/avanti_birds2.mp3"
+			"wave"		"ambient/avanti/avanti_birds3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+			"wave"		"ambient/forest_bird1.wav"
+			"wave"		"ambient/forest_bird2.wav"
+			"wave"		"ambient/forest_bird3.wav"
+			"wave"		"ambient/forest_bird4.wav"
+			"wave"		"ambient/forest_bird5.wav"
+			"wave"		"ambient/forest_bird6.wav"
+			"wave"		"ambient/forest_bird7.wav"
+			"wave"		"ambient/forest_bird8.wav"
+			
+		}
+	}	
+	
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.8"
+		"pitch"			"80"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/wind_gust1.wav"
+			"wave"		"ambient/wind_gust2.wav"
+			"wave"		"scapes/misc/blowing_papers01.wav"
+			"wave"		"scapes/misc/blowing_papers02.wav"
+		}
+	}
+}
+
+"Avanti.Industrial_Interior_2"
+{
+	"dsp"	"12"
+	
+// Soundscape: Creaky interior used for the shack adjacent to C point. The industrial backdrop still has an audible presence, albeit diminished.
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"110"
+		"wave"			"ambient/desert_indoors.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"wave"			"ambient/lightwindcreaks.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"80"
+		"wave"			"ambient/factory_outdoor.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"ambient/avanti/avanti_distant_industrial.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/rur5b_cricket_loopl.wav"
+	}
+
+	// creaky wood
+	
+	"playrandom"
+	{
+		"time"			"13,30"
+		"volume"		"0.5"
+		"pitch"			"90"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"scapes/materials/wood_creak1.wav"
+			"wave"		"scapes/materials/wood_creak2.wav"
+			"wave"		"scapes/materials/wood_creak3.wav"
+			"wave"		"scapes/materials/wood_creak4.wav"
+			"wave"		"scapes/materials/wood_creak5.wav"
+			"wave"		"scapes/materials/wood_creak6.wav"
+			"wave"		"scapes/misc/wood_creaks_new04.wav"
+			"wave"		"scapes/misc/wood_creaks_new06.wav"
+			"wave"		"scapes/misc/wood_creaks_new07.wav"
+			"wave"		"scapes/misc/wood_creaks_new08.wav"
+			"wave"		"scapes/misc/wood_floor_squeak01.wav"
+			"wave"		"scapes/misc/wood_floor_squeak02.wav"
+			"wave"		"scapes/misc/wood_floor_squeak03.wav"
+			"wave"		"scapes/misc/wood_floor_squeak04.wav"
+			"wave"		"scapes/misc/wood_floor_squeak05.wav"
+			"wave"		"scapes/misc/wood_floor_squeak06.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_05.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/random_interiormetal_07.wav"
+		}
+	}	
+	
+	// distant industrial clamor
+	
+	"playrandom"
+	{
+		"time"			"20,45"
+		"volume"		"0.25"
+		"pitch"			"80,100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_02.wav"
+			"wave"		"scapes/misc/random_interiormetal_03.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/randommetalrattle01.wav"
+			"wave"		"scapes/misc/randommetalrattle02.wav"
+		}
+	}		
+	
+	// birds
+	
+	"playrandom"
+	{
+		"time"			"20,30"
+		"volume"		"0.15"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/avanti_birds1.mp3"
+			"wave"		"ambient/avanti/avanti_birds2.mp3"
+			"wave"		"ambient/avanti/avanti_birds3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+			"wave"		"ambient/forest_bird1.wav"
+			"wave"		"ambient/forest_bird2.wav"
+			"wave"		"ambient/forest_bird3.wav"
+			"wave"		"ambient/forest_bird4.wav"
+			"wave"		"ambient/forest_bird5.wav"
+			"wave"		"ambient/forest_bird6.wav"
+			"wave"		"ambient/forest_bird7.wav"
+			"wave"		"ambient/forest_bird8.wav"
+			
+		}
+	}	
+	
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"8,20"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/wind_gust1.wav"
+			"wave"		"ambient/wind_gust2.wav"
+			"wave"		"scapes/forest/treewind1.wav"
+			"wave"		"scapes/forest/treewind2.wav"
+			"wave"		"scapes/forest/treewind3.wav"
+			"wave"		"scapes/forest/treewind4.wav"
+			"wave"		"scapes/nature/wind_leaves_mild_gust_1.wav"
+		}
+	}
+}
+
+"Avanti.Finale"
+{
+	"dsp"	"1"
+	
+// Soundscape: Nature sounds have returned, with birds and doves being traded out for crickets and owls. Heavier underlying wind sounds. Used for exteriors surrounding the final point.
+
+
+	// Positions
+	// 0: Final point fountain
+	// 1: Wind chimes
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient/desert_wind_high3.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"80"
+		"wave"			"ambient/country_life.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"ambient/windwinter.wav"
+	}
+	
+	// crickets 
+	
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/rur5b_cricket_loopr.wav"
+	}
+		
+	"playlooping"
+	{
+		"volume"		"0.05"
+		"pitch"			"100"
+		"wave"			"scapes/caves/cave_crickets_loop1.wav"
+	}
+	
+	// fountain 
+	
+	"playlooping"
+	{
+		"volume"		"0.35" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_65dB"
+		"position"		"0"
+		"wave"			")scapes/3d/waterleak.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.5" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_70dB"
+		"position"		"0"
+		"wave"			")ambient/avanti/avanti_well.wav"
+	}
+	
+	// wind chimes
+	
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_85dB"
+		"position"		"1"
+		"wave"			")ambient/avanti/avanti_wind_chimes.wav"
+	}
+
+	// hoo
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"1"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/owl1.wav"
+			"wave"		"ambient/owl2.wav"
+			"wave"		"ambient/owl3.wav"
+			"wave"		"ambient/owl4.wav"			
+			"wave"		"ambient/avanti/loon1.mp3"
+			"wave"		"ambient/avanti/loon2.mp3"
+			"wave"		"ambient/avanti/loon3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+		}
+	}
+	
+	// shutters
+	
+	"playrandom"
+	{
+		"time"			"8,30"
+		"volume"		"1"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/shutter4.wav"
+			"wave"		"ambient/shutter5.wav"
+			"wave"		"ambient/shutter6.wav"
+		}
+	}	
+	
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/avanti/windy_hills1.mp3"
+			"wave"		"ambient/avanti/windy_hills2.mp3"
+			"wave"		"ambient/avanti/windy_hills3.mp3"
+			"wave"		"ambient/wind_gust1.wav"
+			"wave"		"ambient/wind_gust2.wav"
+			"wave"		"scapes/forest/treewind1.wav"
+			"wave"		"scapes/forest/treewind2.wav"
+			"wave"		"scapes/forest/treewind3.wav"
+			"wave"		"scapes/forest/treewind4.wav"
+			"wave"		"scapes/nature/wind_leaves_mild_gust_1.wav"
+		}
+	}
+}
+
+"Avanti.Finale_Interior"
+{
+	"dsp"	"12"
+	
+// Soundscape: Interior roomtone with background wind/fauna. Used for the bell tower and interior spaces in the final portion of the map.
+
+	// Positions
+	// 0: Spytech room
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"110"
+		"wave"			"ambient/desert_indoors.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/crucial_medroomtone_amb_loop.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1" 
+		"pitch"			"100"
+		"wave"			"ambient/lightwindcreaks.wav"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"ambient/desert_wind_high3.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"ambient/windwinterinside.wav"
+	}
+	
+	// spytech
+	
+	"playlooping"
+	{
+		"volume"		"0.5" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_65dB"
+		"position"		"0"
+		"wave"			")ambient/computer_tape4.wav"
+	}		
+	
+	"playlooping"
+	{
+		"volume"		"0.75" 
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"0"
+		"wave"			")ambient/computer_working2.wav"
+	}		
+	
+	// crickets 
+
+	"playlooping"
+	{
+		"volume"		"0.05"
+		"pitch"			"100"
+		"wave"			"scapes/caves/cave_crickets_loop1.wav"
+	}
+
+	// creaky wood
+	
+	"playrandom"
+	{
+		"time"			"13,30"
+		"volume"		"0.5"
+		"pitch"			"90"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"scapes/materials/wood_creak1.wav"
+			"wave"		"scapes/materials/wood_creak2.wav"
+			"wave"		"scapes/materials/wood_creak3.wav"
+			"wave"		"scapes/materials/wood_creak4.wav"
+			"wave"		"scapes/materials/wood_creak5.wav"
+			"wave"		"scapes/materials/wood_creak6.wav"
+			"wave"		"scapes/misc/wood_creaks_new04.wav"
+			"wave"		"scapes/misc/wood_creaks_new06.wav"
+			"wave"		"scapes/misc/wood_creaks_new07.wav"
+			"wave"		"scapes/misc/wood_creaks_new08.wav"
+			"wave"		"scapes/misc/wood_floor_squeak01.wav"
+			"wave"		"scapes/misc/wood_floor_squeak02.wav"
+			"wave"		"scapes/misc/wood_floor_squeak03.wav"
+			"wave"		"scapes/misc/wood_floor_squeak04.wav"
+			"wave"		"scapes/misc/wood_floor_squeak05.wav"
+			"wave"		"scapes/misc/wood_floor_squeak06.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_05.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/random_interiormetal_07.wav"
+		}
+	}	
+	
+	// hoo
+	
+	"playrandom"
+	{
+		"time"			"20,35"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/owl1.wav"
+			"wave"		"ambient/owl2.wav"
+			"wave"		"ambient/owl3.wav"
+			"wave"		"ambient/owl4.wav"
+			"wave"		"ambient/avanti/loon1.mp3"
+			"wave"		"ambient/avanti/loon2.mp3"
+			"wave"		"ambient/avanti/loon3.mp3"
+			"wave"		"ambient/avanti/mourning_dove1.mp3"
+			"wave"		"ambient/avanti/mourning_dove2.mp3"
+			"wave"		"ambient/avanti/mourning_dove3.mp3"
+		}
+	}
+	
+	// wind
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/wind/wind_snippet1.wav"
+			"wave"		"ambient/wind/wind_snippet2.wav"
+		}
+	}
+}

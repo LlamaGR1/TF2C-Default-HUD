@@ -1,0 +1,11 @@
+<svg id="ico_shock_inactive" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape_24_copy_4" data-name="Shape 24 copy 4" class="cls-1" d="M93.15,68.992L82,112H70L86.743,66.794A10,10,0,1,1,93.15,68.992ZM35,56a9.992,9.992,0,0,1,5.85,18.1L54,112H42L33.9,75.937A10,10,0,0,1,35,56Zm22,8,6,10,9-14,7,18-8-4L63,87,56,75l-8,5Z"/>
+</svg>

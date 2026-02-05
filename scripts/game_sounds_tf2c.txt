@@ -1,0 +1,563 @@
+"HudChat.Message"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"VOL_NORM"
+	"soundlevel"  "SNDLVL_NONE"
+	"pitch"	"PITCH_NORM"
+
+	"wave"	"misc/message.wav"
+}
+
+// Ported from Alien Swarm for the game instructor in Mapbase
+"Instructor.LessonStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel" 		"SNDLVL_NORM"
+
+	"wave"			"#ui/beepclear.wav"
+}
+
+"Instructor.ImportantLessonStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel" 		"SNDLVL_NORM"
+
+	"wave"			"#ui/beep22.wav"
+}
+
+"TeamMenu.PaperSelect"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"pitch"		"95,105"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"	"ui/paper_rustle.wav"
+}
+
+"TeamMenu.PaperDeselect"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"		"85,95"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"	"common/null.wav"
+}
+
+"Alarm.TotalDominationPoint3"
+{
+	"channel"    "CHAN_AUTO"
+	"volume"     "VOL_NORM"
+	"pitch"      "PITCH_NORM"
+	"soundlevel" "SNDLVL_NORM"
+	"wave"       "ambient/total_domination/alarm_totalDom_point3.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// AVANTI
+// ------------------------------------------------------------------------------------ //
+
+"Avanti.Bell"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"99,102"
+	
+	"rndwave"
+	{
+		"wave"			"^ambient\avanti\bell_tower1.mp3"
+		"wave"			"^ambient\avanti\bell_tower2.mp3"
+		"wave"			"^ambient\avanti\bell_tower3.mp3"
+		"wave"			"^ambient\avanti\bell_tower4.mp3"
+		"wave"			"^ambient\avanti\bell_tower5.mp3"
+		"wave"			"^ambient\avanti\bell_tower6.mp3"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// VIP HELICOPTER ESCAPE
+// ------------------------------------------------------------------------------------ //
+
+"Escape.HeliStartup"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"  	"SNDLVL_95dB"
+	"pitch"	"PITCH_NORM"
+	"wave"      	"vehicles/helicopter/chopper_startup_01.wav"
+
+}
+
+"Escape.HeliLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"  	"SNDLVL_95dB"
+	"pitch"			"PITCH_NORM"
+	"wave"      	")vehicles/helicopter/chopper_idleOn_01.wav"
+
+}
+
+"Escape.HelipadActivate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"  	"SNDLVL_95dB"
+	"pitch"	"PITCH_NORM"
+	"wave"      	")ambient/helipad_activate.wav"
+
+}
+
+//-----------------------------------------------------------------------------
+// Achievement Sounds
+//-----------------------------------------------------------------------------
+
+"Achievement.Earned_Trivial"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")misc/achievement_earned_trivial.wav"
+}
+
+"Achievement.Earned_Minor"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")misc/achievement_earned_minor.wav"
+}
+
+"Achievement.Earned_Major"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")misc/achievement_earned_major.wav"
+}
+
+"Achievement.Earned_Player"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")misc/achievement_earned_player.wav"
+}
+
+"Achievement.Earned_Round"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")misc/achievement_earned_round.wav"
+}
+
+"Achievement.Earned_Mistake"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")misc/achievement_earned_mistake.wav"
+}
+
+//-----------------------------------------------------------------------------
+// Chicken Sounds
+//-----------------------------------------------------------------------------
+"CluckHerbert.Idle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"rndwave"
+	{
+		"wave"			")chicken/chicken_idle_01.wav"
+		"wave"			")chicken/chicken_idle_02.wav"
+		"wave"			")chicken/chicken_idle_03.wav"
+		"wave"			")chicken/chicken_idle_04.wav"
+		"wave"			")chicken/chicken_idle_05.wav"
+	}
+}
+
+"CluckHerbert.Panic"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"rndwave"
+	{
+		"wave"			")chicken/chicken_panic_01.wav"
+		"wave"			")chicken/chicken_panic_02.wav"
+		"wave"			")chicken/chicken_panic_03.wav"
+		"wave"			")chicken/chicken_panic_04.wav"
+	}
+}
+
+"CluckHerbert.Fly"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			")chicken/chicken_fly.wav"
+}
+
+"CluckHerbert.Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_94dB"
+	"rndwave"
+	{
+		"wave"			")chicken/chicken_death_01.wav"
+		"wave"			")chicken/chicken_death_02.wav"
+		"wave"			")chicken/chicken_death_03.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// AMBIENT
+// ------------------------------------------------------------------------------------ //
+
+"Ambient.Drips1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_74dB"
+	"wave"		")ambient/drips1.wav"
+}
+
+"Ambient.Drips2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_74dB"
+	"wave"		")ambient/drips2.wav"
+}
+
+"Ambient.Drips3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_74dB"
+	"wave"		")ambient/drips3.wav"
+}
+
+"Sawmill.Waterfall"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"		"ambient/waterfall.wav"
+}
+
+"Ambient.MachineHum"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/machine_hum.wav"
+}
+
+"Ambient.MachineHum2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/machine_hum2.wav"
+}
+
+"Ambient.MachineWorking"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".50"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/train_engine_idle.wav"
+}
+
+
+
+"Ambient.ComputerWorking"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/computer_working.wav"
+}
+
+"Ambient.ComputerTape"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".5"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/computer_tape.wav"
+}
+
+"Ambient.ComputerTape3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"		"ambient/computer_tape3.wav"
+}
+
+"Ambient.ComputerTape4"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"		"ambient/computer_tape4.wav"
+}
+
+"Ambient.CommandCenter"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/command_center.wav"
+}
+
+"Ambient.CommandCenter2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"		")ambient/command_center2.wav"
+}
+
+"Ambient.Factory"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/factory_outdoor.wav"
+}
+
+"Ambient.Generator"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		")ambient/generator.wav"
+}
+
+"Ambient.SteamDrum"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"		")ambient/steam_drum.wav"
+}
+
+"Ambient.TrainApproachAndPass"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_95dB"
+	"wave"		")ambient/train_approach_and_pass.wav"
+}
+
+
+"Ambient.Train"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_95dB"
+	"wave"		")ambient/train.wav"
+}
+
+
+"Ambient.RailroadBells"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_95dB"
+	"wave"		")ambient/railroad_bells.wav"
+}
+
+"Ambient.SlowTrain"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_150dB"
+	"wave"		")ambient/slow_train.wav"
+}
+
+"Ambient.SlowTrainLeadIn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_150dB"
+	"wave"		")ambient/slow_train_lead_in.wav"
+}
+
+"Ambient.LightHum"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"		"ambient/lighthum.wav"
+}
+
+"Ambient.LightHum"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_65dB"
+	"wave"		"ambient/lighthum.wav"
+}
+
+"Ambient.Siren"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ambient/siren.wav"
+}
+
+"Ambient.Cliff"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_87dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")ambient/forest_cliff.wav"
+}
+
+"Ambient.Fireball"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_97dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")ambient/fireball.wav"
+}
+
+"Ambient.Lightning_strike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_NONE"
+	"pitch"			"90,110"
+	"rndwave"
+	{
+		"wave"	"scapes/2D/random_amb/Lightning_Strike_01.wav"
+		"wave"	"scapes/2D/random_amb/Lightning_Strike_02.wav"
+		"wave"	"scapes/2D/random_amb/Lightning_Strike_03.wav"
+		"wave"	"scapes/2D/random_amb/Lightning_Strike_04.wav"
+	}
+}
+
+
+"Ambient.Thunder"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_NONE"
+	"pitch"			"90,110"
+	"rndwave"
+	{
+		"wave"	"scapes/2D/random_amb/thunder_rumble_01.wav"
+		"wave"	"scapes/2D/random_amb/thunder_rumble_02.wav"
+		"wave"	"scapes/2D/random_amb/thunder_rumble_03.wav"
+		"wave"	"scapes/2D/random_amb/thunder_rumble_04.wav"
+	}
+}
+
+"Ambient.LargeFanLoop"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"	"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_110dB"
+
+	"wave"	"scapes/misc/p2_large_fan_loop_01.wav"
+}
+
+"Ambient.Motor"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"	"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_70dB"
+
+	"wave"	")ambient/machines/diesel_engine_idle1.wav"
+}
+
+"Ambient.Honk"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"	"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_120dB"
+
+	"wave"	"ambient/mvm_warehouse/car_horn_01.wav"
+}
+
+"Ambient.Radio"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".5"
+	"pitch"	"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_74dB"
+
+	"wave"	")scapes/3d/MallMusic.wav"
+	"dsp"	"38"
+
+}
+
+//-----------------------------------------------------------------------------
+// Miscellaneous overrides
+//-----------------------------------------------------------------------------
+// Originally from game_sounds.txt
+// Refers to ui/quest_status_complete.wav which doesn't exist
+"Quest.StatusComplete"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/null.wav"
+}

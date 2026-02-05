@@ -1,0 +1,69 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"		"#TF_Weapon_SyringeGun"
+	"BuiltRightHanded"	"0"
+	"weight"		"4"
+	"WeaponType"		"primary"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+		
+	// Attributes TF.
+	"Damage"		"10"
+	"Range"			"8192"
+	"BulletsPerShot"	"1"
+	"Spread"		"0.03"
+	"TimeFireDelay"		"0.1"
+	"ProjectileType"	"projectile_syringe"
+	"UseRapidFireCrits"	"1"
+	"TimeReload"		"1.2"
+
+	// Ammo & Clip.
+	"primary_ammo"			"TF_AMMO_PRIMARY"
+	"secondary_ammo"		"None"
+	"clip_size"				"40"
+	"default_clip"			"40"
+	"MaxAmmo"			"150"
+
+	// Buckets.
+	"bucket"		"0"
+	"bucket_position"	"0"
+
+	// Muzzleflash
+	//"MuzzleFlashModel"		"models/effects/muzzleflash/minigunmuzzle.mdl"
+	"MuzzleFlashParticleEffect"	"muzzle_tranq"
+	"MuzzleflashModelScale"		".2"
+	"NoMuzzleLight"				"1"
+
+	// Models & Animation.
+	"viewmodel"		"models/weapons/v_models/v_syringegun_medic.mdl"
+	"playermodel"		"models/weapons/w_models/w_syringegun.mdl"
+	"anim_prefix"		"ac"
+	
+	// Magazine.
+	"MagazineModel"		"models/weapons/mags/vial.mdl"
+
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
+	SoundData
+	{
+		"reload"		"Weapon_SyringeGun.WorldReload"
+		"empty"			"Weapon_SyringeGun.ClipEmpty"	
+		"single_shot"		"Weapon_SyringeGun.Single"
+		"burst"			"Weapon_SyringeGun.SingleCrit"
+	}
+	"DamageFeedbackVolume"	"0.15"
+
+	// Crosshair
+	"crosshair"	"default"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+	}
+}

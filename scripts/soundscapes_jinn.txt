@@ -1,0 +1,487 @@
+// DSP Effects
+// 0 : "Normal (off)"
+// 1 : "Generic"
+// 2 : "Metal Small"
+// 3 : "Metal Medium"
+// 4 : "Metal Large"
+// 5 : "Tunnel Small"
+// 6 : "Tunnel Medium"
+// 7 : "Tunnel Large"
+// 8 : "Chamber Small"
+// 9 : "Chamber Medium"
+// 10: "Chamber Large"
+// 11: "Bright Small"
+// 12: "Bright Medium"
+// 13: "Bright Large"
+// 14: "Water 1"
+// 15: "Water 2"
+// 16: "Water 3"
+// 17: "Concrete Small"
+// 18: "Concrete Medium"
+// 19: "Concrete Large"
+// 20: "Big 1"
+// 21: "Big 2"
+// 22: "Big 3"
+// 23: "Cavern Small"
+// 24: "Cavern Medium"
+// 25: "Cavern Large"
+// 26: "Weirdo 1"
+// 27: "Weirdo 2"
+// 28: "Weirdo 3"
+
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f	75dB
+//	ATTN_IDLE		2.0f	60dB
+//	ATTN_STATIC		1.25f	66dB
+//	ATTN_RICOCHET	1.5f	65dB
+//	ATTN_GUNFIRE	0.27f	140dB
+
+//	SNDLVL_50dB		= 50,	// 3.9
+//	SNDLVL_55dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_60dB		= 60,	// 2.0
+//	SNDLVL_65dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_70dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	// 0.8
+//	SNDLVL_80dB		= 80,	// 0.7
+//	SNDLVL_85dB		= 85,	// 0.6
+//	SNDLVL_90dB		= 90,	// 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	// 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_140dB	= 140,	// 0.2
+//	SNDLVL_150dB	= 150,	// 0.2
+
+"Jinn.Desert"
+// Position 0: Generator
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"		".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_life.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"10, 30"
+		"volume"	".50"
+		"pitch"		"100"
+		"rndwave"
+		{
+			"wave"		"ambient/owl1.wav"
+			"wave"		"ambient/owl2.wav"
+			"wave"		"ambient/crow1.wav"
+			"wave"		"ambient/crow2.wav"
+		}
+	}
+
+	
+	"playlooping"
+	{
+		"volume"	".25"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_low.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_high.wav"
+	}
+
+	//Generator
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"position"		"0"
+		"wave"		")ambient/generator.wav"
+	}
+}
+
+
+
+"Jinn.Oceanside"
+// Position 0: Waves
+// Position 1: Waves
+// Position 2: Waves
+// Position 3: Harbor sound loop (place far into ocean)
+// Position 4: Seagulls
+// Position 5: Seagulls
+{
+	"dsp"	"1"
+
+//	"playlooping"
+//	{
+//		"volume"		".1"
+//		"pitch"		"100"
+//		"wave"		"ambient/desert_life.wav"
+//	}
+	
+	"playlooping"
+	{
+		"volume"	".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_low.wav"
+	}
+	
+		"playlooping"
+	{
+		"volume"	".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_high.wav"
+	}
+
+//Harbor loop
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel" 	"SNDLVL_85dB"
+		"position"		"3"
+		"wave"			"ambient/mvm_warehouse/warehouse_harbor.wav"	
+	}
+
+//Waves
+	"playlooping"
+	{
+		"volume"		".4"
+		"pitch"			"100"
+		"position"		"0"
+		"soundlevel"  	"SNDLVL_75dB"
+		"wave"			"ambient/lair/perimeter_waves_close.wav"
+	}
+	"playlooping"
+	{
+		"volume"		".4"
+		"pitch"			"100"
+		"position"		"1"
+		"soundlevel"  	"SNDLVL_75dB"
+		"wave"			"ambient/lair/perimeter_waves_close2.wav"
+	}
+	"playlooping"
+	{
+		"volume"		".4"
+		"pitch"			"100"
+		"position"		"2"
+		"soundlevel"  	"SNDLVL_75dB"
+		"wave"			"ambient/lair/perimeter_waves_close3.wav"
+	}
+//Seagulls
+	"playrandom"
+	{	
+		"time"			"9, 13"
+		"volume"		"0.6"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_90dB"
+		"position"		"4"
+		"rndwave"
+		{
+				"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+				"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+				"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"8, 10"
+		"volume"		"0.6"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_90dB"
+		"position"		"5"
+		"rndwave"
+		{
+				"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+				"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+				"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+		}	
+	}
+	
+}
+
+"Jinn.Oceanfar"
+// Position 0: Harbor sound loop
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"		".1"
+		"pitch"		"100"
+		"wave"		"ambient/desert_life.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_low.wav"
+	}
+	
+		"playlooping"
+	{
+		"volume"	".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_high.wav"
+	}
+
+//Harbor loop
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel" 	"SNDLVL_85dB"
+		"position"		"0"
+		"wave"			"ambient/mvm_warehouse/warehouse_harbor.wav"	
+	}
+	
+}
+
+
+"Jinn.Final"
+// Position 0: Water and pond sounds
+// Position 1: Waterfall (fancy)
+// Position 3: Waterfall
+// Position 2: Waterfall (small)
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"		".1"
+		"pitch"		"100"
+		"wave"		"ambient/desert_life.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"10, 30"
+		"volume"	".50"
+		"pitch"		"100"
+		"rndwave"
+		{
+			"wave"		"ambient/owl1.wav"
+			"wave"		"ambient/owl2.wav"
+			"wave"		"ambient/crow1.wav"
+			"wave"		"ambient/crow2.wav"
+		}
+	}
+
+	
+	"playlooping"
+	{
+		"volume"	".25"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_low.wav"
+	}
+	
+		"playlooping"
+	{
+		"volume"	".15"
+		"pitch"		"100"
+		"wave"		"ambient/desert_wind_high.wav"
+	}
+
+	// Pond
+	"playlooping"
+	{
+		"volume"		".45"
+		"pitch"		"100"
+		"position"		"0"
+		"wave"		"ambient/pondlife.wav"
+	}
+	"playlooping"
+	{
+		"volume"		".15"
+		"pitch"		"100"
+		"position"		"0"
+		"wave"		"ambient/pondwater.wav"
+	}
+
+	// Waterfall (fancy)
+	"playlooping" 
+	{
+		"volume"		"0.8"
+		"pitch"		"100"
+		"position"		"1"
+		"soundlevel"  	"SNDLVL_90dB"
+		"wave"		")ambient/lair/perimeter_waterfall.wav"
+	}
+
+	// Waterfall
+	"playlooping" 
+	{
+		"volume"		"1"
+		"pitch"		"100"
+		"position"		"2"
+		"wave"		"ambient/waterfall.wav"
+	}
+
+	// Waterfall (small)
+	"playlooping" 
+	{
+		"volume"		".5"
+		"pitch"		"100"
+		"position"		"3"
+		"wave"		"ambient/lair/perimeter_waterfall_sweetener_close.wav"
+	}
+}
+
+"Jinn.Cavern"
+// Position 0: Waterfall (fancy)
+// Position 1: Waterfall
+// Position 2: Waterfall (rushing water)
+// Position 3: Waterfall (small)
+{
+	"dsp"	"1"
+
+// general ambient
+	"playlooping"
+	{
+		"volume"	".6"
+		"pitch"		"100"
+		"wave"		"ambient/underground.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	".25"
+		"pitch"		"100"
+		"wave"		"ambient/waterfallinside.wav"
+	}
+
+	// Waterfall (fancy)
+	"playlooping" 
+	{
+		"volume"		"1"
+		"pitch"		"100"
+		"position"		"0"
+		"soundlevel"  	"SNDLVL_90dB"
+		"wave"		")ambient/lair/perimeter_waterfall.wav"
+	}
+
+	// Waterfall
+	"playlooping" 
+	{
+		"volume"		"1"
+		"pitch"		"100"
+		"position"		"1"
+		"wave"		"ambient/waterfall.wav"
+	}
+
+	// River sound
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"position"		"2"
+		"wave"		"ambient/waterfalloutside.wav"
+	}
+
+	// Waterfall (small)
+	"playlooping" 
+	{
+		"volume"		".25"
+		"pitch"		"100"
+		"position"		"3"
+		"wave"		"ambient/lair/perimeter_waterfall_sweetener_close.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1"
+		"pitch"		"100"
+		"rndwave"
+		{
+			"wave"		"ambient/water/distant_drip1.wav"
+			"wave"		"ambient/water/distant_drip2.wav"
+			"wave"		"ambient/water/distant_drip3.wav"
+			"wave"		"ambient/water/distant_drip4.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1"
+		"pitch"		"100"
+		"rndwave"
+		{
+			"wave"		"ambient/water/distant_drip1.wav"
+			"wave"		"ambient/water/distant_drip2.wav"
+			"wave"		"ambient/water/distant_drip3.wav"
+			"wave"		"ambient/water/distant_drip4.wav"
+		}
+	}
+}
+
+"Jinn.HorusHall"
+// Position 0: Waterfall (fancy)
+// Position 1: Waterfall
+// Position 2: Waterfall (rushing water)
+// Position 3: Waterfall (small)
+{
+	"dsp"	"1"
+
+// general ambient
+	"playlooping"
+	{
+		"volume"	".6"
+		"pitch"		"100"
+		"wave"		"ambient/indoors.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	".25"
+		"pitch"		"100"
+		"wave"		"ambient/waterfallinside.wav"
+	}
+
+	// Waterfall (fancy)
+	"playlooping" 
+	{
+		"volume"		"1"
+		"pitch"		"100"
+		"position"		"0"
+		"soundlevel"  	"SNDLVL_90dB"
+		"wave"		")ambient/lair/perimeter_waterfall.wav"
+	}
+
+	// Waterfall
+	"playlooping" 
+	{
+		"volume"		"1"
+		"pitch"		"100"
+		"position"		"1"
+		"wave"		"ambient/waterfall.wav"
+	}
+
+	// River sound
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"position"		"2"
+		"wave"		"ambient/waterfalloutside.wav"
+	}
+
+	// Waterfall (small)
+	"playlooping" 
+	{
+		"volume"		".25"
+		"pitch"		"100"
+		"position"		"3"
+		"wave"		"ambient/lair/perimeter_waterfall_sweetener_close.wav"
+	}
+}

@@ -1,0 +1,3008 @@
+// Channels
+//	CHAN_AUTO		= 0,
+//	CHAN_WEAPON		= 1,
+//	CHAN_VOICE		= 2,
+//	CHAN_ITEM		= 3,
+//	CHAN_BODY		= 4,
+//	CHAN_STREAM		= 5,		// allocate stream channel from the static or dynamic area
+//	CHAN_STATIC		= 6,		// allocate channel from the static area 
+// these can be set with "channel" "2" or "channel" "chan_voice"
+
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	// 3.9
+//	SNDLVL_55dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_60dB		= 60,	// 2.0
+//	SNDLVL_65dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_70dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	// 0.8
+//	SNDLVL_80dB		= 80,	// 0.7
+//	SNDLVL_85dB		= 85,	// 0.6
+//	SNDLVL_90dB		= 90,	// 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	// 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_140dB	= 140,	// 0.2
+//	SNDLVL_150dB	= 150,	// 0.2
+//
+
+//-----------------------------------------------------------------------------
+// Player Deaths
+//-----------------------------------------------------------------------------
+
+"Civilian.Death"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_painsevere01.mp3"
+		"wave"		"vo/civilian_painsevere02.mp3"
+		"wave"		"vo/civilian_painsevere03.mp3"
+		"wave"		"vo/civilian_painsevere04.mp3"
+	}
+}
+
+"Civilian.CritDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_paincriticaldeath01.mp3"
+		"wave"		"vo/civilian_paincriticaldeath02.mp3"
+		"wave"		"vo/civilian_paincriticaldeath03.mp3"
+		"wave"		"vo/civilian_paincriticaldeath04.mp3"
+		"wave"		"vo/civilian_paincriticaldeath05.mp3"
+		"wave"		"vo/civilian_paincriticaldeath06.mp3"
+		"wave"		"vo/civilian_paincriticaldeath07.mp3"
+	}
+}
+
+"Civilian.MeleeDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_paincriticaldeath01.mp3"
+		"wave"		"vo/civilian_paincriticaldeath02.mp3"
+		"wave"		"vo/civilian_paincriticaldeath03.mp3"
+		"wave"		"vo/civilian_paincriticaldeath04.mp3"
+		"wave"		"vo/civilian_paincriticaldeath05.mp3"
+		"wave"		"vo/civilian_paincriticaldeath06.mp3"
+		"wave"		"vo/civilian_paincriticaldeath07.mp3"
+	}
+}
+
+"Civilian.ExplosionDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_painsharp01.mp3"
+		"wave"		"vo/civilian_painsharp02.mp3"
+		"wave"		"vo/civilian_painsharp03.mp3"
+		"wave"		"vo/civilian_painsharp04.mp3"
+	}
+}
+
+"Civilian.ActivateCharge01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_ActivateCharge01.mp3"
+}
+
+"Civilian.ActivateCharge02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_ActivateCharge02.mp3"
+}
+
+"Civilian.ActivateCharge03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_ActivateCharge03.mp3"
+}
+
+"Civilian.ActivateCharge04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_ActivateCharge04.mp3"
+}
+
+"Civilian.ActivateCharge05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_ActivateCharge05.mp3"
+}
+
+"Civilian.AutoCappedControlPoint01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedControlPoint01.mp3"
+}
+
+"Civilian.AutoCappedControlPoint02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedControlPoint02.mp3"
+}
+
+"Civilian.AutoCappedControlPoint03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedControlPoint03.mp3"
+}
+
+"Civilian.AutoCappedControlPoint04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedControlPoint04.mp3"
+}
+
+"Civilian.AutoCappedControlPoint05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedControlPoint05.mp3"
+}
+
+"Civilian.AutoCappedIntelligence01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedIntelligence01.mp3"
+}
+
+"Civilian.AutoCappedIntelligence02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedIntelligence02.mp3"
+}
+
+"Civilian.AutoCappedIntelligence03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedIntelligence03.mp3"
+}
+
+"Civilian.AutoCappedIntelligence04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoCappedIntelligence04.mp3"
+}
+
+"Civilian.AutoDejectedTie01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoDejectedTie01.mp3"
+}
+
+"Civilian.AutoDejectedTie02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoDejectedTie02.mp3"
+}
+
+"Civilian.AutoOnFire01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire01.mp3"
+}
+
+"Civilian.AutoOnFire02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire02.mp3"
+}
+
+"Civilian.AutoOnFire03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire03.mp3"
+}
+
+"Civilian.AutoOnFire04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire04.mp3"
+}
+
+"Civilian.AutoOnFire05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire05.mp3"
+}
+
+"Civilian.AutoOnFire06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire06.mp3"
+}
+
+"Civilian.AutoOnFire07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_AutoOnFire07.mp3"
+}
+
+"Civilian.BattleCry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry01.mp3"
+}
+
+"Civilian.BattleCry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry02.mp3"
+}
+
+"Civilian.BattleCry03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry03.mp3"
+}
+
+"Civilian.BattleCry04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry04.mp3"
+}
+
+"Civilian.BattleCry05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry05.mp3"
+}
+
+"Civilian.BattleCry06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry06.mp3"
+}
+
+"Civilian.BattleCry07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry07.mp3"
+}
+
+"Civilian.BattleCry08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry08.mp3"
+}
+
+"Civilian.CartMovingForwardOffense01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartmovingforwardoffense01.mp3"
+}
+
+"Civilian.CartMovingForwardOffense02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartmovingforwardoffense02.mp3"
+}
+
+"Civilian.CartMovingForwardOffense03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartmovingforwardoffense03.mp3"
+}
+
+"Civilian.CartMovingForwardOffense04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartmovingforwardoffense04.mp3"
+}
+
+"Civilian.CartStayCloseOffense01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartstaycloseoffense01.mp3"
+}
+
+"Civilian.CartStayCloseOffense02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartstaycloseoffense02.mp3"
+}
+
+"Civilian.CartStayCloseOffense03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartstaycloseoffense03.mp3"
+}
+
+"Civilian.CartStoppedOffense01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartstoppedoffense01.mp3"
+}
+
+"Civilian.CartStoppedOffense02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.000"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"		"vo/civilian_cartstoppedoffense02.mp3"
+}
+
+"Civilian.Cheers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Cheers01.mp3"
+}
+
+"Civilian.Cheers02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Cheers02.mp3"
+}
+
+"Civilian.Cheers03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Cheers03.mp3"
+}
+
+"Civilian.CloakedSpy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpy01.mp3"
+}
+
+"Civilian.CloakedSpy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpy02.mp3"
+}
+
+"Civilian.CloakedSpyIdentify01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify01.mp3"
+}
+
+"Civilian.CloakedSpyIdentify02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify02.mp3"
+}
+
+"Civilian.CloakedSpyIdentify03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify03.mp3"
+}
+
+"Civilian.CloakedSpyIdentify04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify04.mp3"
+}
+
+"Civilian.CloakedSpyIdentify05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify05.mp3"
+}
+
+"Civilian.CloakedSpyIdentify06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify06.mp3"
+}
+
+"Civilian.CloakedSpyIdentify07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify07.mp3"
+}
+
+"Civilian.CloakedSpyIdentify08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify08.mp3"
+}
+
+"Civilian.CloakedSpyIdentify09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify09.mp3"
+}
+
+"Civilian.CloakedSpyIdentify10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_CloakedSpyIdentify10.mp3"
+}
+
+"Civilian.Domination01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination01.mp3"
+}
+
+"Civilian.Domination02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination02.mp3"
+}
+
+"Civilian.Domination03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination03.mp3"
+}
+
+"Civilian.Domination04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination04.mp3"
+}
+
+"Civilian.Domination05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination05.mp3"
+}
+"Civilian.Domination06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination06.mp3"
+}
+"Civilian.Domination07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Domination07.mp3"
+}
+
+"Civilian.Go01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Go01.mp3"
+}
+
+"Civilian.Go02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Go02.mp3"
+}
+
+"Civilian.Go03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Go03.mp3"
+}
+
+"Civilian.Go04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Go04.mp3"
+}
+
+"Civilian.GoodJob01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_GoodJob01.mp3"
+}
+
+"Civilian.GoodJob02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_GoodJob02.mp3"
+}
+
+"Civilian.GoodJob03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_GoodJob03.mp3"
+}
+
+"Civilian.GoodJob04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_GoodJob04.mp3"
+}
+
+"Civilian.HeadLeft01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HeadLeft01.mp3"
+}
+
+"Civilian.HeadLeft02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HeadLeft02.mp3"
+}
+
+"Civilian.HeadLeft03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HeadLeft03.mp3"
+}
+
+"Civilian.HeadRight01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HeadRight01.mp3"
+}
+
+"Civilian.HeadRight02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HeadRight02.mp3"
+}
+
+"Civilian.HeadRight03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HeadRight03.mp3"
+}
+
+"Civilian.HelpMe01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMe01.mp3"
+}
+
+"Civilian.HelpMe02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMe02.mp3"
+}
+
+"Civilian.HelpMe03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMe03.mp3"
+}
+
+"Civilian.HelpMeCapture01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMeCapture01.mp3"
+}
+
+"Civilian.HelpMeCapture02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMeCapture02.mp3"
+}
+
+"Civilian.HelpMeCapture03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMeCapture03.mp3"
+}
+
+"Civilian.HelpMeCapture04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_HelpMeCapture04.mp3"
+}
+
+"Civilian.Incoming01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Incoming01.mp3"
+}
+
+"Civilian.Incoming02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Incoming02.mp3"
+}
+
+"Civilian.Incoming03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Incoming03.mp3"
+}
+
+"Civilian.Jeers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Jeers01.mp3"
+}
+
+"Civilian.Jeers02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Jeers02.mp3"
+}
+
+"Civilian.Jeers03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Jeers03.mp3"
+}
+
+"Civilian.Jeers04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Jeers04.mp3"
+}
+
+"Civilian.Jeers05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Jeers05.mp3"
+}
+
+"Civilian.LowHealth01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_LowHealth01.mp3"
+}
+
+"Civilian.LowHealth02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_LowHealth02.mp3"
+}
+
+"Civilian.Medic01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Medic01.mp3"
+}
+
+"Civilian.Medic02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Medic02.mp3"
+}
+
+"Civilian.Medic03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Medic03.mp3"
+}
+
+"Civilian.MedicFollow01"
+{
+	"channel"  "CHAN_VOICE"
+	"volume"  "0.820"
+	"pitch"  "PITCH_NORM"
+	
+	"soundlevel"  "SNDLVL_95dB"
+	
+	"wave"  "vo/civilian_medicfollow01.mp3"
+}
+ 
+"Civilian.MedicFollow02"
+{
+	"channel"  "CHAN_VOICE"
+	"volume"  "0.820"
+	"pitch"  "PITCH_NORM"
+	
+	"soundlevel"  "SNDLVL_95dB"
+	
+	"wave"  "vo/civilian_medicfollow02.mp3"
+}
+ 
+"Civilian.MedicFollow03"
+{
+	"channel"  "CHAN_VOICE"
+	"volume"  "0.820"
+	"pitch"  "PITCH_NORM"
+	
+	"soundlevel"  "SNDLVL_95dB"
+	
+	"wave"  "vo/civilian_medicfollow03.mp3"
+}
+ 
+"Civilian.MedicFollow04"
+{
+	"channel"  "CHAN_VOICE"
+	"volume"  "0.820"
+	"pitch"  "PITCH_NORM"
+	
+	"soundlevel"  "SNDLVL_95dB"
+	
+	"wave"  "vo/civilian_medicfollow04.mp3"
+}
+
+"Civilian.MedicFollow05"
+{
+	"channel"  "CHAN_VOICE"
+	"volume"  "0.820"
+	"pitch"  "PITCH_NORM"
+	
+	"soundlevel"  "SNDLVL_95dB"
+	
+	"wave"  "vo/civilian_medicfollow05.mp3"
+}
+
+"Civilian.MoveUp01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_MoveUp01.mp3"
+}
+
+"Civilian.MoveUp02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_MoveUp02.mp3"
+}
+
+"Civilian.MoveUp03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_MoveUp03.mp3"
+}
+
+"Civilian.NeedDispenser01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NeedDispenser01.mp3"
+}
+
+"Civilian.NeedSentry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NeedSentry01.mp3"
+}
+
+"Civilian.NeedTeleporter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NeedTeleporter01.mp3"
+}
+
+"Civilian.NegativeVocalization01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NegativeVocalization01.mp3"
+}
+
+"Civilian.NegativeVocalization02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NegativeVocalization02.mp3"
+}
+
+"Civilian.NegativeVocalization03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NegativeVocalization03.mp3"
+}
+
+"Civilian.NegativeVocalization04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NegativeVocalization04.mp3"
+}
+
+"Civilian.NegativeVocalization05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NegativeVocalization05.mp3"
+}
+
+"Civilian.NiceShot01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NiceShot01.mp3"
+}
+
+"Civilian.NiceShot02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NiceShot02.mp3"
+}
+
+"Civilian.NiceShot03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_NiceShot03.mp3"
+}
+
+"Civilian.No01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_No01.mp3"
+}
+
+"Civilian.No02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_No02.mp3"
+}
+
+"Civilian.No03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_No03.mp3"
+}
+
+"Civilian.No04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_No04.mp3"
+}
+
+"Civilian.PainSevere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSevere01.mp3"
+}
+
+"Civilian.PainSevere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSevere02.mp3"
+}
+
+"Civilian.PainSevere03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSevere03.mp3"
+}
+
+"Civilian.PainSevere04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSevere04.mp3"
+}
+
+"Civilian.PainSharp01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSharp01.mp3"
+}
+
+"Civilian.PainSharp02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSharp02.mp3"
+}
+
+"Civilian.PainSharp03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSharp03.mp3"
+}
+
+"Civilian.PainSharp04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PainSharp04.mp3"
+}
+
+"Civilian.PositiveVocalization01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PositiveVocalization01.mp3"
+}
+
+"Civilian.PositiveVocalization02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PositiveVocalization02.mp3"
+}
+
+"Civilian.PositiveVocalization03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_PositiveVocalization03.mp3"
+}
+
+"Civilian.SentryAhead01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SentryAhead01.mp3"
+}
+
+"Civilian.SentryAhead02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SentryAhead02.mp3"
+}
+
+"Civilian.SentryAhead03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SentryAhead03.mp3"
+}
+
+"Civilian.StandOnThePoint01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_StandOnThePoint01.mp3"
+}
+
+"Civilian.StandOnThePoint02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_StandOnThePoint02.mp3"
+}
+
+"Civilian.Thanks01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Thanks01.mp3"
+}
+
+"Civilian.Thanks02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Thanks02.mp3"
+}
+
+"Civilian.Thanks03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Thanks03.mp3"
+}
+
+"Civilian.Thanks04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Thanks04.mp3"
+}
+
+"Civilian.Yes01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Yes01.mp3"
+}
+
+"Civilian.Yes02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Yes02.mp3"
+}
+
+"Civilian.Yes03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Yes03.mp3"
+}
+
+"Civilian.Yes04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Yes04.mp3"
+}
+
+"Civilian.Yes05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Yes05.mp3"
+}
+
+"Civilian.SpecialCompleted01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SpecialCompleted01.mp3"
+}
+
+"Civilian.SpecialCompleted02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SpecialCompleted02.mp3"
+}
+
+"Civilian.SpecialCompleted03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SpecialCompleted03.mp3"
+}
+
+"Civilian.SpecialCompleted04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_SpecialCompleted04.mp3"
+}
+
+"Civilian.Success01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success01.mp3"
+}
+
+"Civilian.Success02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success02.mp3"
+}
+
+"Civilian.Success03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success03.mp3"
+}
+
+"Civilian.Success04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success04.mp3"
+}
+
+"Civilian.Success05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success05.mp3"
+}
+
+"Civilian.Success06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success06.mp3"
+}
+
+"Civilian.Success07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success07.mp3"
+}
+
+"Civilian.Success08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Success08.mp3"
+}
+
+"Civilian.Failure01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Failure01.mp3"
+}
+
+"Civilian.Failure02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Failure02.mp3"
+}
+
+"Civilian.Failure03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Failure03.mp3"
+}
+
+"Civilian.Failure04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Failure04.mp3"
+}
+
+"Civilian.Failure05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_Failure05.mp3"
+}
+
+"Civilian.Protect01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect01.mp3"
+}
+
+"Civilian.Protect02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect02.mp3"
+}
+
+"Civilian.Protect03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect03.mp3"
+}
+
+"Civilian.Protect04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect04.mp3"
+}
+
+"Civilian.Protect05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect05.mp3"
+}
+
+"Civilian.Protect06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect06.mp3"
+}
+
+"Civilian.Protect07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect07.mp3"
+}
+
+"Civilian.Protect08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_protect08.mp3"
+}
+
+///
+///
+///
+
+"Announcer.RoundEnds10secondsIsolated"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"vo/announcer_ends_10sec_isolated.wav"
+}
+
+"Announcer.Dom_LeadGained"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+	
+	"rndwave"
+	{
+		"wave"	"vo/announcer_plr_racegeneral01.mp3"
+		"wave"	"vo/announcer_am_killstreak01.mp3"
+		"wave"	"vo/announcer_am_killstreak02.mp3"
+		"wave"	"vo/announcer_am_killstreak07.mp3"
+		"wave"	"vo/announcer_am_killstreak08.mp3"
+	}
+
+}
+
+"Announcer.Dom_LeadLost"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_plr_racegeneral02.mp3"
+		"wave"	"vo/announcer_plr_racegeneral04.mp3"
+		"wave"	"vo/announcer_plr_racegeneral15.mp3"
+	}
+}
+
+"Announcer.Dom_TeamGettingClose"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"	"vo/announcer_plr_racegeneral12.mp3"
+}
+
+"Announcer.Dom_EnemyGettingClose"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_plr_racegeneral03.mp3"
+		"wave"	"vo/announcer_plr_racegeneral11.mp3"
+	}
+}
+
+"Announcer.Dom_TeamComeback"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/mvm_bonus01.mp3"
+		"wave"	"vo/mvm_bonus02.mp3"
+		"wave"	"vo/mvm_bonus03.mp3"
+	}	
+}
+
+"Announcer.Dom_EnemyComeback"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_plr_racegeneral05.mp3"
+		"wave"	"vo/announcer_plr_racegeneral06.mp3"
+	}	
+}
+
+"Announcer.VIP_OurVIPDeath"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+	
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash01.mp3"
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash02.mp3"
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash03.mp3"
+		"wave"	"vo/compmode/cm_admin_misc_01.mp3"
+		"wave"	"vo/compmode/cm_admin_misc_07.mp3"
+		"wave"	"vo/compmode/cm_admin_misc_09.mp3"
+	}
+}
+
+///
+///
+///
+
+//-----------------------------------------------------------------------------
+// PS Announcer
+//-----------------------------------------------------------------------------
+
+"Announcer.PS_AttackEnemyReactor"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_ps_attack_generator01.mp3"
+		"wave"	"vo/announcer_ps_attack_generator02.mp3"
+	}
+}
+
+"Announcer.PS_DefendReactor"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_ps_defend_generator01.mp3"
+	}
+}
+
+
+///
+///
+///
+
+
+"Medic.TauntsSyringe"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/taunts/medic_taunts_syringe.wav"
+}
+
+//-----------------------------------------------------------------------------
+// Engineer Jump Pad
+//-----------------------------------------------------------------------------
+
+"Engineer.AutoBuildingJumpPad01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autobuildingjumppad01.mp3"
+}
+
+"Engineer.AutoBuildingJumpPad02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autobuildingjumppad02.mp3"
+}
+
+"Engineer.AutoBuildingJumpPad03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autobuildingjumppad03.mp3"
+}
+
+"Engineer.AutoBuildingJumpPad04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autobuildingjumppad04.mp3"
+}
+
+"Engineer.AutoAttackedBySpyJumpPad01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autoattackedbyspyjumppad01.mp3"
+}
+
+"Engineer.AutoAttackedBySpyJumpPad02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autoattackedbyspyjumppad02.mp3"
+}
+
+"Engineer.AutoDestroyedJumpPad01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autodestroyedjumppad01.mp3"
+}
+
+"Engineer.AutoDestroyedJumpPad02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_autodestroyedjumppad02.mp3"
+}
+
+//-----------------------------------------------------------------------------
+// temp
+//-----------------------------------------------------------------------------
+
+"Demoman.LaughShortRnd"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/demoman_LaughShort01.mp3"
+		"wave"			"vo/demoman_LaughShort02.mp3"
+		"wave"			"vo/demoman_LaughShort03.mp3"
+		"wave"			"vo/demoman_LaughShort04.mp3"
+		"wave"			"vo/demoman_LaughShort05.mp3"
+		"wave"			"vo/demoman_LaughShort06.mp3"
+	}
+}
+
+//-----------------------------------------------------------------------------
+// Civilian VIPR
+//-----------------------------------------------------------------------------
+
+"Civilian.CaneBoost01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_caneboost01.mp3"
+}
+
+"Civilian.CaneBoost02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_caneboost02.mp3"
+}
+
+"Civilian.CaneBoost03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_caneboost03.mp3"
+}
+
+"Civilian.CaneBoost04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_caneboost04.mp3"
+}
+
+"Civilian.CaneBoost05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_caneboost05.mp3"
+}
+
+"Civilian.UmbrellaBoost01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_umbrellaboost01.mp3"
+}
+
+"Civilian.UmbrellaBoost02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_umbrellaboost02.mp3"
+}
+
+"Civilian.UmbrellaBoost03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_umbrellaboost03.mp3"
+}
+
+"Civilian.UmbrellaBoost04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_umbrellaboost04.mp3"
+}
+
+"Civilian.UmbrellaBoost05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_umbrellaboost05.mp3"
+}
+
+// wrong car
+"Civilian.VIPR_WrongCar01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongcar01.mp3"
+}
+
+"Civilian.VIPR_WrongCar02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongcar02.mp3"
+}
+
+"Civilian.VIPR_WrongCar03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongcar03.mp3"
+}
+
+"Civilian.VIPR_WrongCar04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongcar04.mp3"
+}
+
+"Civilian.VIPR_WrongCar05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongcar05.mp3"
+}
+
+"Civilian.VIPR_WrongCar06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongcar06.mp3"
+}
+
+// race round start
+"Civilian.VIPR_RaceRoundStart_Car01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_car01.mp3"
+}
+
+"Civilian.VIPR_RaceRoundStart_Car02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_car02.mp3"
+}
+
+"Civilian.VIPR_RaceRoundStart_Car03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_car03.mp3"
+}
+
+"Civilian.VIPR_RaceRoundStart_Car04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_car04.mp3"
+}
+
+"Civilian.VIPR_RaceRoundStart_Car05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_car05.mp3"
+}
+
+"Civilian.VIPR_RaceRoundStart_Car06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_car06.mp3"
+}
+
+// respawn! point reset after death (car)
+
+"Civilian.VIPR_RespawnAfterReset_Car01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset_car01.mp3"
+}
+
+"Civilian.VIPR_RespawnAfterReset_Car02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset_car02.mp3"
+}
+
+"Civilian.VIPR_RespawnAfterReset_Car03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset_car03.mp3"
+}
+
+// respawn! point reset after death (generic)
+
+"Civilian.VIPR_RespawnAfterReset01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset01.mp3"
+}
+
+"Civilian.VIPR_RespawnAfterReset02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset02.mp3"
+}
+
+"Civilian.VIPR_RespawnAfterReset03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset03.mp3"
+}
+
+//-----------------------------------------------------------------------------
+// Additional Civilian VIPR lines (3.0)
+//-----------------------------------------------------------------------------
+
+// race round start (generic)
+
+"Civilian.VIPR_RaceRoundStart01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart01.wav"
+}
+
+"Civilian.VIPR_RaceRoundStart02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart02.wav"
+}
+
+// wrong way (generic)
+
+"Civilian.VIPR_WrongWay01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongway01.wav"
+}
+
+"Civilian.VIPR_WrongWay02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongway02.wav"
+}
+
+// race round start (helicopter)
+
+"Civilian.VIPR_RaceRoundStart_Heli01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_heli01.wav"
+}
+
+"Civilian.VIPR_RaceRoundStart_Heli02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_heli02.wav"
+}
+
+"Civilian.VIPR_RaceRoundStart_Heli03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_heli03.wav"
+}
+
+"Civilian.VIPR_RaceRoundStart_Heli04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_heli04.wav"
+}
+
+"Civilian.VIPR_RaceRoundStart_Heli05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_heli05.wav"
+}
+
+"Civilian.VIPR_RaceRoundStart_Heli06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_roundstart_heli06.wav"
+}
+
+// respawn after reset (helicopter)
+
+"Civilian.VIPR_RespawnAfterReset_Heli01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset_heli01.wav"
+}
+
+"Civilian.VIPR_RespawnAfterReset_Heli02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_respawnafterreset_heli02.wav"
+}
+
+// wrong way (helicopter)
+
+"Civilian.VIPR_WrongHeli01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongheli01.wav"
+}
+
+"Civilian.VIPR_WrongHeli02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongheli02.wav"
+}
+
+"Civilian.VIPR_WrongHeli03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_vipr_wrongheli03.wav"
+}
+
+//-----------------------------------------------------------------------------
+// Modified SD soundscripts, reusing the lines that refer to a suitcase instead of Australium (I love canon)
+//-----------------------------------------------------------------------------
+"Announcer.TF2C_SD_RoundStart"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_round_start02.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_OurTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession02.mp3"
+		"wave"	"vo/announcer_sd_possession18.mp3"
+		"wave"	"vo/announcer_sd_possession22.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_OurTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession26.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_OurTeamCapped"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_launch05.mp3"
+		"wave"	"vo/announcer_sd_rocket_launch01.mp3"
+		"wave"	"vo/announcer_sd_rocket_launch06.mp3"
+		"wave"	"vo/announcer_sd_rocket_launch03.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_TheirTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession04.mp3"
+		"wave"	"vo/announcer_sd_possession05.mp3"
+		"wave"	"vo/announcer_sd_possession08.mp3"
+		"wave"	"vo/announcer_sd_possession09.mp3"
+		"wave"	"vo/announcer_sd_possession14.mp3"
+		"wave"	"vo/announcer_sd_possession15.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_TheirTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession11.mp3"
+		"wave"	"vo/announcer_sd_possession12.mp3"
+		"wave"	"vo/announcer_sd_possession20.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_TheirTeamCapped"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_launch02.mp3"
+		"wave"	"vo/announcer_sd_rocket_launch04.mp3"
+		"wave"	"vo/announcer_sd_rocket_launch07.mp3"
+		"wave"	"vo/mvm_game_over_loss01.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_TheirFlagOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings03.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_OurFlagOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings05.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_TheyAreAboutToLaunch"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings01.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings04.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings08.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings09.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings10.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_WeAreAboutToLaunch"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings02.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings06.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings07.mp3"
+		"wave"	"vo/announcer_sd_rocket_warnings11.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_FlagAvailableGo"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_misc_nags02.mp3"
+		"wave"	"vo/announcer_sd_drop_site05.mp3"
+		"wave"	"vo/announcer_sd_drop_site06.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_FlagAboutToReturn"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_self_destruct02.mp3"
+	}
+}
+
+"Announcer.TF2C_SD_FlagReturned"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_drop_site02.mp3"
+	}
+}
+
+"Resource.TF2C_FlagSpawn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"items/itembk2.mp3"
+}
+
+//-----------------------------------------------------------------------------
+// Miscellaneous overrides
+//-----------------------------------------------------------------------------
+// Originally from game_sounds_vo_mvm_handmade.txt
+// Refers to vo/mvm/norm/heavy_mvm_Thanks04.mp3 which doesn't exist
+"Heavy.MVM_Thanks04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"misc/null.wav"
+}
+
+// The infamous "Remember the Alamo!" voiceline
+// We aren't certain we have the rights to use it, and the definition creates console errors
+// ;(
+"Engineer.BattleCry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"misc/null.wav"
+}

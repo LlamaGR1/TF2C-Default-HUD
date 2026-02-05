@@ -1,0 +1,42 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"			"#TF_Weapon_Sapper"
+	"BuiltRightHanded"		"0"
+	"weight"				"1"
+	"WeaponType"			"building"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+
+	// Ammo & Clip
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	// Buckets.	
+	"bucket"			"1"
+	"bucket_position"		"0"
+
+	// Models & Animation.
+	"viewmodel"			"models/weapons/v_models/v_sapper_spy.mdl"
+	"playermodel"			"models/weapons/w_models/w_sapper.mdl"
+	"anim_prefix"			"building"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+	}
+	"DamageFeedbackVolume"	"0.8"
+
+	// Crosshair
+	"crosshair"	"crosshair5"
+	TextureData
+	{
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+<svg id="ico_battery_inactive" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape_18_copy" data-name="Shape 18 copy" class="cls-1" d="M85,96c-0.126,1.87-2.158,4-4,4H47c-1.842,0-3.883-2.13-4-4L39,40c-0.163-2.6,1.791-4,4-4H56V32a4,4,0,0,1,4-4h8a4,4,0,0,1,4,4v4H85c2.209,0,4.175,1.4,4,4ZM43,40l4,56H81l4-56H43ZM70,79l-6-6-6,6-4.5-4.5,6-6-6-6L58,58l6,6,6-6,4.5,4.5-6,6,6,6Z"/>
+</svg>

@@ -1,0 +1,1078 @@
+// DSP Effects
+// 0 : "Normal (off)"
+// 1 : "Generic"
+// 2 : "Metal Small"
+// 3 : "Metal Medium"
+// 4 : "Metal Large"
+// 5 : "Tunnel Small"
+// 6 : "Tunnel Medium"
+// 7 : "Tunnel Large"
+// 8 : "Chamber Small"
+// 9 : "Chamber Medium"
+// 10: "Chamber Large"
+// 11: "Bright Small"
+// 12: "Bright Medium"
+// 13: "Bright Large"
+// 14: "Water 1"
+// 15: "Water 2"
+// 16: "Water 3"
+// 17: "Concrete Small"
+// 18: "Concrete Medium"
+// 19: "Concrete Large"
+// 20: "Big 1"
+// 21: "Big 2"
+// 22: "Big 3"
+// 23: "Cavern Small"
+// 24: "Cavern Medium"
+// 25: "Cavern Large"
+// 26: "Weirdo 1"
+// 27: "Weirdo 2"
+// 28: "Weirdo 3"
+
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f	75dB
+//	ATTN_IDLE		2.0f	60dB
+//	ATTN_STATIC		1.25f	66dB
+//	ATTN_RICOCHET	1.5f	65dB
+//	ATTN_GUNFIRE	0.27f	140dB
+
+//	SNDLVL_50dB		= 50,	// 3.9
+//	SNDLVL_55dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_60dB		= 60,	// 2.0
+//	SNDLVL_65dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_70dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	// 0.8
+//	SNDLVL_80dB		= 80,	// 0.7
+//	SNDLVL_85dB		= 85,	// 0.6
+//	SNDLVL_90dB		= 90,	// 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	// 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_140dB	= 140,	// 0.2
+//	SNDLVL_150dB	= 150,	// 0.2
+
+"VIP_Harbor.BLU_Spawn"
+{
+	"dsp"	"10"
+	
+// Soundscape: Initial BLU spawn, underground ambience with occasional background movement
+
+	// Positions
+	// 0: resupply car engine
+	// 1: steam pipes
+	// 2: ac ducts
+
+	"playlooping"
+	{  
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"ambient/underground.wav"
+	}	
+	
+	"playlooping"
+	{  
+		"volume"		"0.5"
+		"pitch"			"85"
+		"wave"			"scapes/ambience/crucial_medroomtone_amb_loop.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"80"
+		"wave"			"ambient/vip_harbor/harbor_city.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"80"
+		"position"		"0"
+		"soundlevel"	"SNDLVL_75dB"	
+		"wave"			")ambient/engine_idle.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"90"
+		"position"		"1"
+		"soundlevel"	"SNDLVL_75dB"	
+		"wave"			")scapes/3d/water_drip_loop.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"60"
+		"position"		"1"
+		"soundlevel"	"SNDLVL_85dB"	
+		"wave"			")scapes/3d/steam_loop_01.wav"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"position"		"2"
+		"soundlevel"	"SNDLVL_75dB"	
+		"wave"			")ambient/turbine6.wav"
+	}
+				
+	"playrandom"
+	{
+		"time"			"5,35"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"scapes/misc/random_interiormetal_03.wav"
+			"wave"		"scapes/misc/random_interiormetal_04.wav"
+			"wave"		"scapes/misc/random_interiormetal_05.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"scapes/misc/random_interiormetal_07.wav"
+		}
+	}	
+	
+	"playrandom"
+	{
+		"time"			"10,25"
+		"volume"		"0.5"
+		"pitch"			"85"
+		"rndwave"
+		{
+			"wave"		"ambient/cp_harbor/car_1shot_04.wav"
+			"wave"		"ambient/cp_harbor/car_1shot_05.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_01.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_04.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_05.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_06.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_07.wav"		
+			"wave"		"ambient/vip_harbor/truck.mp3"
+		}
+	}
+}
+
+"VIP_Harbor.Outside"
+{
+	"dsp"	"1"
+
+// Soundscape: City/industrial noises with light background traffic
+
+	// Positions
+	// 0: rooftop hvac unit outside BLU spawn
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_city.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15" 
+		"pitch"			"100"
+		"wave"			"scapes/ambience/rur5b_cricket_loopl.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_ocean_distant.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_65dB"
+		"position"		"0"
+		"wave"			")ambient/lair/ac_vent2.wav"
+	}
+		
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"0"
+		"wave"			")ambient/turbine5.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"			"15,35"
+		"volume"		"1"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/dog1.wav"
+			"wave"		"ambient/dog2.wav"
+			"wave"		"ambient/dog3.wav"
+			"wave"		"ambient/dog4.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"			"25,45"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/crow1.wav"
+			"wave"		"ambient/crow2.wav"
+			"wave"		"ambient/crow3.wav"
+			"wave"		"ambient/crow4.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"			"10,25"
+		"volume"		"0.4"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/cp_harbor/car_1shot_04.wav"
+			"wave"		"ambient/cp_harbor/car_1shot_05.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_01.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_04.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_05.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_06.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_07.wav"		
+		}
+	}
+
+	"playrandom"
+	{	
+		"time"			"10,35"
+		"volume"		"0.3"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull1.mp3"
+			"wave"		"ambient/vip_harbor/seagull2.mp3"
+			"wave"		"ambient/vip_harbor/seagull3.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"20,45"
+		"volume"		"0.25,0.4"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/ship_horn_01.wav"
+			"wave"		"ambient/mvm_warehouse/ship_horn_02.wav"
+			"wave"		"ambient/vip_harbor/boat_horn2.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn3.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn5.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle2.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle3.mp3"
+		}
+	}		
+	"playrandom"
+	{	
+		"time"			"30,90"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/chopper/helicopter1.mp3"
+			"wave"		"ambient/chopper/helicopter2.mp3"
+			"wave"		"ambient/chopper/helicopter3.mp3"
+		}
+	}	
+}
+
+"VIP_Harbor.Inside"
+{
+	"dsp"	"18"
+
+// Soundscape: City/industrial noises with interior roomtone
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/crucial_smallroomtone_amb_loop.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_city.wav"
+	}
+
+	"playrandom"
+	{
+		"time"			"15,35"
+		"volume"		"1"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/dog1.wav"
+			"wave"		"ambient/dog2.wav"
+			"wave"		"ambient/dog3.wav"
+			"wave"		"ambient/dog4.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"			"30,45"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/crow1.wav"
+			"wave"		"ambient/crow2.wav"
+			"wave"		"ambient/crow3.wav"
+			"wave"		"ambient/crow4.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"			"10,25"
+		"volume"		"0.4"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/cp_harbor/car_1shot_04.wav"
+			"wave"		"ambient/cp_harbor/car_1shot_05.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_01.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_04.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_05.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_06.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_07.wav"		
+		}
+	}
+
+	"playrandom"
+	{	
+		"time"			"13,35"
+		"volume"		"0.3"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull1.mp3"
+			"wave"		"ambient/vip_harbor/seagull2.mp3"
+			"wave"		"ambient/vip_harbor/seagull3.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"30, 125"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/chopper/helicopter_interior1.mp3"
+			"wave"		"ambient/chopper/helicopter_interior2.mp3"
+			"wave"		"ambient/chopper/helicopter_interior3.mp3"
+		}
+	}	
+}
+
+"VIP_Harbor.Tunnel_A"
+{
+	"dsp"	"6"
+
+// Soundscape: Muffled cityscape with light wind and debris
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_ocean_distant.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_city.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"pitch"			"65"
+		"wave"			"scapes/misc/underground_hall_loop1.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"			"10,25"
+		"volume"		"0.3"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/cp_harbor/car_1shot_04.wav"
+			"wave"		"ambient/cp_harbor/car_1shot_05.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_01.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_04.wav"
+			"wave"		"ambient/mvm_warehouse/car_passby_05.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_06.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_07.wav"		
+			"wave"		"ambient/mvm_warehouse/car_passby_07.wav"		
+			"wave"		"scapes/misc/blowing_papers01.wav"			
+			"wave"		"scapes/misc/blowing_papers02.wav"			
+			"wave"		"scapes/wind/wind_snippet1.wav"			
+			"wave"		"scapes/wind/wind_snippet2.wav"			
+			"wave"		"scapes/wind/wind_snippet3.wav"			
+		}
+	}
+
+	"playrandom"
+	{	
+		"time"			"13,35"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull1.mp3"
+			"wave"		"ambient/vip_harbor/seagull2.mp3"
+			"wave"		"ambient/vip_harbor/seagull3.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"30, 60"
+		"volume"		"0.3"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/ship_horn_01.wav"
+			"wave"		"ambient/mvm_warehouse/ship_horn_02.wav"
+			"wave"		"ambient/vip_harbor/boat_horn2.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn3.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn5.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn6.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle3.mp3"
+		}
+	}		
+}
+	
+"VIP_Harbor.Tunnel_B"
+{
+	"dsp"	"6"
+
+// Soundscape: Muffled cityscape with more pronounced seaside sounds, used in the brief transitionary tunnel on the approach to B point
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_ocean_distant.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_waterfront.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"1"
+		"pitch"			"65"
+		"wave"			"scapes/misc/underground_hall_loop1.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"			"10,25"
+		"volume"		"0.3"
+		"pitch"			"100"
+		"rndwave"
+		{	
+			"wave"		"scapes/misc/blowing_papers01.wav"			
+			"wave"		"scapes/misc/blowing_papers02.wav"			
+			"wave"		"scapes/wind/wind_snippet1.wav"			
+			"wave"		"scapes/wind/wind_snippet2.wav"			
+			"wave"		"scapes/wind/wind_snippet3.wav"			
+		}
+	}
+
+	"playrandom"
+	{	
+		"time"			"7,20"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull1.mp3"
+			"wave"		"ambient/vip_harbor/seagull2.mp3"
+			"wave"		"ambient/vip_harbor/seagull3.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"8, 35"
+		"volume"		"0.4"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/ship_horn_01.wav"
+			"wave"		"ambient/mvm_warehouse/ship_horn_02.wav"
+			"wave"		"ambient/vip_harbor/boat_horn2.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn3.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn5.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn6.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle3.mp3"
+		}
+	}		
+}
+
+"VIP_Harbor.Tunnel_C"
+{
+	"dsp"	"25"
+
+// Soundscape: Ominous escape tunnel ambience, only accessible after final point is captured
+
+	// Positions
+	// 0: escape car chime
+
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"scapes/2d/interior2/interiorc.wav"		
+	}		
+	
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"scapes/2d/interior1/sewer_amb02.wav"		
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"65"
+		"wave"			"ambient/underground.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"1"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_65dB"
+		"position"		"0"
+		"wave"			"ambient/limousine_chime.wav"		
+	}
+	
+	"playrandom"
+	{
+		"time"			"5,15"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"rndwave"
+		{			
+			"wave"		"scapes/wind/wind_snippet1.wav"			
+			"wave"		"scapes/wind/wind_snippet2.wav"			
+			"wave"		"scapes/wind/wind_snippet3.wav"				
+		}
+	}	
+	
+	"playrandom"
+	{
+		"time"			"8,25"
+		"volume"		"0.2,0.3"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"
+		"rndwave"
+		{	
+			"wave"		"scapes/misc/blowing_papers01.wav"			
+			"wave"		"scapes/misc/blowing_papers02.wav"	
+			"wave"		"scapes/misc/Cable_Rattle01.wav"
+			"wave"		"scapes/misc/Cable_Rattle02.wav"
+			"wave"		"scapes/misc/Cable_Rattle03.wav"
+			"wave"		"scapes/misc/Cable_Rattle04.wav"
+			"wave"		"scapes/misc/Cable_Rattle05.wav"			
+			"wave"		"scapes/misc/randommetalrattle01.wav"			
+			"wave"		"scapes/misc/randommetalrattle02.wav"			
+			"wave"		"scapes/misc/randommetalsqueak01.wav"			
+			"wave"		"scapes/misc/randommetalsqueak02.wav"			
+		}
+	}
+}
+			
+"VIP_Harbor.Waterfront"
+{
+	"dsp"	"1"
+
+// Soundscape: Port ambience with sounds of heavy machinery and mid-century transportation
+
+	// Positions
+	// 0: ocean
+	// 1: crane hook over B point	
+	
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_waterfront.wav"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_140dB"
+		"position"		"0"
+		"wave"			")ambient/vip_harbor/harbor_ocean.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"			"9"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_140dB"
+		"position"		"0"
+		"rndwave"
+		{
+			"wave"		"ambient/vip_harbor/buoy_bell1.mp3"
+			"wave"		"ambient/vip_harbor/buoy_bell2.mp3"
+			"wave"		"ambient/vip_harbor/buoy_bell3.mp3"
+			"wave"		"ambient/vip_harbor/buoy_bell4.mp3"
+			"wave"		"ambient/vip_harbor/buoy_bell5.mp3"
+			"wave"		"ambient/vip_harbor/buoy_bell6.mp3"
+		}
+	}
+	
+	"playrandom"
+	{	
+		"time"			"7,20"
+		"volume"		"0.4,0.45"
+		"pitch"			"95,105"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull1.mp3"
+			"wave"		"ambient/vip_harbor/seagull2.mp3"
+			"wave"		"ambient/vip_harbor/seagull3.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"8, 35"
+		"volume"		"0.6,0.85"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_140dB"
+		"position"		"0"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/ship_horn_01.wav"
+			"wave"		"ambient/mvm_warehouse/ship_horn_02.wav"
+			"wave"		"ambient/vip_harbor/boat_horn1.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn2.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn3.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn4.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn5.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn6.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn7.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn8.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle1.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle2.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle3.mp3"
+		}
+	}
+		
+	"playrandom"
+	{
+		"time"			"15,60"
+		"volume"		"0.5,0.65"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"				
+		"rndwave"
+		{		
+			"wave"		"scapes/misc/binhit01.wav"
+			"wave"		"scapes/misc/binhit02.wav"
+			"wave"		"scapes/misc/binhit03.wav"
+			"wave"		"scapes/misc/cable_rattle01.wav"
+			"wave"		"scapes/misc/cable_rattle02.wav"
+			"wave"		"scapes/misc/cable_rattle03.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_01.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_02.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_04.wav"
+			"wave"		"ambient/mvm_warehouse/train_01.wav"	
+			"wave"		"ambient/mvm_warehouse/train_02.wav"	
+			"wave"		"ambient/mvm_warehouse/train_03.wav"	
+			"wave"		"ambient/vip_harbor/train_distant1.mp3"
+			"wave"		"ambient/vip_harbor/train_distant2.mp3"
+			"wave"		"ambient/vip_harbor/train_distant3.mp3"
+			"wave"		"ambient/vip_harbor/truck.mp3"
+			"wave"		"ambient/vip_harbor/machinery1.mp3"
+			"wave"		"ambient/vip_harbor/machinery2.mp3"
+			"wave"		"ambient/vip_harbor/machinery3.mp3"
+			"wave"		"ambient/vip_harbor/machinery4.mp3"
+			"wave"		"ambient/vip_harbor/machinery5.mp3"
+			"wave"		"ambient/vip_harbor/machinery6.mp3"
+			"wave"		"ambient/vip_harbor/machinery7.mp3"
+			"wave"		"ambient/vip_harbor/machinery8.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell1.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell2.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell3.mp3"
+			
+		}
+	}	
+		
+	"playrandom"
+	{
+		"time"			"9,16"
+		"volume"		"1"
+		"pitch"			"98,102"
+		"soundlevel" 	"SNDLVL_95dB"
+		"position"		"1"
+		"rndwave"
+		{		
+			"wave"		"ambient/vip_harbor/metal_creak1.mp3"
+			"wave"		"ambient/vip_harbor/metal_creak2.mp3"
+			"wave"		"ambient/vip_harbor/metal_creak3.mp3"
+		}
+	}		
+		
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.4"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"
+		"rndwave"
+		{		
+			"wave"		"scapes/wind/wind_hit1.wav"
+			"wave"		"scapes/wind/wind_hit2.wav"
+		}
+	}		
+}
+	
+"VIP_Harbor.Waterfront_Inside"
+{
+	"dsp"	"17"
+	
+// Soundscape: Port ambience with interior roomtone
+
+	// Positions
+	// 0: leaky pipes
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_waterfront.wav"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"scapes/ambience/crucial_medroomtone_amb_loop.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"90"
+		"position"		"0"
+		"soundlevel"	"SNDLVL_60dB"	
+		"wave"			")scapes/3d/water_drip_loop.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"50"
+		"position"		"0"
+		"soundlevel"	"SNDLVL_85dB"	
+		"wave"			")scapes/3d/crucial_big_pipes_loop.wav"
+	}	
+	
+	"playrandom"
+	{	
+		"time"			"15,25"
+		"volume"		"0.4"
+		"pitch"			"95,105"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull1.mp3"
+			"wave"		"ambient/vip_harbor/seagull2.mp3"
+			"wave"		"ambient/vip_harbor/seagull3.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}	
+	}
+	
+	"playrandom"
+	{	
+		"time"			"8, 35"
+		"volume"		"0.6"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/ship_horn_01.wav"
+			"wave"		"ambient/mvm_warehouse/ship_horn_02.wav"
+			"wave"		"ambient/vip_harbor/boat_horn1.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn2.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn3.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn4.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn5.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn6.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn7.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn8.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle1.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle2.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle3.mp3"
+		}
+	}
+		
+	"playrandom"
+	{
+		"time"			"10,60"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"	
+		"rndwave"
+		{		
+			"wave"		"scapes/misc/binhit01.wav"
+			"wave"		"scapes/misc/binhit02.wav"
+			"wave"		"scapes/misc/binhit03.wav"
+			"wave"		"scapes/misc/cable_rattle01.wav"
+			"wave"		"scapes/misc/cable_rattle02.wav"
+			"wave"		"scapes/misc/cable_rattle03.wav"
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_02.wav"
+			"wave"		"scapes/misc/random_interiormetal_05.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_01.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_02.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_04.wav"
+			"wave"		"ambient/mvm_warehouse/train_01.wav"	
+			"wave"		"ambient/mvm_warehouse/train_02.wav"	
+			"wave"		"ambient/mvm_warehouse/train_03.wav"	
+			"wave"		"ambient/vip_harbor/train_distant1.mp3"
+			"wave"		"ambient/vip_harbor/train_distant2.mp3"
+			"wave"		"ambient/vip_harbor/train_distant3.mp3"
+			"wave"		"ambient/vip_harbor/truck.mp3"
+			"wave"		"ambient/vip_harbor/machinery1.mp3"
+			"wave"		"ambient/vip_harbor/machinery2.mp3"
+			"wave"		"ambient/vip_harbor/machinery3.mp3"
+			"wave"		"ambient/vip_harbor/machinery4.mp3"
+			"wave"		"ambient/vip_harbor/machinery5.mp3"
+			"wave"		"ambient/vip_harbor/machinery6.mp3"
+			"wave"		"ambient/vip_harbor/machinery7.mp3"
+			"wave"		"ambient/vip_harbor/machinery8.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell1.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell2.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell3.mp3"
+			
+		}
+	}	
+	
+	"playrandom"
+	{
+		"time"			"5,13"
+		"volume"		"0.3,0.45"
+		"pitch"			"95,105"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"	
+		"rndwave"
+		{
+			
+			"wave"		"ambient/water/distant_drip1.wav"
+			"wave"		"ambient/water/distant_drip2.wav"
+			"wave"		"ambient/water/distant_drip3.wav"
+			"wave"		"ambient/water/distant_drip4.wav"
+		}
+	}	
+		
+	"playrandom"
+	{
+		"time"			"20,45"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_75dB"
+		"position"		"random"	
+		"rndwave"
+		{
+			"wave"		"scapes/animal/RatPath01.wav"
+			"wave"		"scapes/animal/RatPath02.wav"
+			"wave"		"scapes/animal/RatPath03.wav"
+			"wave"		"scapes/animal/rats1.wav"
+			"wave"		"scapes/animal/rats2.wav"
+			"wave"		"scapes/animal/rats3.wav"
+		}
+	}	
+}
+		
+"VIP_Harbor.Warehouse"
+{
+	"dsp"	"10"
+	
+// Soundscape: Industrial ambience with light seaside background noise
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_warehouse.wav"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"ambient\machine_hum2.wav"
+	}
+		
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"ambient/vip_harbor/harbor_waterfront.wav"
+	}	
+	
+	"playrandom"
+	{	
+		"time"			"13,30"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/ship_horn_01.wav"
+			"wave"		"ambient/mvm_warehouse/ship_horn_02.wav"
+			"wave"		"ambient/vip_harbor/boat_horn1.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn2.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn3.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn4.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn5.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn6.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn7.mp3"
+			"wave"		"ambient/vip_harbor/boat_horn8.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle1.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle2.mp3"
+			"wave"		"ambient/vip_harbor/boat_whistle3.mp3"
+			"wave"		"ambient/vip_harbor/train_distant1.mp3"
+			"wave"		"ambient/vip_harbor/train_distant2.mp3"	
+			"wave"		"ambient/cp_harbor/train_1shot_01.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_02.wav"
+			"wave"		"ambient/cp_harbor/train_1shot_04.wav"
+			"wave"		"ambient/mvm_warehouse/train_01.wav"	
+			"wave"		"ambient/mvm_warehouse/train_02.wav"	
+			"wave"		"ambient/mvm_warehouse/train_03.wav"	
+		}
+	}
+		
+	"playrandom"
+	{	
+		"time"			"15,25"
+		"volume"		"0.3"
+		"pitch"			"95,105"
+		"rndwave"
+		{
+			"wave"		"ambient/mvm_warehouse/seagull_01.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_02.wav"
+			"wave"		"ambient/mvm_warehouse/seagull_03.wav"
+			"wave"		"ambient/vip_harbor/seagull_flock1.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock2.mp3"
+			"wave"		"ambient/vip_harbor/seagull_flock3.mp3"
+		}
+	}
+		
+	"playrandom"
+	{
+		"time"			"8,25"
+		"volume"		"0.6,0.75"
+		"pitch"			"100"
+		"soundlevel" 	"SNDLVL_100dB"
+		"position"		"random"	
+		"rndwave"
+		{		
+			"wave"		"scapes/misc/binhit01.wav"
+			"wave"		"scapes/misc/binhit02.wav"
+			"wave"		"scapes/misc/binhit03.wav"
+			"wave"		"scapes/misc/cable_rattle01.wav"
+			"wave"		"scapes/misc/cable_rattle02.wav"
+			"wave"		"scapes/misc/cable_rattle03.wav"
+			"wave"		"scapes/misc/random_interiormetal_01.wav"
+			"wave"		"scapes/misc/random_interiormetal_02.wav"
+			"wave"		"scapes/misc/random_interiormetal_06.wav"
+			"wave"		"ambient/vip_harbor/truck.mp3"
+			"wave"		"ambient/vip_harbor/machinery1.mp3"
+			"wave"		"ambient/vip_harbor/machinery2.mp3"
+			"wave"		"ambient/vip_harbor/machinery3.mp3"
+			"wave"		"ambient/vip_harbor/machinery4.mp3"
+			"wave"		"ambient/vip_harbor/machinery5.mp3"
+			"wave"		"ambient/vip_harbor/machinery6.mp3"
+			"wave"		"ambient/vip_harbor/machinery7.mp3"
+			"wave"		"ambient/vip_harbor/machinery8.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell1.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell2.mp3"
+			"wave"		"ambient/vip_harbor/alarm_bell3.mp3"
+		}
+	}	
+}

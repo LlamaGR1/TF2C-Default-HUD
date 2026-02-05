@@ -1,0 +1,11 @@
+<svg id="hud_obj_status_ammo_128" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Ellipse_1_copy_5" data-name="Ellipse 1 copy 5" class="cls-1" d="M64,100a36,36,0,1,1,36-36A36,36,0,0,1,64,100ZM54,47a7,7,0,0,0-14,0V78H54V47Zm0,34H40v6H54V81ZM71,47a7,7,0,0,0-14,0V78H71V47Zm0,34H57v6H71V81ZM88,47a7,7,0,0,0-14,0V78H88V47Zm0,34H74v6H88V81Z"/>
+</svg>

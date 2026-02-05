@@ -1,0 +1,11 @@
+<svg id="hud_obj_status_haul" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Rectangle_20_copy_4" data-name="Rectangle 20 copy 4" class="cls-1" d="M99,93H72.4L74,85H56l1.6,8H29l-1-6,4-8H96.041L100,87ZM74,71V65H54v6a4.015,4.015,0,0,1-4,4H40V69h8V63a4.015,4.015,0,0,1,4-4H76a4.015,4.015,0,0,1,4,4v6h8v6H78A4.015,4.015,0,0,1,74,71ZM70,51H58V33H48L64,17,80,33H70V51ZM60,105H70l1.6-8H98.333L96,111H32L29.667,97H58.4Z"/>
+</svg>
